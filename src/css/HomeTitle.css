@@ -1,0 +1,13 @@
+.home-title {
+    width: 100%;
+}
+
+.home-title > span {
+    font-size: 24px;
+    color: #1355FF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
