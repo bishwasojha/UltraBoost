@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import faq from "../Assets/json/faq.json";
+import HomeTitle from '../components/HomeTitle';
 
 const FaqItem = ({ id, item, isOpen, onToggle }) => {
   return (
@@ -32,7 +33,7 @@ const FAQ = () => {
     <div className="faq-section">
       <div className="faq-title">
         <div>
-          <h4>FAQ'S</h4>
+          <HomeTitle>FAQ'S</HomeTitle>
           <div className="faq-second-heading">
             <h1>Frequently Asked </h1>
             <span>Questions</span>

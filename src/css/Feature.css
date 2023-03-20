@@ -15,26 +15,28 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .text-special-feature {
+    font-family: 'OpenSauceSansRegular';
     display: flex;
     flex-direction: row;
     align-items: center;
     font-weight: 500;
-    font-family: 'Open Sauce Sans';
     font-style: normal;
     margin-top: 0.8rem;
     letter-spacing: -0.015em;
 }
 
-.text-special-feature > h3 {
+.text-special-feature > h1 {
+    font-family: 'OpenSauceSansRegular';
     font-size: 44px;
     color: #07090D; 
+    font-weight: 700;
 }
 
-.text-special-feature > span {
+.text-special-feature > h2 {
     font-size: 44px;
     color: #1355FF;
     margin-left: 10px;
@@ -50,7 +52,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4.5rem;
 }
 
 .feature-wrapper-1 ,
@@ -58,7 +60,7 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    margin: 0 2rem;
+    margin: 0 1rem;
 }
 
 .each-feature {
@@ -72,6 +74,9 @@
     width: 44px;
     height: 44px;
     border-radius: 4px;
+    margin-left: 3rem;
+    text-align: center;
+    margin-right: 0.4rem;
 }
 
 .feature-icon > img {
@@ -89,14 +94,16 @@
 }
 
 .feature-name > h3 {
+    font-family: 'OpenSauceSansRegular';
     font-size: 18px;
     color: #07090D;
-    font-family: 'Open Sauce Sans';
     font-weight: 700;
     line-height: 24px;
+    letter-spacing: -0.015em;
 }
 
 .feature-name > p {
+    width: 280px;
     font-family: 'Inter';
     font-size: 14px;
     font-weight: 400;

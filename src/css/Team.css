@@ -20,7 +20,7 @@
 }
 
 .team-title > .team-bold-text {
-    font-family: 'Open Sauce Sans Regular';
+    font-family: 'OpenSauceSansRegular';
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
@@ -37,17 +37,13 @@
 .team-description {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .team-card {
     border: 1px solid #E7EAEE;
     border-radius: 15px;
-    margin: 0 2rem 0 0;
-}
-
-.team-card:first-child {
-    margin-left: 30px;
+    padding: 1.35rem;
 }
 
 .img-placeholder {
@@ -55,11 +51,8 @@
     height: 280px;
     background: #F5F5F5;
     border-radius: 12px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 1rem;
+    margin-left: 0.5rem;
+    margin-top: 5px;
 }
 
 .user-title, 
@@ -76,6 +69,7 @@
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #E7EAEE ;
+    margin-top: 1.5rem;
 }
 
 .user-name {
@@ -87,14 +81,16 @@
     letter-spacing: -0.015em;
     font-feature-settings: 'pnum' on, 'lnum' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on, 'case' on, 'cpsp' on;
     color: #07090D;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    padding-right: 1.5rem;
-    border-right: 1px solid #E7EAEE;
+    padding-right: 0.8rem;
     margin-bottom: 1rem;
+    border-right: 1px solid #E7EAEE;
 }
 
+.line {
+    color: black;
+    width: 2px;
+    height: 10px;
+}
 .user-rank {
     font-family: 'Inter';
     font-style: normal;
@@ -116,16 +112,15 @@
     width: 288px;
     letter-spacing: -0.18px;
     color: #586174;
-
+    margin-top: 1rem;
 }
 
 .card-links > svg {
+    width: 15px;
+    height: 15px;
     margin-top: 1rem;
     align-items: flex-start;
-    width: 25px;
-    height: 25px;
     padding: 8px;
-    gap: 10px;
     background: #F6F7F9;
     border-radius: 4px;
     flex-wrap: wrap;

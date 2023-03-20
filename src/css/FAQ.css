@@ -7,35 +7,23 @@
 
 .faq-title {
     width: 42%;
-    margin-left: 2rem;
+    margin-left: 0rem;
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
-
-.faq-title > div > h4 {
-    font-size: 15px;
-    color: #1355FF;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    margin-left: 0.3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
 
 .faq-second-heading {
-    font-family: 'Open Sauce Sans';
-    font-weight: 700;
-    
+    font-family: 'OpenSauceSansRegular';
+    font-weight: 700;  
+    padding-top: 2rem;
+        
 }
 
 .faq-second-heading > h1{
     font-size: 44px;
     line-height: 60px;
     color: #07090D;
-    margin-bottom: -5px;
 }
 
 .faq-second-heading > span {
@@ -48,12 +36,15 @@
     flex-direction: column;
     font-family: 'Inter';
     font-weight: 400;
-    margin-top: 12rem;
+    margin-top: 18.5rem;
 }
 
 .faq-email-section > p {
+    width: 298px;
     color: #586174;
     font-size: 14px;
+    letter-spacing: -0.09px;
+    line-height: 24px;
 }
 
 .faq-email-section > span {
@@ -63,7 +54,7 @@
 }
 
 .faq-details {
-    padding-top: 0.5rem;
+    padding-top: 1.5rem;
     display: flex;
     flex-direction: row;
     width: 57%;
@@ -72,7 +63,7 @@
 .faq-items {
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
+    margin-top: 2rem;
     margin-left: 2rem;
 }
   
@@ -80,7 +71,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
-    border-bottom: 1px solid aliceblue;
+    border-bottom: 1px solid #E7EAEE;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     transition: 0.5s cubic-bezier(0, 0.5, 0, 1);
@@ -96,11 +87,11 @@
 .faq-question {
     display: flex;
     justify-content: space-between;
-    padding: 8px 8px 8px 15px;
+    padding: 26px 8px 8px 15px;
 }
   
 .faq-question > span {
-    font-family: 'Open Sauce Sans';
+    font-family: 'OpenSauceSansRegular';
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
@@ -161,15 +152,15 @@
 .faq-icon > .arrow > span:first-of-type{
     left: 0;
     transform: rotate(45deg);
-    background: rgb(77, 75, 75);
-    height: 3px;
+    background: #1C2436;
+    height: 2px;
 }
   
 .faq-icon > .arrow > span:last-of-type{
-    right: 1.5px;
+    right: 1px;
     transform: rotate(-45deg);
-    background: rgb(77, 75, 75);
-    height: 3px;
+    background: #1C2436;
+    height: 2px;
 }
   
 .faq-icon.opened > .arrow > span:first-of-type{

@@ -48,6 +48,7 @@ const Team = () => {
             <div className="img-placeholder"></div>
           <div className="user-title">
             <div className="user-name">Jesica Janet</div>
+            <div className="line"></div>
             <div className="user-rank">Master</div>
           </div>
           <div className="team-card-description">

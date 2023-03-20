@@ -13,7 +13,7 @@ const Feature = () => {
             <div className="feature-heading">
                 <HomeTitle> FEATURES </HomeTitle>
                 <div className="text-special-feature">
-                    <h3>Our Special</h3><span>Features </span>
+                    <h1>Our Special</h1><h2>Features </h2>
                 </div>
             </div>
             <div className="feature-description">
@@ -26,9 +26,7 @@ const Feature = () => {
                         </div>
                         <div className="feature-name">
                             <h3>Feature Name</h3>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Aliquam doloremque fugiat pariatur delectus neque corrupti. 
-                                Sed, tempore labore!</p>
+                            <p> Lorem ipsum dolor sit consectetur adipiscing elit nulla massanen.</p>
                         </div>
                     </div>
                     <div className="each-feature">
@@ -37,9 +35,7 @@ const Feature = () => {
                         </div>
                         <div className="feature-name">
                             <h3>Feature Name</h3>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Aliquam doloremque fugiat pariatur delectus neque corrupti. 
-                                Sed, tempore labore!</p>
+                            <p> Lorem ipsum dolor sit consectetur adipiscing elit nulla massanen.</p>
                         </div>
                     </div>
                     <div className="each-feature">
@@ -48,9 +44,7 @@ const Feature = () => {
                         </div>
                         <div className="feature-name">
                             <h3>Feature Name</h3>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Aliquam doloremque fugiat pariatur delectus neque corrupti. 
-                                Sed, tempore labore!</p>
+                            <p> Lorem ipsum dolor sit consectetur adipiscing elit nulla massanen.</p>
                         </div>
                     </div>
                     </div>
@@ -63,9 +57,7 @@ const Feature = () => {
                         </div>
                         <div className="feature-name">
                             <h3>Feature Name</h3>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Aliquam doloremque fugiat pariatur delectus neque corrupti. 
-                                Sed, tempore labore!</p>
+                            <p> Lorem ipsum dolor sit consectetur adipiscing elit nulla massanen.</p>
                         </div>
                     </div>
                     <div className="each-feature">
@@ -74,9 +66,7 @@ const Feature = () => {
                         </div>
                         <div className="feature-name">
                             <h3>Feature Name</h3>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Aliquam doloremque fugiat pariatur delectus neque corrupti. 
-                                Sed, tempore labore!</p>
+                            <p> Lorem ipsum dolor sit consectetur adipiscing elit nulla massanen.</p>
                         </div>
                     </div>
                     <div className="each-feature">
@@ -85,9 +75,7 @@ const Feature = () => {
                         </div>
                         <div className="feature-name">
                             <h3>Feature Name</h3>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Aliquam doloremque fugiat pariatur delectus neque corrupti. 
-                                Sed, tempore labore!</p>
+                            <p> Lorem ipsum dolor sit consectetur adipiscing elit nulla massanen.</p>
                         </div>
                     </div>
                     </div>
