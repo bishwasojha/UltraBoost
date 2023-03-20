@@ -15,51 +15,47 @@ const Team = () => {
     </div>
       <div className="team-description">
         <div className="team-card">
-          <img src="" alt="something" />
+          <div className="img-placeholder"></div>
           <div className="user-title">
             <div className="user-name">Jesica Janet</div>
             <div className="user-rank">Challenger</div>
           </div>
           <div className="team-card-description">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euis
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit integeriet.
           </div>
           <div className="card-links">
-            <BsFacebook />
             <AiOutlineTwitter />
+            <BsFacebook />
             <AiFillInstagram />
           </div>
         </div>
         <div className="team-card">
-          <div className="image">
-            <img src="" alt="aphelios" />
-          </div>
+            <div className="img-placeholder"></div>
           <div className="user-title">
             <div className="user-name">Jesica Janet</div>
-            <div className="user-rank">Challenger</div>
+            <div className="user-rank">Grandmaster</div>
           </div>
           <div className="team-card-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit integeriet.
           </div>
           <div className="card-links">
-          <BsFacebook />
             <AiOutlineTwitter />
+            <BsFacebook />
             <AiFillInstagram />
           </div>
         </div>
         <div className="team-card">
-            <img src="" alt="usedtoknow" />
+            <div className="img-placeholder"></div>
           <div className="user-title">
             <div className="user-name">Jesica Janet</div>
-            <div className="user-rank">Challenger</div>
+            <div className="user-rank">Master</div>
           </div>
           <div className="team-card-description">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euis
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit integeriet.
           </div>
           <div className="card-links">
-          <BsFacebook />
             <AiOutlineTwitter />
+            <BsFacebook />
             <AiFillInstagram />
           </div>
         </div>
