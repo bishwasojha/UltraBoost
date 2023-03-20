@@ -1,17 +1,22 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@font-face {
+  font-family: 'OpenSauceSansLight';
+  src: url('../Assets/fonts/OpenSauceOne-Light.ttf') format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'OpenSauceSansMedium';
+  src: url('../Assets/fonts/OpenSauceOne-Medium.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'OpenSauceSansRegular';
+  src: url('../Assets/fonts/OpenSauceOne-Regular.ttf') format('truetype');
+}
+
+@import url(Team.css);
+@import url(Testimonials.css);
 @import url(App.css);
 @import url(Feature.css);
 @import url(HomeTitle.css);
