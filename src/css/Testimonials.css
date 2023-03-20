@@ -4,6 +4,10 @@
 }
 
 .testimonials-title {
+    margin-bottom: 1rem;
+}
+
+.testimonials-title > h2 {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -35,23 +39,27 @@
 .testimonials-description {
     display: flex;
     align-items: center;
-    padding: 32px;
-    gap: 40px;
+    justify-content: space-between;
+    padding: 1rem 3rem;
 }
 
 .testimonials-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 352px;
     height: 368px;
     background: #FFFFFF;
     border: 1px solid #E7EAEE;
-    border-radius: 12px;
+    border-radius: 12px;  
 }
 
 .img-svg {
     width: 64px;
     height: 64px;
     background: #C4C4C4;
-    margin: 3rem 2.5rem 2.5rem 2.5rem ;
+    border-radius: 50%;
+    margin: 2.5rem 0;
 }
 
 .testimonials-card-description {
@@ -62,7 +70,6 @@
     line-height: 28px;
     text-align: center;
     letter-spacing: -0.18px;
-    font-feature-settings: 'ss01' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on;
     color: #07090D;
     padding-top: 1.5rem;
 }

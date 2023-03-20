@@ -12,7 +12,7 @@ const Feature = () => {
         <div className="container">
             <div className="feature-heading">
                 <HomeTitle> FEATURES </HomeTitle>
-                <div className="special-feature">
+                <div className="text-special-feature">
                     <h3>Our Special</h3><span>Features </span>
                 </div>
             </div>

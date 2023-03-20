@@ -3,11 +3,11 @@
     flex-direction: column;
 }
 
-.team-black-bar {
+.team-title {
     margin-bottom: 2.5rem;
 }
 
-.team-title{
+.team-title > h4{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -16,19 +16,17 @@
     text-align: center;
     letter-spacing: 1.25px;
     text-transform: uppercase;
-    font-feature-settings: 'ss01' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on;
     color: #1355FF;
 }
 
-.team-bold-text {
-    font-family: 'OpenSauceSansRegular';
+.team-title > .team-bold-text {
+    font-family: 'Open Sauce Sans Regular';
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
     line-height: 60px;
     text-align: center;
     letter-spacing: -0.015em;
-    font-feature-settings: 'pnum' on, 'lnum' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on, 'case' on, 'cpsp' on;
     color: #07090D;
 }
 
@@ -39,6 +37,7 @@
 .team-description {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .team-card {
@@ -48,7 +47,7 @@
 }
 
 .team-card:first-child {
-    margin-left: 150px;
+    margin-left: 30px;
 }
 
 .img-placeholder {
@@ -63,8 +62,14 @@
     margin: 1rem;
 }
 
-.user-title, .team-card-description, .card-links {
+.user-title, 
+.team-card-description {
     margin-left: 1rem;
+}
+
+.card-links {
+    margin-left: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .user-title {
@@ -97,12 +102,9 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: -0.09px;
-    font-feature-settings: 'ss01' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on;
     color: #1355FF;
-    flex: none;
-    order: 2;
-    flex-grow: 1;
     padding-left: 0.5rem;
+    padding-top: 0.25rem;
 }
 
 .team-card-description {
@@ -113,13 +115,8 @@
     line-height: 28px;
     width: 288px;
     letter-spacing: -0.18px;
-    font-feature-settings: 'ss01' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on;
     color: #586174;
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-    margin-top: 1rem;
+
 }
 
 .card-links > svg {
@@ -131,9 +128,12 @@
     gap: 10px;
     background: #F6F7F9;
     border-radius: 4px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    flex-wrap: wrap;
     margin-right: 1rem;
+    cursor: pointer;
+    transition: filter .5s; /* Animation */
 }
 
+.card-links > svg:hover {
+    filter: brightness(90%);
+}

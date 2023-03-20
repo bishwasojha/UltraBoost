@@ -5,10 +5,10 @@ import {AiOutlineTwitter,AiFillInstagram} from "react-icons/ai";
 const Team = () => {
   return (
     <div className="team-container">
-      <div className="team-black-bar">
-        <div className="team-title">
+      <div className="team-title">
+        <h4>
             TEAM
-        </div>
+        </h4>
         <div className="team-bold-text">
             Meet Our <span>Boosting Team</span>
         </div>
