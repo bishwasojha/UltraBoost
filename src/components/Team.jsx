@@ -8,7 +8,7 @@ const Team = () => {
       <div className="team-title">
         <h4>TEAM</h4>
         <div className="team-bold-text">
-          Meet Our <span>Boosting Team</span>
+            <h3>  Meet Our <span>Boosting Team</span> </h3> 
         </div>
       </div>
       <div className="team-description">

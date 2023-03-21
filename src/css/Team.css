@@ -16,7 +16,7 @@
     text-align: center;
     letter-spacing: 1.25px;
     text-transform: uppercase;
-    color: #1355FF;
+    color: var(--base_blue);
 }
 
 .team-title > .team-bold-text {
@@ -27,10 +27,11 @@
     line-height: 60px;
     text-align: center;
     letter-spacing: -0.015em;
-    color: #07090D;
+    color: var(--neutral_900);
+    margin-top: 16px;
 }
 
-.team-bold-text > span {
+.team-bold-text > h3 > span {
     color: #1355FF;
 }
 
@@ -43,7 +44,7 @@
 .team-card {
     border: 1px solid #E7EAEE;
     border-radius: 15px;
-    padding: 1.35rem;
+    padding: 32px;
 }
 
 .img-placeholder {
@@ -51,17 +52,16 @@
     height: 280px;
     background: #F5F5F5;
     border-radius: 12px;
-    margin-left: 0.5rem;
     margin-top: 5px;
 }
 
 .user-title, 
 .team-card-description {
-    margin-left: 1rem;
+    margin-left: 0px;
 }
 
 .card-links {
-    margin-left: 1rem;
+    margin-left: 0px;
     margin-bottom: 1.2rem;
 }
 

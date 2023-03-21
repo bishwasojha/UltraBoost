@@ -24,15 +24,19 @@
     font-family: 'OpenSauceSansRegular';
     font-style: normal;
     font-weight: 700;
-    font-size: 44px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
     line-height: 60px;
     text-align: center;
     letter-spacing: -0.015em;
-    font-feature-settings: 'pnum' on, 'lnum' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on, 'case' on, 'cpsp' on;
     color: #07090D;
+    margin-top: 0.8rem;
 }
 
-.testimonials-bold-text > span {
+
+.testimonials-bold-text > h3:last-child{
+    padding-left: 8px;
     color: #1355FF;
 }
 

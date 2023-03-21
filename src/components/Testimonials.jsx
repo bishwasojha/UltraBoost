@@ -6,7 +6,8 @@ const Testimonials = () => {
       <div className="testimonials-title">
         <h2>Testimonials</h2>
         <div className="testimonials-bold-text">
-          Our Customer <span>Says!</span>
+           <h3>Our Customer </h3> 
+           <h3> Says!</h3> 
         </div>
       </div>
       <div className="testimonials-description">

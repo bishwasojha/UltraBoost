@@ -24,9 +24,9 @@ const Home = () => {
         <Testimonials />
       </div>
 
-      {/* <div className="homepage-footer">
+      <div className="homepage-footer">
         <Footer />
-      </div> */}
+      </div>
     </>
   );
 };
