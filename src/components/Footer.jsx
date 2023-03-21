@@ -13,8 +13,7 @@ export default function Footer() {
                         <div className="footer-logo">
                             <div className="logo">
                                 <img src={UltraBoost_icon} alt="" />
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Atque quaerat quibusdam modi numquam at eligendi adipisci quidem.
+                                <p>  Lorem ipsum dolor sit amet, consectetur adip elit.Posuere dolor massa, pellentesque.
                                 </p>
                             </div>
 
@@ -90,13 +89,14 @@ export default function Footer() {
                                     </li>
 
                                     <li className="each-pgs">
-                                        Contact
+                                        About us
                                     </li>
                                 </ul>
                             </div>
                         </div>
 
                 </div>
+
                 <div className="footer-sociallink">
                     <div className="copyright">
                         <p> &copy; 2021 Copyright Company.com</p>

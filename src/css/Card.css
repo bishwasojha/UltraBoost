@@ -22,9 +22,14 @@
     display: flex;
 }
 
+.card-top > img:nth-child(2) {
+    width: 13.75px;
+    height: 14px;
+}
+
 .card-text {
     width: 232px;
-    font-family: 'OpenSauceSansSemiBold';
+    font-family: 'OpenSauceSansRegular';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -55,6 +60,11 @@
     background-color: var(--base_blue);
     border-radius: 6px;
     cursor: pointer;
+}
+
+.card-user-icon > img:nth-child(1) {
+    width: 14px;
+    height: 16px;
 }
 
 .card-bottom > .card-user-icon > img {
