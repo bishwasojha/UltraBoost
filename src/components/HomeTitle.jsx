@@ -1,13 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const HomeTitle = ({children}) => {
+const HomeTitle = ({ children }) => {
   return (
     <div className="home-title">
-        <span>
-            {children}
-        </span>
+      <span>{children}</span>
     </div>
-  )
-}
+  );
+};
 
-export default HomeTitle
+export default HomeTitle;
