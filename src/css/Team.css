@@ -32,7 +32,7 @@
 }
 
 .team-bold-text > h3 > span {
-    color: #1355FF;
+    color: var(--base_blue);
 }
 
 .team-description {
@@ -45,6 +45,7 @@
     border: 1px solid #E7EAEE;
     border-radius: 15px;
     padding: 32px;
+    margin-top: 48px;
 }
 
 .img-placeholder {
@@ -69,7 +70,7 @@
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #E7EAEE ;
-    margin-top: 1.5rem;
+    margin-top: 32px;
 }
 
 .user-name {
@@ -81,8 +82,8 @@
     letter-spacing: -0.015em;
     font-feature-settings: 'pnum' on, 'lnum' on, 'ss03' on, 'cv03' on, 'cv04' on, 'cv06' on, 'cv09' on, 'case' on, 'cpsp' on;
     color: #07090D;
-    padding-right: 0.8rem;
-    margin-bottom: 1rem;
+    padding-right: 12px;
+    margin-bottom: 16px;
     border-right: 1px solid #E7EAEE;
 }
 
