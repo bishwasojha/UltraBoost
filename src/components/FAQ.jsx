@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import faq from "../Assets/json/faq.json";
-import HomeTitle from '../components/HomeTitle';
+import HomeTitle from "../components/HomeTitle";
 
 const FaqItem = ({ id, item, isOpen, onToggle }) => {
   return (

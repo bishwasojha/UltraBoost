@@ -1,0 +1,115 @@
+.about-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1.5rem;
+}
+
+.about-pic {
+    width: 544px;
+    height: 464px;
+    background: url(../Assets/Images/yone.jpg);
+    border-radius: 16px;
+}
+
+.about-description {
+    margin-left: 7rem ;
+    margin-top: 2rem;
+}
+
+.about-description > h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #1355FF;
+    padding-bottom: 1rem;
+}
+
+.about-bold-text {
+    font-family: 'OpenSauceSansRegular';
+    width: 448px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: -0.015em;
+    color: #061237;
+    padding-bottom: 1.5rem;
+}
+
+.about-bold-text > span {
+    color: #1355FF;
+}
+
+.about-text-description {
+    font-family: 'Inter';
+    font-style: normal;
+    width: 448px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.18px;
+    color: #3C4353;
+    padding-bottom: 2.5rem;
+}
+
+.about-guarantee {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2.5rem;
+
+}
+
+.about-guarantee-1, .about-guarantee-2 {
+    display: flex;
+    align-items: center;
+}
+
+.about-guarantee-1 > span , .about-guarantee-2 > span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+    color: #07090D;
+    padding: 0 2.5rem 0 1rem;
+}
+
+.about-guarantee-1 > img , .about-guarantee-2 > img {
+    width: 15px;
+    height: 15px;
+}
+
+.about-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px 12px 20px;
+    gap: 8px;
+    background: #1355FF;
+    border-radius: 6px;
+    width: 148px;
+    height: 48px;    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.about-button > span {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.09px;
+}
+
+.about-button > img {
+    width: 15px;
+    height: 15px;
+}
