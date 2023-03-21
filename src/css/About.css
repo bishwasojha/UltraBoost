@@ -3,33 +3,25 @@
     flex-direction: row;
     padding-top: 1.5rem;
 }
-
-.about-pic {
+.about-left {
+    position: relative;
+}
+.about-pic > img {
     width: 544px;
     height: 464px;
-    background: url(../Assets/Images/yone.jpg);
     border-radius: 16px;
+    object-fit: cover;
+    background-repeat: no-repeat;
 }
 
 .about-description {
-    margin-left: 7rem ;
+    margin-left: 128px;
     margin-top: 2rem;
 }
 
-.about-description > h4 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
-    color: #1355FF;
-    padding-bottom: 1rem;
-}
 
 .about-bold-text {
-    font-family: 'OpenSauceSansRegular';
+    font-family: 'OpenSauceSansSemiBold';
     width: 448px;
     font-style: normal;
     font-weight: 700;
@@ -58,8 +50,7 @@
 
 .about-guarantee {
     display: flex;
-    flex-direction: row;
-    padding-bottom: 2.5rem;
+    padding-bottom: 52px;
 
 }
 
@@ -84,7 +75,7 @@
     height: 15px;
 }
 
-.about-button {
+.learn-more-btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -97,9 +88,11 @@
     height: 48px;    display: flex;
     align-items: center;
     border: none;
+    cursor: pointer;
+    margin-left: 2px;
 }
 
-.about-button > span {
+.learn-more-btn > span {
     color: #FFFFFF;
     font-family: 'Inter';
     font-style: normal;
@@ -109,7 +102,7 @@
     letter-spacing: -0.09px;
 }
 
-.about-button > img {
+.learn-more-btn > img {
     width: 15px;
     height: 15px;
 }

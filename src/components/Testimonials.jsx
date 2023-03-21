@@ -1,10 +1,11 @@
 import React from "react";
+import HomeTitle from '../components/HomeTitle';
 
 const Testimonials = () => {
   return (
     <div className="testimonials-container">
       <div className="testimonials-title">
-        <h2>Testimonials</h2>
+        <HomeTitle>TESTIMONIALS</HomeTitle>
         <div className="testimonials-bold-text">
            <h3>Our Customer </h3> 
            <h3> Says!</h3> 

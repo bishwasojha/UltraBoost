@@ -3,16 +3,20 @@ import Button from "./Button";
 import Card from "./Card";
 import AboutTick from "../Assets/Icons/About/about_tick.svg";
 import RightArrow from "../Assets/Icons/About/about_learn-more.svg";
+import HomeTitle from '../components/HomeTitle'
+import yone from '../Assets/Images/yone.jpg';
 
 const About = () => {
   return (
     <div className="about-container">
       <div className="about-left">
-        <div className="about-pic"></div>
+        <div className="about-pic">
+          <img src={yone} alt="" srcset="" />
+        </div>
         <Card />
       </div>
       <div className="about-description">
-        <h4>About</h4>
+        <HomeTitle>ABOUT</HomeTitle>
         <div className="about-bold-text">
           Why our service is the best <span>easily!</span>
         </div>
@@ -30,7 +34,7 @@ const About = () => {
             <span>Special Discount 50%</span>
           </div>
         </div>
-        <Button className="about-button" type="submit">
+        <Button className="learn-more-btn" type="submit">
           <span> Learn More</span>
           <img src={RightArrow} alt="" />
         </Button>

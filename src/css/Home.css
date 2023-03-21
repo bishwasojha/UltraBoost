@@ -1,7 +1,12 @@
+.homepage-about,
 .homepage-team,
 .homepage-feature,
 .homepage-faq,
 .homepage-testimonials {
     padding: 5rem 0;
+}
+
+.homepage-footer {
+    margin-top: 40px;
 }
 

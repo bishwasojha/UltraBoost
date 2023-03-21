@@ -14,10 +14,8 @@
 }
 
 .faq-second-heading {
-    font-family: 'OpenSauceSansRegular';
+    font-family: 'OpenSauceSansSemiBold';
     font-weight: 700;  
-    padding-top: 2rem;
-        
 }
 
 .faq-second-heading > h1{
@@ -36,7 +34,7 @@
     flex-direction: column;
     font-family: 'Inter';
     font-weight: 400;
-    margin-top: 17.5rem;
+    margin-top: 16rem;
 }
 
 .faq-email-section > p {
@@ -54,7 +52,6 @@
 }
 
 .faq-details {
-    padding-top: 1.5rem;
     display: flex;
     flex-direction: row;
     width: 57%;

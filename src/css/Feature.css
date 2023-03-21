@@ -19,18 +19,16 @@
 }
 
 .text-special-feature {
-    font-family: 'OpenSauceSansRegular';
+    font-family: 'OpenSauceSansSemiBold';
     display: flex;
     flex-direction: row;
     align-items: center;
     font-weight: 500;
     font-style: normal;
-    margin-top: 0.8rem;
     letter-spacing: -0.015em;
 }
 
 .text-special-feature > h1 {
-    font-family: 'OpenSauceSansRegular';
     font-size: 44px;
     color: #07090D; 
     font-weight: 700;

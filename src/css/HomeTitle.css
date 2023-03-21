@@ -1,11 +1,12 @@
 .home-title {
     width: 100%;
     letter-spacing: 1.25px;
+    margin-bottom: 16px;
 }
 
 .home-title > span {
     font-size: 14px;
-    color: #1355FF;
+    color: var(--base_blue);
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;

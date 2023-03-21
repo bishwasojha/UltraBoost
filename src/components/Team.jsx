@@ -8,7 +8,7 @@ const Team = () => {
       <div className="team-title">
         <h4>TEAM</h4>
         <div className="team-bold-text">
-            <h3>  Meet Our <span>Boosting Team</span> </h3> 
+            <p>  Meet Our <span>Boosting Team</span> </p> 
         </div>
       </div>
       <div className="team-description">
@@ -16,6 +16,7 @@ const Team = () => {
           <div className="img-placeholder"></div>
           <div className="user-title">
             <div className="user-name">Jesica Janet</div>
+            <div className="long-line"></div>
             <div className="user-rank">Challenger</div>
           </div>
           <div className="team-card-description">
@@ -31,6 +32,7 @@ const Team = () => {
           <div className="img-placeholder"></div>
           <div className="user-title">
             <div className="user-name">Jesica Janet</div>
+            <div className="long-line"></div>
             <div className="user-rank">Grandmaster</div>
           </div>
           <div className="team-card-description">
@@ -46,7 +48,7 @@ const Team = () => {
           <div className="img-placeholder"></div>
           <div className="user-title">
             <div className="user-name">Jesica Janet</div>
-            <div className="line"></div>
+            <div className="long-line"></div>
             <div className="user-rank">Master</div>
           </div>
           <div className="team-card-description">
