@@ -37,11 +37,13 @@
 
 
 .timeline-list1 > .timeline-item:nth-child(odd) {
-    opacity: 0;
+    /* display: none; */
+    visibility: hidden;
   }
 
   .timeline-list2 > .timeline-item:nth-child(even) {
-    opacity: 0;
+    /* display: none; */
+    visibility: hidden;
   }
 
   .timeline-list1 > .timeline-item:nth-child(even) {
@@ -51,3 +53,16 @@
   .timeline-list2 > .timeline-item:nth-child(odd) {
     z-index: 1;
   }
+
+
+  /* .timeline-list2 > div:nth-child(3) {
+    margin-top: 180px;
+    }
+   
+    .timeline-list1 > div:nth-child(2) {
+    margin-top: 180px;
+    }
+   
+    .timeline-list1 > div:nth-child(4) {
+    margin-top: 180px;
+    } */

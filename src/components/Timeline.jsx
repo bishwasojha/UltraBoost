@@ -18,6 +18,7 @@ const Timeline = () => {
             <div className="timeline-wrapper">
                 <div className="timeline-list1">
                 {timelineData.map((data, idx) => (
+                    
                 <TimelineItem data={data} key={idx} />
             ))}
                 </div>
