@@ -22,7 +22,8 @@
     color: var(--base_blue);
 }
 
-.timeline-list1 , .timeline-list2 {
+.timeline-list1 , 
+.timeline-list2 {
     width: 544px;
     background: var(--neutral_0);
     display: flex;

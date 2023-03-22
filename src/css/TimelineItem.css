@@ -13,7 +13,6 @@
     gap: 8px;
     border: 1px solid var(--neutral_200);
     border-radius: 12px;
-    overflow: hidden !important;
 }
 
 .timeline-item-content > h4 {
@@ -47,10 +46,8 @@
 
   .timeline-list1 > .timeline-item:nth-child(even) {
     z-index: 1;
-    overflow: hidden !important;
   }
 
   .timeline-list2 > .timeline-item:nth-child(odd) {
     z-index: 1;
-    overflow: hidden !important;
   }
