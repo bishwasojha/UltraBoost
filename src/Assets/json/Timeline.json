@@ -1,0 +1,18 @@
+[
+    {
+     "cardtitle": "Create your account",
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis..."
+    },
+    {
+     "cardtitle": "Place a boosting order",
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis..."
+    },
+    {
+     "cardtitle": "Your order is assigned to a booster",
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis..."
+    },
+    {
+     "cardtitle": "Your order is complete",
+     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis..."
+    }  
+]

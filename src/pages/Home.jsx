@@ -5,14 +5,17 @@ import Feature from "../components/Feature";
 import Team from "../components/Team";
 import Testimonials from "../components/Testimonials";
 import Footer from "../components/Footer";
+import Timeline from "../components/Timeline";
 
 const Home = () => {
   return (
     <>
+    <Timeline />
     <div className="homepage-about">
     <About />
     </div>
-     
+
+      
       <div className="homepage-team">
         <Team />
       </div>
