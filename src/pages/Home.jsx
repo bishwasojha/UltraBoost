@@ -10,28 +10,28 @@ import Timeline from "../components/Timeline";
 const Home = () => {
   return (
     <>
-    <Timeline />
-    <div className="root-container">
-    <div className="homepage-about">
-    <About />
-    </div>
+      <div className="root-container">
+        <div className="homepage-timeline">
+          <Timeline />
+        </div>
+        <div className="homepage-about">
+          <About />
+        </div>
 
-      
-      <div className="homepage-team">
-        <Team />
-      </div>
-      <div className="homepage-feature">
-        <Feature />
-      </div>
+        <div className="homepage-team">
+          <Team />
+        </div>
+        <div className="homepage-feature">
+          <Feature />
+        </div>
 
-      <div className="homepage-faq">
-        <FAQ />
+        <div className="homepage-faq">
+          <FAQ />
+        </div>
+        <div className="homepage-testimonials">
+          <Testimonials />
+        </div>
       </div>
-      <div className="homepage-testimonials">
-        <Testimonials />
-      </div>
-
-    </div>
 
       <div className="homepage-footer">
         <Footer />
