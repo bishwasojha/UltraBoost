@@ -115,8 +115,8 @@
 }
 
 .card-links > svg {
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     margin-top: 1rem;
     align-items: flex-start;
     padding: 13px;
@@ -131,3 +131,9 @@
 .card-links > svg:hover {
     filter: brightness(90%);
 }
+
+/* .card-links > svg:nth-child(1),
+.card-links > svg:nth-child(2),
+.card-links > svg:nth-child(3) {
+    height: 12px;
+} */

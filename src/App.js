@@ -5,10 +5,9 @@ const App = () => {
   return (
     <>
 
-    <div className="root-container">
-    <Home />
-    
-    </div>
+    {/* <div className="root-container"> */}
+     <Home />
+    {/* </div> */}
     </>
   )
 }

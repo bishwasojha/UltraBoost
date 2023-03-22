@@ -1,17 +1,17 @@
 .about-container {
     display: flex;
     flex-direction: row;
-    padding-top: 1.5rem;
 }
+
 .about-left {
     position: relative;
 }
+
 .about-pic > img {
     width: 544px;
     height: 464px;
     border-radius: 16px;
     object-fit: cover;
-    background-repeat: no-repeat;
 }
 
 .about-description {
