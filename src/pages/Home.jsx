@@ -10,11 +10,8 @@ import Timeline from "../components/Timeline";
 const Home = () => {
   return (
     <>
-<<<<<<< HEAD
     <Timeline />
-=======
     <div className="root-container">
->>>>>>> 43f1762b0dfa12c27e3a2b5c833ceee9d65e50cd
     <div className="homepage-about">
     <About />
     </div>
