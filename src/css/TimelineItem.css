@@ -35,14 +35,18 @@
     letter-spacing: -0.09px;   
 }
 
+.timeline-list1, .timeline-list2 {
+  z-index: 1;
+}
 
+/*
 .timeline-list1 > .timeline-item:nth-child(odd) {
-    /* display: none; */
+    /* display: none; *//*
     visibility: hidden;
   }
 
   .timeline-list2 > .timeline-item:nth-child(even) {
-    /* display: none; */
+    /* display: none; *//*  
     visibility: hidden;
   }
 
