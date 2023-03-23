@@ -35,41 +35,6 @@
     letter-spacing: -0.09px;   
 }
 
-
-  /* .timeline-list1 > .timeline-item:nth-child(even) {
-    z-index: 1;
-  }
-
-  .timeline-list2 > .timeline-item:nth-child(odd) {
-    z-index: 1;
-  } */
-
-  
-/* .timeline-list1 > div#2 > .timeline-item-content {
-    margin-top: 232px;
-}
-
-.timeline-list1 > div > #4 > .timeline-item-content {
-    margin-top: 208px;
-    z-index: 1;
-}
-
-.timeline-list2 > .timeline-item-content:last-child {
-  margin-top: 180px;
+.timeline-list1, .timeline-list2 {
   z-index: 1;
-} */
-/* .timeline-list2 > div > #3 > .timeline-item-content {
-    
-} */
-   
-  /* .timeline-list2 > div:nth-child(3) {
-    margin-top: 180px;
-    }
-   
-    .timeline-list1 > div:nth-child(2) {
-    margin-top: 180px;
-    }
-   
-    .timeline-list1 > div:nth-child(4) {
-    margin-top: 180px;
-    } */
+}

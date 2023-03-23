@@ -23,6 +23,7 @@ const Timeline = () => {
               if (idx !== 0 && idx !== 2) {
                 return <TimelineItem data={data} key={idx} />;
               } else {
+
                 return [];
               }
             })}
@@ -42,7 +43,9 @@ const Timeline = () => {
             })}
           </div>
         </div>
+
         <div className="timeline-bg-light"></div>
+
       </div>
     )
   );
