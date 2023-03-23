@@ -8,7 +8,10 @@ const Team = () => {
       <div className="team-title">
         <h4>TEAM</h4>
         <div className="team-bold-text">
-            <p>  Meet Our <span>Boosting Team</span> </p> 
+          <p>
+            {" "}
+            Meet Our <span>Boosting Team</span>{" "}
+          </p>
         </div>
       </div>
       <div className="team-description">

@@ -1,5 +1,5 @@
 import React from "react";
-import HomeTitle from '../components/HomeTitle';
+import HomeTitle from "../components/HomeTitle";
 
 const Testimonials = () => {
   return (
@@ -7,8 +7,8 @@ const Testimonials = () => {
       <div className="testimonials-title">
         <HomeTitle>TESTIMONIALS</HomeTitle>
         <div className="testimonials-bold-text">
-           <h3>Our Customer </h3> 
-           <h3> Says!</h3> 
+          <h3>Our Customer </h3>
+          <h3> Says!</h3>
         </div>
       </div>
       <div className="testimonials-description">
