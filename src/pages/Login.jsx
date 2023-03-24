@@ -125,7 +125,15 @@ export default function Login() {
               error={errors.password}
               className="login-input"
             />
-            <div className="forgot-password">Forgot password?</div>
+            <div className="forgot-password">
+              <Link
+                to="/forgot-password"
+                className="not-registered-link"
+                style={{ textDecoration: 'none' }}
+              >
+                Forgot Password ?
+              </Link>
+            </div>
 
             <div className="login-btn">
               <Button

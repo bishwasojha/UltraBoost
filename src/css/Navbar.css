@@ -142,7 +142,7 @@
   border-radius: 6px;
 }
 
-.navbar-login-btn > span {
+.navbar-login-btn > a {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
@@ -166,7 +166,7 @@
   border: none;
 }
 
-.navbar-register-btn > span {
+.navbar-register-btn > a {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;

@@ -3,6 +3,7 @@ import { NavLink, Link, useNavigate } from 'react-router-dom'
 import UltraBoostLogo from '../Assets/Logos/UltraBoost.png'
 import Button from './Button'
 //import { ReactComponent as Hamburger } from "../Assets/Logo/Hamburger.svg";
+
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
   //const navigate = useNavigate();
@@ -96,10 +97,22 @@ const Navbar = () => {
 
         <div className="right-container">
           <Button className="navbar-login-btn" type="submit">
-            <span>Log in</span>
+            <Link
+              to="/login"
+              className="not-registered-link"
+              style={{ textDecoration: 'none' }}
+            >
+              Login
+            </Link>
           </Button>
           <Button className="navbar-register-btn" type="submit">
-            <span>Get Started</span>
+            <Link
+              to="/register"
+              className="not-registered-link"
+              style={{ textDecoration: 'none' }}
+            >
+              Get Started
+            </Link>
           </Button>
         </div>
       </div>
