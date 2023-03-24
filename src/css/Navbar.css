@@ -11,7 +11,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 28px 80px;
+  padding: 28px 28px;
 }
 
 .left-container {
@@ -98,6 +98,7 @@
   color: #424242;
 }
 
+/*
 .navbar-link.active {
   color: #ff4555;
   text-decoration: none;
@@ -116,7 +117,7 @@
   flex-direction: column;
   padding-right: 1.1rem;
   gap: 10px;
-}
+}*/
 
 .right-container {
   display: flex;

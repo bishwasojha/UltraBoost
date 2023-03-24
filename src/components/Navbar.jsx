@@ -27,12 +27,7 @@ const Navbar = () => {
         <div className="mid-container">
           <ul className={`main-navbar ${showNavbar && 'active'}`}>
             <li className="navbar-item">
-              <NavLink
-                exact
-                to="/"
-                activeClassName="active"
-                className="navbar-link"
-              >
+              <NavLink exact to="/" className="navbar-link">
                 Home
               </NavLink>
             </li>
@@ -41,7 +36,6 @@ const Navbar = () => {
               <NavLink
                 exact
                 to="/"
-                activeClassName="active"
                 className="navbar-link"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -51,22 +45,12 @@ const Navbar = () => {
             </li>
 
             <li className="navbar-item">
-              <NavLink
-                exact
-                to="/"
-                activeClassName="active"
-                className="navbar-link"
-              >
+              <NavLink exact to="/" className="navbar-link">
                 About
               </NavLink>
             </li>
             <li className="navbar-item">
-              <NavLink
-                exact
-                to="/"
-                activeClassName="active"
-                className="navbar-link"
-              >
+              <NavLink exact to="/" className="navbar-link">
                 Features
               </NavLink>
             </li>
@@ -74,7 +58,7 @@ const Navbar = () => {
             <li className="navbar-item">
               <Link
                 exact
-                activeClassName="active"
+                to="/"
                 className="navbar-link"
                 //onClick={() => navigate("/#faq")}
               >
@@ -83,12 +67,7 @@ const Navbar = () => {
             </li>
 
             <li className="navbar-item">
-              <NavLink
-                exact
-                to="/"
-                activeclassname="active"
-                className="navbar-link"
-              >
+              <NavLink exact to="/" className="navbar-link">
                 Testimonials
               </NavLink>
             </li>

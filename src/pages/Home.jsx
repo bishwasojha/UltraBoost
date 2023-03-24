@@ -6,11 +6,15 @@ import Team from '../components/Team'
 import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
 import Timeline from '../components/Timeline'
+import Navbar from '../components/Navbar'
 
 const Home = () => {
   return (
     <>
       <div className="root-container">
+        <div className="homepage-navbar">
+          <Navbar />
+        </div>
         <div className="homepage-timeline">
           <Timeline />
         </div>
