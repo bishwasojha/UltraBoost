@@ -3,8 +3,9 @@
   padding: 0;
 }
 
-html, body {
-  background: #FFF;
+html,
+body {
+  background: #fff;
 }
 
 .root-container {

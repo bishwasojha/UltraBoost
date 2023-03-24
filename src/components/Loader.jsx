@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 const Loader = React.forwardRef(({ size }, ref) => {
   return (
@@ -79,11 +79,11 @@ const Loader = React.forwardRef(({ size }, ref) => {
         </circle>
       </svg>
     </div>
-  );
-});
+  )
+})
 
 Loader.defaultProps = {
-  size: "big",
-};
+  size: 'big',
+}
 
-export default Loader;
+export default Loader

@@ -1,14 +1,14 @@
 .home-title {
-    letter-spacing: 1.25px;
-    margin-bottom: 16px;
+  letter-spacing: 1.25px;
+  margin-bottom: 16px;
 }
 
 .home-title > span {
-    font-size: 14px;
-    color: var(--base_blue);
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-align: center;
+  font-size: 14px;
+  color: var(--base_blue);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
 }

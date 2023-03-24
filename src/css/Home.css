@@ -4,16 +4,14 @@
 .homepage-feature,
 .homepage-faq,
 .homepage-testimonials {
-    padding: 5rem 0;
+  padding: 5rem 0;
 }
 
 .homepage-timeline {
-    margin-bottom: 160px;
+  margin-bottom: 160px;
 }
 
 .homepage-footer {
-    background: #07090d;
-    margin-top: 40px;
+  background: #07090d;
+  margin-top: 40px;
 }
-
-

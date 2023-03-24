@@ -1,8 +1,8 @@
-import React from "react";
-import UltraBoost_icon from "../Assets/Icons/UltraBoost-icon.svg";
-import fb_icon from "../Assets/Icons/fb_vector.svg";
-import insta_icon from "../Assets/Icons/Insta_vector.svg";
-import twitter_icon from "../Assets/Icons/Twitter_vector.svg";
+import React from 'react'
+import UltraBoost_icon from '../Assets/Icons/UltraBoost-icon.svg'
+import fb_icon from '../Assets/Icons/fb_vector.svg'
+import insta_icon from '../Assets/Icons/Insta_vector.svg'
+import twitter_icon from '../Assets/Icons/Twitter_vector.svg'
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="logo">
               <img src={UltraBoost_icon} alt="" />
               <p>
-                {" "}
+                {' '}
                 Lorem ipsum dolor sit amet, consectetur adip elit.Posuere dolor
                 massa, pellentesque.
               </p>
@@ -87,5 +87,5 @@ export default function Footer() {
         </div>
       </div>
     </div>
-  );
+  )
 }

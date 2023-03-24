@@ -1,5 +1,5 @@
-import React from "react";
-import HomeTitle from "../components/HomeTitle";
+import React from 'react'
+import HomeTitle from '../components/HomeTitle'
 
 const Testimonials = () => {
   return (
@@ -49,7 +49,7 @@ const Testimonials = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Testimonials;
+export default Testimonials

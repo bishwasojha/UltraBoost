@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
 const TimelineItem = ({ data }) => {
   return (
@@ -8,7 +8,7 @@ const TimelineItem = ({ data }) => {
         <p className="description">{data.description}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TimelineItem;
+export default TimelineItem

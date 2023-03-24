@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&display=swap');
 @font-face {
   font-family: 'OpenSauceSansLight';
@@ -43,3 +42,6 @@
 @import url(theme.css);
 @import url(Timeline.css);
 @import url(TimelineItem.css);
+@import url(Navbar.css);
+@import url(Login.css);
+@import url(Register.css);

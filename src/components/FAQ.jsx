@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import faq from "../Assets/json/faq.json";
-import HomeTitle from "../components/HomeTitle";
+import React, { useState } from 'react'
+import faq from '../Assets/json/faq.json'
+import HomeTitle from '../components/HomeTitle'
 
 const FaqItem = ({ id, item, isOpen, onToggle }) => {
   return (
-    <div className={`faq-item ${isOpen ? "opened" : ""}`}>
+    <div className={`faq-item ${isOpen ? 'opened' : ''}`}>
       <div
         className="faq-question"
-        onClick={(e) => {
-          onToggle(isOpen ? null : id);
+        onClick={e => {
+          onToggle(isOpen ? null : id)
         }}
       >
         <span>{item.question}</span>
-        <div className={`faq-icon ${isOpen ? "opened" : ""}`}>
+        <div className={`faq-icon ${isOpen ? 'opened' : ''}`}>
           <span className="arrow">
             <span></span>
             <span></span>
@@ -20,15 +20,15 @@ const FaqItem = ({ id, item, isOpen, onToggle }) => {
         </div>
       </div>
 
-      <div className={`faq-answer ${isOpen ? "opened" : ""}`}>
+      <div className={`faq-answer ${isOpen ? 'opened' : ''}`}>
         {item.answer}
       </div>
     </div>
-  );
-};
+  )
+}
 
 const FAQ = () => {
-  const [selected, setSelected] = useState();
+  const [selected, setSelected] = useState()
   return (
     <div className="faq-section">
       <div className="faq-title">
@@ -60,7 +60,7 @@ const FAQ = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FAQ;
+export default FAQ

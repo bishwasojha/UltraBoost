@@ -1,106 +1,105 @@
 .testimonials-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonials-title {
-    text-align: center;
+  text-align: center;
 }
 
 .testimonials-title > h2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 1.25px;
-    text-transform: uppercase;
-    color: var(--base_blue);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: var(--base_blue);
 }
 
 .testimonials-bold-text {
-    font-family: 'OpenSauceSansSemiBold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    line-height: 60px;
-    text-align: center;
-    letter-spacing: -0.015em;
-    color: var(--neutral_900);
+  font-family: 'OpenSauceSansSemiBold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: var(--neutral_900);
 }
 
-
-.testimonials-bold-text > h3:last-child{
-    padding-left: 8px;
-    color: var(--base_blue);
+.testimonials-bold-text > h3:last-child {
+  padding-left: 8px;
+  color: var(--base_blue);
 }
 
 .testimonials-description {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
 }
 
 .testimonials-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 352px;
-    height: 368px;
-    background: var(--neutral_0);
-    border: 1px solid var(--neutral_200);
-    border-radius: 12px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 352px;
+  height: 368px;
+  background: var(--neutral_0);
+  border: 1px solid var(--neutral_200);
+  border-radius: 12px;
 }
 
 .img-svg {
-    width: 64px;
-    height: 64px;
-    background: var(--neutral_300);
-    border-radius: 50%;
-    margin: 2.5rem 0;
+  width: 64px;
+  height: 64px;
+  background: var(--neutral_300);
+  border-radius: 50%;
+  margin: 2.5rem 0;
 }
 
 .testimonials-card-description {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: -0.18px;
-    color: var(--neutral_900);
-    padding: 0px 36px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.18px;
+  color: var(--neutral_900);
+  padding: 0px 36px;
 }
 
 .test-title {
-    padding-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .test-name {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: -0.03em;
-    color: #07090D;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #07090d;
 }
 
 .test-rank {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: -0.01em;
-    color: var(--neutral_500);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: var(--neutral_500);
 }

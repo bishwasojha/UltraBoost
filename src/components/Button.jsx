@@ -1,4 +1,4 @@
-import Loader from "./Loader";
+import Loader from './Loader'
 
 export default function Button({
   children,
@@ -14,20 +14,20 @@ export default function Button({
     <button
       disabled={disabled}
       className={`button 
-      ${className || ""} 
+      ${className || ''} 
       ${size}
       ${color}
-      ${loading ? " loading" : ""}
-      ${disabled ? " disabled" : ""}`}
+      ${loading ? ' loading' : ''}
+      ${disabled ? ' disabled' : ''}`}
       onClick={onClick}
       {...props}
     >
       {loading ? <Loader size={size} /> : <>{children}</>}
     </button>
-  );
+  )
 }
 
 Button.defaultProps = {
-  size: "medium",
-  color: "primary",
-};
+  size: 'medium',
+  color: 'primary',
+}

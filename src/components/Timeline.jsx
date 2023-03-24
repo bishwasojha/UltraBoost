@@ -1,8 +1,8 @@
-import React from "react";
-import timelineData from "../Assets/json/Timeline.json";
-import TimelineItem from "./TimelineItem";
-import Timeline_line from "../Assets/Icons/long-string.svg";
-import HomeTitle from "../components/HomeTitle";
+import React from 'react'
+import timelineData from '../Assets/json/Timeline.json'
+import TimelineItem from './TimelineItem'
+import Timeline_line from '../Assets/Icons/long-string.svg'
+import HomeTitle from '../components/HomeTitle'
 
 const Timeline = () => {
   return (
@@ -21,10 +21,9 @@ const Timeline = () => {
           <div className="timeline-list1">
             {timelineData.map((data, idx) => {
               if (idx !== 0 && idx !== 2) {
-                return <TimelineItem data={data} key={idx} />;
+                return <TimelineItem data={data} key={idx} />
               } else {
-
-                return [];
+                return []
               }
             })}
           </div>
@@ -36,19 +35,18 @@ const Timeline = () => {
           <div className="timeline-list2">
             {timelineData.map((data, idx) => {
               if (idx !== 1 && idx !== 3) {
-                return <TimelineItem data={data} key={idx} />;
+                return <TimelineItem data={data} key={idx} />
               } else {
-                return [];
+                return []
               }
             })}
           </div>
         </div>
 
         <div className="timeline-bg-light"></div>
-
       </div>
     )
-  );
-};
+  )
+}
 
-export default Timeline;
+export default Timeline
