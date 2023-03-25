@@ -1,4 +1,4 @@
-import Loader from './Loader'
+import Loader from './Loader';
 
 export default function Button({
   children,
@@ -24,10 +24,10 @@ export default function Button({
     >
       {loading ? <Loader size={size} /> : <>{children}</>}
     </button>
-  )
+  );
 }
 
 Button.defaultProps = {
   size: 'medium',
   color: 'primary',
-}
+};

@@ -1,23 +1,23 @@
 [
-    {
-     "question": "How long does it take for my account to be delivered?",
-     "answer": "Your account is delivered instantly, an email will be sent to your address with the details, this usually takes no more than five minutes as the messaging service is automatic."
-    },
-    {
-     "question": "Can i change the summoner name, password and mail of the account?",
-     "answer": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto iusto veniam eveniet labore impedit nam"
-    },
-    {
-     "question": "What does my account include?",
-     "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores,"
-    },
-    {
-     "question": "How will my account delivered?",
-     "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
-    },
-    {
-     "question": "I bought the wrong account, can I get a change?",
-     "answer": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi."
-    }
-   
-]
+  {
+    'question': 'How long does it take for my account to be delivered?',
+    'answer': 'Your account is delivered instantly, an email will be sent to your address with the details, this usually takes no more than five minutes as the messaging service is automatic.',
+  },
+  {
+    'question': 'Can i change the summoner name, password and mail of the account?',
+    'answer': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto iusto veniam eveniet labore impedit nam',
+  },
+  {
+    'question': 'What does my account include?',
+    'answer': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores,',
+  },
+  {
+    'question': 'How will my account delivered?',
+    'answer': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi.',
+  },
+  {
+    'question': 'I bought the wrong account, can I get a change?',
+    'answer': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, sed. Dolores, sequi.',
+  },
+
+];

@@ -1,6 +1,6 @@
-import React from 'react'
-import { BsFacebook } from 'react-icons/bs'
-import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai'
+import React from 'react';
+import {BsFacebook} from 'react-icons/bs';
+import {AiOutlineTwitter, AiFillInstagram} from 'react-icons/ai';
 
 const Team = () => {
   return (
@@ -65,7 +65,7 @@ const Team = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Team
+export default Team;

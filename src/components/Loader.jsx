@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const Loader = React.forwardRef(({ size }, ref) => {
+const Loader = React.forwardRef(({size}, ref) => {
   return (
     <div ref={ref} className={`load-wrapper ${size}`}>
       <svg
@@ -33,7 +33,7 @@ const Loader = React.forwardRef(({ size }, ref) => {
             repeatCount="indefinite"
           />
         </circle>
-        <circle cx="60" cy="15" r="9" fill-opacity="0.3">
+        <circle cx="60" cy="15" r="9" fillOpacity="0.3">
           <animate
             attributeName="r"
             from="9"
@@ -79,11 +79,11 @@ const Loader = React.forwardRef(({ size }, ref) => {
         </circle>
       </svg>
     </div>
-  )
-})
+  );
+});
 
 Loader.defaultProps = {
   size: 'big',
-}
+};
 
-export default Loader
+export default Loader;

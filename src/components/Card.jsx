@@ -1,6 +1,6 @@
-import React from 'react'
-import HamburgerMenu from '../Assets/Icons/About/about_hamburger-icon.svg'
-import card_user_icon from '../Assets/Icons/About/about_user-icon.svg'
+import React from 'react';
+import HamburgerMenu from '../Assets/Icons/About/about_hamburger-icon.svg';
+import card_user_icon from '../Assets/Icons/About/about_user-icon.svg';
 const Card = () => {
   return (
     <div className="card-container">
@@ -17,7 +17,7 @@ const Card = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
