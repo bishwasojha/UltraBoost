@@ -1,22 +1,22 @@
 [
   {
-    'id': 1,
-    'cardtitle': 'Create your account',
-    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis...',
+      "id" : 1,
+   "cardtitle": "Create your account",
+   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis..."
   },
   {
-    'id': 2,
-    'cardtitle': 'Place a boosting order',
-    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis...',
+      "id" : 2,
+   "cardtitle": "Place a boosting order",
+   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis..."
   },
   {
-    'id': 3,
-    'cardtitle': 'Your order is assigned to a booster',
-    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis...',
+      "id" : 3,
+   "cardtitle": "Your order is assigned to a booster",
+   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis..."
   },
   {
-    'id': 4,
-    'cardtitle': 'Your order is complete',
-    'description': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis...',
-  },
-];
+      "id" : 4,
+   "cardtitle": "Your order is complete",
+   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum dapibus, leo in fermentum iaculis..."
+  }  
+]
