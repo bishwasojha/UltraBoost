@@ -7,14 +7,14 @@
 
 .faq-title {
   width: 42%;
-  margin-left: 0rem;
+  margin-left: 0;
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
 }
 
 .faq-second-heading {
-  font-family: 'OpenSauceSansSemiBold';
+  font-family: OpenSauceSansSemiBold;
   font-weight: 700;
 }
 
@@ -32,7 +32,7 @@
 .faq-email-section {
   display: flex;
   flex-direction: column;
-  font-family: 'Inter';
+  font-family: Inter;
   font-weight: 400;
   margin-top: 16rem;
 }
@@ -87,7 +87,7 @@
 }
 
 .faq-question > span {
-  font-family: 'OpenSauceSansRegular';
+  font-family: OpenSauceSansRegular;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -99,7 +99,7 @@
 }
 
 .faq-answer {
-  font-family: 'Inter';
+  font-family: Inter;
   letter-spacing: -0.03em;
   max-height: 0;
   font-weight: 400;

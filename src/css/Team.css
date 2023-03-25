@@ -8,7 +8,7 @@
 }
 
 .team-title > h4 {
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -20,7 +20,7 @@
 }
 
 .team-title > .team-bold-text {
-  font-family: 'OpenSauceSansSemiBold';
+  font-family: OpenSauceSansSemiBold;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -58,7 +58,7 @@
 
 .user-title,
 .team-card-description {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .user-title {
@@ -69,21 +69,19 @@
 }
 
 .user-name {
-  font-family: 'OpenSauceSansRegular';
+  font-family: OpenSauceSansRegular;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.015em;
-  font-feature-settings: 'pnum' on, 'lnum' on, 'ss03' on, 'cv03' on, 'cv04' on,
-    'cv06' on, 'cv09' on, 'case' on, 'cpsp' on;
   color: #07090d;
   padding-right: 12px;
   margin-bottom: 16px;
 }
 
 .user-title > .user-rank {
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -103,7 +101,7 @@
 }
 
 .team-card-description {
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

@@ -21,7 +21,7 @@
 .login-text {
   width: 464px;
   height: 40px;
-  font-family: 'OpenSauceSansBold';
+  font-family: OpenSauceSansBold;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -40,7 +40,7 @@
   gap: 8px;
   width: 464px;
   height: 24px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e7eaee;
   border-radius: 6px;
 }
@@ -70,7 +70,7 @@
 
 .input > .label {
   height: 24px;
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -89,7 +89,7 @@
 }
 
 .forgot-password > a {
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -116,19 +116,19 @@
 }
 
 .login-btn > button {
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.09px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .not-a-user {
   display: flex;
   justify-content: center;
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -138,7 +138,7 @@
 }
 
 .not-a-user > a {
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   text-align: center;
@@ -447,4 +447,4 @@
         font-size: 12px;
         line-height: 18px;
      }
-}*/
+} */

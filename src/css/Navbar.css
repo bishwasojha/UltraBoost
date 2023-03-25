@@ -1,17 +1,17 @@
 * {
-  font-family: 'OpenSauceSansRegular', 'Inter', sans-serif;
+  font-family: OpenSauceSansRegular, Inter, sans-serif;
 }
 
 .navbar-header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background: #ffffff;
+  background: #fff;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 28px 28px;
+  padding: 28px;
 }
 
 .left-container {
@@ -26,7 +26,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 680px;
   height: 40px;
@@ -39,21 +39,20 @@
 .header-image > img {
   height: 32px;
   width: 165.18px;
-  padding: 0px;
+  padding: 0;
   gap: 7px;
 }
 
 .main-navbar {
   list-style: none;
   display: inline-flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   margin-right: 2rem;
-  flex-wrap: wrap;
 }
 
 .navbar-item {
   display: flex;
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -117,14 +116,14 @@
   flex-direction: column;
   padding-right: 1.1rem;
   gap: 10px;
-}*/
+} */
 
 .right-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 16px;
   width: 260px;
   height: 40px;
@@ -138,13 +137,13 @@
   gap: 8px;
   width: 81px;
   height: 40px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e7eaee;
   border-radius: 6px;
 }
 
 .navbar-login-btn > a {
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -168,7 +167,7 @@
 }
 
 .navbar-register-btn > a {
-  font-family: 'Inter';
+  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -176,7 +175,7 @@
   display: flex;
   align-items: center;
   letter-spacing: -0.09px;
-  color: #ffffff;
+  color: #fff;
 }
 
 /*
@@ -232,4 +231,4 @@
     .header-image > img {
         width: 192px;
     }
-}*/
+} */

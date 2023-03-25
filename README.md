@@ -11,4 +11,8 @@ for files within src/pages
 ``` npx prettier --write src/pages/ ```
 
 ### For CSS
+Pretties the files
 ``` npx prettier --write "**/*.css" ```
+
+For linting css. Beware that don't run this cmd if you have build/ directory
+``` npx stylelint "**/*.css" --fix ```
