@@ -1,16 +1,16 @@
-import React, {useState} from 'react';
-import {NavLink, Link, useNavigate} from 'react-router-dom';
-import UltraBoostLogo from '../Assets/Logos/UltraBoost.png';
-import Button from './Button';
+import React, { useState } from 'react'
+import { NavLink, Link, useNavigate } from 'react-router-dom'
+import UltraBoostLogo from '../Assets/Logos/UltraBoost.png'
+import Button from './Button'
 // import { ReactComponent as Hamburger } from "../Assets/Logo/Hamburger.svg";
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false)
   // const navigate = useNavigate();
 
   const handleNavbar = () => {
-    setShowNavbar(!showNavbar);
-  };
+    setShowNavbar(!showNavbar)
+  }
 
   return (
     <>
@@ -79,7 +79,7 @@ const Navbar = () => {
             <Link
               to="/login"
               className="not-registered-link"
-              style={{textDecoration: 'none'}}
+              style={{ textDecoration: 'none' }}
             >
               Login
             </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
             <Link
               to="/register"
               className="not-registered-link"
-              style={{textDecoration: 'none'}}
+              style={{ textDecoration: 'none' }}
             >
               Get Started
             </Link>
@@ -96,7 +96,7 @@ const Navbar = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

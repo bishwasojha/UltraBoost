@@ -1,52 +1,52 @@
-import Cookies from 'js-cookie';
-import {useRef, useState} from 'react';
+import Cookies from 'js-cookie'
+import { useRef, useState } from 'react'
 // import ReCAPTCHA from "react-google-recaptcha";
-import {AiOutlineMail} from 'react-icons/ai';
-import {Link} from 'react-router-dom';
-import Button from '../components/Button';
-import Form from '../components/Form';
-import Input from '../components/Input';
+import { AiOutlineMail } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
+import Button from '../components/Button'
+import Form from '../components/Form'
+import Input from '../components/Input'
 // import { captchaSiteKey } from "../settings";
 
-import Navbar from '../components/Navbar';
-import HomeTitle from '../components/HomeTitle';
+import Navbar from '../components/Navbar'
+import HomeTitle from '../components/HomeTitle'
 
-import {ToastContainer, toast, Slide} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
+import { ToastContainer, toast, Slide } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.min.css'
 
 export default function ForgotPassword() {
-  const [email, setEmail] = useState('');
-  const [captcha, setCaptcha] = useState();
+  const [email, setEmail] = useState('')
+  const [captcha, setCaptcha] = useState()
 
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState({});
-  const [message, setMessage] = useState();
+  const [loading, setLoading] = useState(false)
+  const [errors, setErrors] = useState({})
+  const [message, setMessage] = useState()
 
-  const captchaRef = useRef();
+  const captchaRef = useRef()
 
   const notify = () => {
     toast.success('Reset Email Sent!', {
       position: toast.POSITION.BOTTOM_RIGHT,
       autoClose: 3000,
-    });
+    })
 
     toast.error('Email not found!', {
       position: toast.POSITION.BOTTOM_RIGHT,
       autoClose: 3000,
-    });
-  };
+    })
+  }
 
-  const login = async (e) => {
-    e.preventDefault();
+  const login = async e => {
+    e.preventDefault()
 
     try {
-      setLoading(true);
-      setErrors({});
-      setMessage(null);
+      setLoading(true)
+      setErrors({})
+      setMessage(null)
       const body = {
         email,
         captcha,
-      };
+      }
       const response = await fetch(`/auth/password/reset/`, {
         method: 'POST',
         headers: {
@@ -54,25 +54,25 @@ export default function ForgotPassword() {
           'X-CSRFToken': Cookies.get('csrftoken'),
         },
         body: JSON.stringify(body),
-      });
+      })
 
-      captchaRef.current?.reset();
-      setCaptcha();
+      captchaRef.current?.reset()
+      setCaptcha()
       if (response.status === 429) {
-        setErrors({email: 'Too many attempts. Please slow down.'});
-        return;
+        setErrors({ email: 'Too many attempts. Please slow down.' })
+        return
       }
       if (response.ok) {
-        setMessage('Password reset e-mail has been sent.');
+        setMessage('Password reset e-mail has been sent.')
       }
-      const json = await response.json();
-      setErrors(json);
+      const json = await response.json()
+      setErrors(json)
     } catch (reason) {
-      console.log(reason);
+      console.log(reason)
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }
 
   return (
     <>
@@ -93,7 +93,7 @@ export default function ForgotPassword() {
               required={true}
               icon={<AiOutlineMail />}
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={e => setEmail(e.target.value)}
               error={errors.email}
               className="login-input"
             />
@@ -115,7 +115,7 @@ export default function ForgotPassword() {
               <Link
                 to="/register"
                 className="not-registered-link"
-                style={{textDecoration: 'none'}}
+                style={{ textDecoration: 'none' }}
               >
                 Sign Up
               </Link>
@@ -124,7 +124,7 @@ export default function ForgotPassword() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
 /*

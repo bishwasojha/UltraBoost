@@ -5,6 +5,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import ResetPassword from './pages/ResetPassword';
 import ForgotPassword from './pages/ForgotPassword';
+import Account from './pages/Account';
 
 const App = () => {
   return (
@@ -21,8 +22,8 @@ const App = () => {
           <Route path="/login" element={<Login />}> </Route>
           <Route path="/reset-password" element={<ResetPassword />}> </Route>
           <Route path="/forgot-password" element={<ForgotPassword />}> </Route>
-          { /* <Route path="/account" element={<UserAccount />}> </Route>
-          <Route path="/purchase" element={<Purchase />}> </Route>
+          <Route path="/account" element={<Account />}> </Route>
+          { /* <Route path="/purchase" element={<Purchase />}> </Route>
           <Route path="/testing" element={<Navbar/>}></Route> */}
         </Routes>
       </Router>

@@ -1,27 +1,27 @@
 // Importing from packages
-import Cookies from 'js-cookie';
-import {useState} from 'react';
-import {useLocation, useNavigate, Link} from 'react-router-dom';
+import Cookies from 'js-cookie'
+import { useState } from 'react'
+import { useLocation, useNavigate, Link } from 'react-router-dom'
 
-import Button from '../components/Button';
-import Form from '../components/Form';
-import Input from '../components/Input';
-import Hometitle from '../components/HomeTitle';
-import Navbar from '../components/Navbar';
+import Button from '../components/Button'
+import Form from '../components/Form'
+import Input from '../components/Input'
+import Hometitle from '../components/HomeTitle'
+import Navbar from '../components/Navbar'
 
-import {AiOutlineUser} from 'react-icons/ai';
-import {HiOutlineLockClosed} from 'react-icons/hi';
+import { AiOutlineUser } from 'react-icons/ai'
+import { HiOutlineLockClosed } from 'react-icons/hi'
 
 export default function Login() {
-  const [username, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState({});
+  const [username, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [errors, setErrors] = useState({})
 
-  const navigate = useNavigate();
-  const location = useLocation();
+  const navigate = useNavigate()
+  const location = useLocation()
 
-  const loginStatus = async (queue_id) => {
+  const loginStatus = async queue_id => {
     // Return whether to break or keep polling
     try {
       const response = await fetch(`/auth/login/status/${queue_id}/`, {
@@ -30,38 +30,38 @@ export default function Login() {
           'Content-Type': 'application/json',
           'X-CSRFToken': Cookies.get('csrftoken'),
         },
-      });
+      })
       if (response.ok) {
-        const data = await response.json();
+        const data = await response.json()
         if (data.user) {
-          const urlParams = new URLSearchParams(location.search);
-          navigate(urlParams.get('next') || '/my-account/orders');
-          return false;
+          const urlParams = new URLSearchParams(location.search)
+          navigate(urlParams.get('next') || '/my-account/orders')
+          return false
         }
-        setErrors(data);
-        return true;
+        setErrors(data)
+        return true
       }
-      const data = await response.json();
-      setErrors(data);
-      setLoading(false);
-      return false;
+      const data = await response.json()
+      setErrors(data)
+      setLoading(false)
+      return false
     } catch (reason) {
-      console.log(reason);
-      setLoading(false);
+      console.log(reason)
+      setLoading(false)
     }
-    return false;
-  };
+    return false
+  }
 
-  const login = async (e) => {
-    e.preventDefault();
+  const login = async e => {
+    e.preventDefault()
 
     try {
-      setLoading(true);
-      setErrors({});
+      setLoading(true)
+      setErrors({})
       const body = {
         username,
         password,
-      };
+      }
       const response = await fetch(`/auth/login/`, {
         method: 'POST',
         headers: {
@@ -69,28 +69,28 @@ export default function Login() {
           'X-CSRFToken': Cookies.get('csrftoken'),
         },
         body: JSON.stringify(body),
-      });
+      })
 
       if (response.ok) {
-        const data = await response.json();
-        const queueId = data.queue_id;
+        const data = await response.json()
+        const queueId = data.queue_id
         if (!queueId) {
-          setLoading(false);
-          return;
+          setLoading(false)
+          return
         }
         while (true) {
-          if (!(await loginStatus(queueId))) return;
-          await new Promise((resolve) => setTimeout(resolve, 2000));
+          if (!(await loginStatus(queueId))) return
+          await new Promise(resolve => setTimeout(resolve, 2000))
         }
       }
-      const json = await response.json();
-      setErrors(json);
+      const json = await response.json()
+      setErrors(json)
     } catch (reason) {
-      console.log(reason);
+      console.log(reason)
     } finally {
-      setLoading(false);
+      setLoading(false)
     }
-  };
+  }
 
   return (
     <>
@@ -110,7 +110,7 @@ export default function Login() {
               required={true}
               icon={<AiOutlineUser />}
               value={username}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={e => setEmail(e.target.value)}
               error={errors.username}
               className="login-input"
             />
@@ -121,7 +121,7 @@ export default function Login() {
               required={true}
               icon={<HiOutlineLockClosed />}
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={e => setPassword(e.target.value)}
               error={errors.password}
               className="login-input"
             />
@@ -129,7 +129,7 @@ export default function Login() {
               <Link
                 to="/forgot-password"
                 className="not-registered-link"
-                style={{textDecoration: 'none'}}
+                style={{ textDecoration: 'none' }}
               >
                 Forgot Password ?
               </Link>
@@ -150,7 +150,7 @@ export default function Login() {
               <Link
                 to="/register"
                 className="not-registered-link"
-                style={{textDecoration: 'none'}}
+                style={{ textDecoration: 'none' }}
               >
                 Sign Up
               </Link>
@@ -159,5 +159,5 @@ export default function Login() {
         </div>
       </div>
     </>
-  );
+  )
 }

@@ -1,12 +1,12 @@
-import React from 'react';
-import About from '../components/About';
-import FAQ from '../components/FAQ';
-import Feature from '../components/Feature';
-import Team from '../components/Team';
-import Testimonials from '../components/Testimonials';
-import Footer from '../components/Footer';
-import Timeline from '../components/Timeline';
-import Navbar from '../components/Navbar';
+import React from 'react'
+import About from '../components/About'
+import FAQ from '../components/FAQ'
+import Feature from '../components/Feature'
+import Team from '../components/Team'
+import Testimonials from '../components/Testimonials'
+import Footer from '../components/Footer'
+import Timeline from '../components/Timeline'
+import Navbar from '../components/Navbar'
 
 const Home = () => {
   return (
@@ -41,7 +41,7 @@ const Home = () => {
         <Footer />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

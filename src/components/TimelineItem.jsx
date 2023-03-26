@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react'
 
-const TimelineItem = ({data}) => {
+const TimelineItem = ({ data }) => {
   return (
     <div className="timeline-item">
       <div className="timeline-item-content" id={data.id}>
@@ -8,7 +8,7 @@ const TimelineItem = ({data}) => {
         <p className="description">{data.description}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default TimelineItem;
+export default TimelineItem

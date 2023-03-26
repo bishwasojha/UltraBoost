@@ -1,11 +1,11 @@
-import React from 'react';
-import HomeTitle from './HomeTitle';
-import feature_1 from '../Assets/Icons/Feature/Feature1.svg';
-import feature_2 from '../Assets/Icons/Feature/Feature2.svg';
-import feature_3 from '../Assets/Icons/Feature/Feature3.svg';
-import feature_4 from '../Assets/Icons/Feature/Feature4.svg';
-import feature_5 from '../Assets/Icons/Feature/Feature5.svg';
-import feature_6 from '../Assets/Icons/Feature/Feature6.svg';
+import React from 'react'
+import HomeTitle from './HomeTitle'
+import feature_1 from '../Assets/Icons/Feature/Feature1.svg'
+import feature_2 from '../Assets/Icons/Feature/Feature2.svg'
+import feature_3 from '../Assets/Icons/Feature/Feature3.svg'
+import feature_4 from '../Assets/Icons/Feature/Feature4.svg'
+import feature_5 from '../Assets/Icons/Feature/Feature5.svg'
+import feature_6 from '../Assets/Icons/Feature/Feature6.svg'
 const Feature = () => {
   return (
     <div className="feature-container">
@@ -106,7 +106,7 @@ const Feature = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Feature;
+export default Feature

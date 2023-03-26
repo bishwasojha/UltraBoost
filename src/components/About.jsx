@@ -1,10 +1,10 @@
-import React from 'react';
-import Button from './Button';
-import Card from './Card';
-import AboutTick from '../Assets/Icons/About/about_tick.svg';
-import RightArrow from '../Assets/Icons/About/about_learn-more.svg';
-import HomeTitle from '../components/HomeTitle';
-import yone from '../Assets/Images/yone.jpg';
+import React from 'react'
+import Button from './Button'
+import Card from './Card'
+import AboutTick from '../Assets/Icons/About/about_tick.svg'
+import RightArrow from '../Assets/Icons/About/about_learn-more.svg'
+import HomeTitle from '../components/HomeTitle'
+import yone from '../Assets/Images/yone.jpg'
 
 const About = () => {
   return (
@@ -40,7 +40,7 @@ const About = () => {
         </Button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

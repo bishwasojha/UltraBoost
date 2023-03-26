@@ -1,0 +1,240 @@
+.account-detail-left,
+.account-detail-right {
+  width: 544px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 160px;
+}
+
+.account-hometitle .home-title {
+  display: flex;
+  flex-direction: row;
+  padding-top: 80px;
+}
+
+.account-title {
+  font-family: OpenSauceSansBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: -0.015em;
+  color: #061237;
+  padding-bottom: 2rem;
+}
+
+.account-title > span {
+  color: #1355ff;
+}
+
+.account-description {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+  color: #3c4353;
+  padding-bottom: 2rem;
+}
+
+.account-buy-order {
+  width: 544px;
+  background: #fff;
+  border: 1px solid #e7eaee;
+  border-radius: 12px;
+}
+
+.choose-game {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px;
+  height: 88px;
+  border-bottom: 1px solid #e7eaee;
+}
+
+.choose-game-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #586173;
+  width: 454px;
+}
+
+.choose-game-edit {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #1355ff;
+}
+
+.choose-plan {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 32px;
+  height: 88px;
+  border-bottom: 1px solid #e7eaee;
+}
+
+.choose-plan-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #1b212c;
+}
+
+.order-boost-detail {
+  padding: 32px;
+  border-bottom: 1px solid #e7eaee;
+}
+
+.starting,
+.desired {
+  display: flex;
+  flex-direction: row;
+}
+
+.starting .icon,
+.desired .icon,
+.boost-type-input .icon,
+.boost-region .icon,
+.queue-type .icon {
+  width: 0;
+  height: 0;
+}
+
+.starting .login-input,
+.desired .login-input,
+.boost-type-input .login-input,
+.boost-region .login-input,
+.queue-type .login-input {
+  padding: 0;
+}
+
+.starting .input-group,
+.desired .input-group {
+  width: 213px;
+  margin-right: 0.5rem;
+}
+
+.order-summary-card {
+  width: 544px;
+  background: #fff;
+  border: 1px solid #e7eaee;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.order-summary {
+  padding-bottom: 2.5rem;
+}
+
+.order-summary > h4 {
+  font-family: OpenSauceSansBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #07090d;
+}
+
+.order-line {
+  width: 464px;
+  height: 0;
+  border-bottom: 1px solid #e7eaee;
+}
+
+.division-boosting {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1rem 0;
+  gap: 16px;
+  width: 464px;
+  height: 32px;
+}
+
+.division-text {
+  width: 379px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+  color: #586174;
+}
+
+.division-text-vpn {
+  width: 392px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+  color: #586174;
+}
+
+.division-total-text {
+  width: 365px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+  color: #586174;
+}
+
+.division-cost {
+  font-family: OpenSauceSansSemiBold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  color: #07090d;
+}
+
+.division-total-cost {
+  font-family: OpenSauceSansSemiBold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  color: #07090d;
+}
+
+.pay-btn-ub {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 464px;
+  gap: 8px;
+  background: #1355ff;
+  border-radius: 6px;
+  border: none;
+  margin-top: 2rem;
+}
+
+.have-question {
+  width: 464px;
+  height: 32px;
+}

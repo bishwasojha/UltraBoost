@@ -22,5 +22,5 @@ export default function Form({
       </div>
       {extra && <div className="extra">{extra}</div>}
     </form>
-  );
+  )
 }

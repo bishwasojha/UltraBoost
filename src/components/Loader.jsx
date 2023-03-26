@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 
-const Loader = React.forwardRef(({size}, ref) => {
+const Loader = React.forwardRef(({ size }, ref) => {
   return (
     <div ref={ref} className={`load-wrapper ${size}`}>
       <svg
@@ -79,11 +79,11 @@ const Loader = React.forwardRef(({size}, ref) => {
         </circle>
       </svg>
     </div>
-  );
-});
+  )
+})
 
 Loader.defaultProps = {
   size: 'big',
-};
+}
 
-export default Loader;
+export default Loader
