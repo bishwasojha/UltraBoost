@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-// import yone from '../Assets/Images/yone.jpg';
+import yone from '../Assets/Images/yone.jpg'
 import AboutTick from '../Assets/Icons/About/about_tick.svg'
 import RightArrow from '../Assets/Icons/About/about_learn-more.svg'
 
@@ -9,7 +9,7 @@ import Navbar from '../components/Navbar'
 import HomeTitle from '../components/HomeTitle'
 import Input from '../components/Input'
 import Button from '../components/Button'
-// import Card from '../components/Card';
+//import Card from '../components/Card';
 
 const Account = () => {
   const [boostType, setBoostType] = useState('')
@@ -156,11 +156,9 @@ const Account = () => {
           </div>
         </div>
         <div className="account-detail-right">
-          {/*
           <div className="about-pic">
             <img src={yone} alt="" srcSet="" />
           </div>
-  <Card /> */}
           <div className="order-summary-card">
             <div className="order-summary">
               <h4>Order Summary</h4>

@@ -1,15 +1,26 @@
-.account-detail-left,
-.account-detail-right {
+.account-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.account-detail-left {
   width: 544px;
   display: flex;
   flex-direction: column;
   padding-left: 160px;
 }
 
+.account-detail-right {
+  width: 544px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+
 .account-hometitle .home-title {
   display: flex;
   flex-direction: row;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 
 .account-title {
@@ -129,11 +140,14 @@
 }
 
 .order-summary-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 544px;
   background: #fff;
   border: 1px solid #e7eaee;
   border-radius: 12px;
-  padding: 40px;
+  padding: 40px 0;
 }
 
 .order-summary {
@@ -237,4 +251,9 @@
 .have-question {
   width: 464px;
   height: 32px;
+}
+
+.about-pic {
+  margin-bottom: 2.5rem;
+  padding-top: 80px;
 }
