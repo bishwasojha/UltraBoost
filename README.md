@@ -10,12 +10,9 @@ for files within src/components:
 for files within src/pages:
 ``` npx prettier --write src/pages/ ```
 
-For linting jsx with ESlint:
-```npx eslint "src/components/**" --fix```
-
 ### For CSS
 Pretties the files:
-``` npx prettier --write "**/*.css" ```
+``` npx prettier --write "src/css/*.css" ```
 
-For linting css with Stylelint. Beware that don't run this cmd if you have `build/` directory: 
-``` npx stylelint "**/*.css" --fix ```
+For linting css with Stylelint:  
+``` npx stylelint "src/css/*.css" --fix ```
