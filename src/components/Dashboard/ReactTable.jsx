@@ -1,5 +1,12 @@
 import React, { useState } from 'react'
 import { useTable, usePagination, useRowSelect } from 'react-table'
+import '../../css/Dashboard/Reacttable.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faChevronRight,
+  faChevronLeft,
+  faC,
+} from '@fortawesome/free-solid-svg-icons'
 
 const IndeterminateCheckbox = React.forwardRef(
   ({ indeterminate, ...rest }, ref) => {
@@ -102,19 +109,22 @@ function Table({ columns, data }) {
         This is just a very basic UI implementation:
       */}
       <div className="pagination">
-        <button onClick={() => previousPage()} disabled={!canPreviousPage}>
-          {'<'}
-        </button>{' '}
-        <button onClick={() => nextPage()} disabled={!canNextPage}>
-          {'>'}
-        </button>{' '}
         <span>
-          Page{' '}
-          <strong>
-            {pageIndex + 1} of {pageOptions.length}
-          </strong>{' '}
+          Showing {pageIndex + 1} to 10 of {pageOptions.length} results
         </span>
-        <span>
+        <div className="pagination-button">
+          <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </button>
+          <button
+            className="second-pag-btn"
+            onClick={() => nextPage()}
+            disabled={!canNextPage}
+          >
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
+        </div>
+        {/* <span>
           | Go to page:{' '}
           <input
             type="number"
@@ -137,7 +147,7 @@ function Table({ columns, data }) {
               Show {pageSize}
             </option>
           ))}
-        </select>
+        </select> */}
       </div>
     </>
   )

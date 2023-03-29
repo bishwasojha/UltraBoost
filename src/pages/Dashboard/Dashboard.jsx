@@ -4,6 +4,7 @@ import Sidebar from '../../components/Dashboard/Sidebar'
 import SmallNav from '../../components/Dashboard/SmallNav'
 import { AiOutlineQuestionCircle } from 'react-icons/ai'
 import ReactTable from '../../components/Dashboard/ReactTable'
+import Button from '../../components/Button'
 
 const Dashboard = () => {
   const columns = [
@@ -52,9 +53,24 @@ const Dashboard = () => {
       status: 'In progress',
       dateCompleted: '',
     },
+    {
+      id: 234212,
+      type: 'Division Boosting',
+      game: 'League of Legends',
+      date: '3rd March 2023',
+      details: 'Bronze IV -> Platinum II',
+      booster: 'somebody',
+      status: 'In progress',
+      dateCompleted: '',
+    },
   ]
 
   const [selectedRows, setSelectedRows] = useState([])
+  const [isClicked, setIsClicked] = useState(false)
+
+  function handleClick() {
+    setIsClicked(true)
+  }
 
   const handleRowSelect = rows => {
     setSelectedRows(rows)
@@ -65,13 +81,28 @@ const Dashboard = () => {
         <Sidebar />
         <div className="sidenav-div">
           <SmallNav>
-            Dashboard <AiOutlineQuestionCircle />
+            Orders <AiOutlineQuestionCircle />
           </SmallNav>
-          <ReactTable
-            columns={columns}
-            data={data}
-            onRowSelect={handleRowSelect}
-          />
+          <div className="button-bars">
+            <Button
+              className={`dashboard-btn ${
+                isClicked ? 'dashboard-btn-active' : ''
+              }`}
+              onClick={handleClick}
+            >
+              All
+            </Button>
+            <Button className="dashboard-btn">Unassigned</Button>
+            <Button className="dashboard-btn">In Progress</Button>
+            <Button className="dashboard-btn">Completed</Button>
+          </div>
+          <div className="dash-table">
+            <ReactTable
+              columns={columns}
+              data={data}
+              onRowSelect={handleRowSelect}
+            />
+          </div>
         </div>
       </div>
     </>

@@ -1,6 +1,6 @@
 import React from 'react'
-import Cookies from "js-cookie";
-import { useParams } from "react-router-dom";
+import Cookies from 'js-cookie'
+import { useParams } from 'react-router-dom'
 import { useState, Link } from 'react'
 import Sidebar from '../../components/Dashboard/Sidebar'
 import SmallNav from '../../components/Dashboard/SmallNav'
@@ -20,9 +20,9 @@ const Settings = () => {
   const [email, setEmail] = useState('')
   const [loading, setLoading] = useState(false)
   const [errors, setErrors] = useState({})
-  const [message, setMessage] = useState();
+  const [message, setMessage] = useState()
 
-  const { uid, token } = useParams();
+  const { uid, token } = useParams()
 
   const resetPassword = async e => {
     e.preventDefault()
