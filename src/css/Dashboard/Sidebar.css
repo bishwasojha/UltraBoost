@@ -3,7 +3,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 24px 0 24px 24px;
+  padding-top: 16px;
+  padding-left: 16px;
   gap: 8px;
   width: 220px;
   background: #fff;
@@ -22,30 +23,47 @@
   margin-right: 8px;
 }
 
+.profile-name > img {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
 .profile-name > span {
   font-family: OpenSauceSansRegular;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.006em;
   color: #07090d;
-  padding-right: 0.5rem;
+  margin-right: 5px;
 }
 
 .sidebar-navbar {
   display: flex;
   flex-direction: column;
+  gap: 12px;
   align-items: flex-start;
-  padding-top: 2rem;
+  margin-top: 20px;
 }
 
-.menu-item {
+.menu-item , .menu-item.active {
   display: flex;
   align-items: center;
-  height: 32px;
   text-decoration: none;
-  margin-bottom: 1.5rem;
+}
+.menu-item.active {
+  width: 95.5%;
+}
+
+.menu-item.active > svg {
+  color: #07090d;
+} 
+
+.menu-item.active > span{
+  color: #07090d !important;
+  border-right: 5px solid  #2457FA;
 }
 
 .menu-item > svg {
@@ -60,19 +78,23 @@
   font-family: OpenSauceSansRegular;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.006em;
   color: #979fb3;
 }
 
 .sidebar-navbar-second {
-  margin-top: 32px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .collapse {
   display: flex;
   align-items: center;
+  margin-top: 360px;
 }
 
 .collapse > svg {
@@ -86,7 +108,7 @@
   font-family: OpenSauceSansRegular;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.006em;
   color: #979fb3;

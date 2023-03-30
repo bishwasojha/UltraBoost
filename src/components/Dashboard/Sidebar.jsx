@@ -11,37 +11,40 @@ import {
   faChevronLeft,
   faGear,
 } from '@fortawesome/free-solid-svg-icons'
-
+import  dashboard_orderitem  from '../../Assets/Logos/Dashboard-OrderItem.svg'
+import { NavLink }from 'react-router-dom'
 export default props => {
   return (
     <div className="sidebar-container">
       <div className="profile-name">
-        <FontAwesomeIcon icon={faUser} className="usericon" />{' '}
-        <span>Pradish</span>
-        <FontAwesomeIcon icon={faChevronDown} />
+        <img src={dashboard_orderitem} alt="" />
+        <span>pradishb</span>
+        <FontAwesomeIcon icon={faChevronDown} size="xs"/>
       </div>
+      <div>
       <div className="sidebar-navbar">
-        <a href="/testing" className="menu-item">
+        <NavLink strict to="/testing/order" className="menu-item">
           <FontAwesomeIcon icon={faListUl} /> <span>Orders</span>
-        </a>
-        <a href="/testing/jobs" className="menu-item">
+        </NavLink>
+        <NavLink strict to="/testing/jobs/" className="menu-item" activeClassName = "active" >
           <FontAwesomeIcon icon={faBarsProgress} /> <span>Jobs</span>
-        </a>
-        <a href="/testing/browse" className="menu-item">
+        </NavLink>
+        <NavLink strict to="/testing/browse/" className="menu-item" activeClassName = "active" >
           <FontAwesomeIcon icon={faFolderOpen} /> <span>Browse</span>
-        </a>
-        <a href="/testing/payment" className="menu-item">
+        </NavLink>
+        <NavLink strict to="/testing/payment/" className="menu-item" activeClassName = "active" >
           <FontAwesomeIcon icon={faRightLeft} /> <span>Payments</span>
-        </a>
+        </NavLink>
       </div>
       <div className="sidebar-navbar-second">
-        <a href="/testing/settings" className="menu-item">
+        <NavLink strict to="/testing/settings" className="menu-item" activeClassName = "active" >
           <FontAwesomeIcon icon={faGear} /> <span>Settings</span>
-        </a>
-        <a href="/testing" className="menu-item">
+        </NavLink>
+        <NavLink strict to ="/login" className="menu-item" activeClassName = "active" >
           <FontAwesomeIcon icon={faRightFromBracket} /> <span>Logout</span>
-        </a>
+        </NavLink>
       </div>
+      </div>   
       <div className="collapse">
         <FontAwesomeIcon icon={faChevronLeft} /> <span>Collapse</span>
       </div>
