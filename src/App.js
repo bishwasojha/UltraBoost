@@ -11,6 +11,7 @@ import Settings from './pages/Dashboard/Settings';
 import Browse from './pages/Dashboard/Browse';
 import Payment from './pages/Dashboard/Payment';
 import Jobs from './pages/Dashboard/Jobs';
+import Order from './pages/Dashboard/Order';
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/testing/browse" element={<Browse/>}></Route>
           <Route path="/testing/jobs" element={<Jobs/>}></Route>
           <Route path="/testing/payment" element={<Payment/>}></Route>
+          <Route path='/testing/order' element={<Order />}></Route>
         </Routes>
       </Router>
     </>
