@@ -2,9 +2,9 @@ import React from 'react'
 import { useState } from 'react'
 import Sidebar from '../../components/Dashboard/Sidebar'
 import SmallNav from '../../components/Dashboard/SmallNav'
-import { AiOutlineQuestionCircle } from 'react-icons/ai'
+import { FaSearch } from 'react-icons/fa'
 import ReactTable from '../../components/Dashboard/ReactTable'
-
+import question from '../../Assets/Icons/Dashboard/question.svg';
 const Payment = () => {
   const columns = [
     {
@@ -57,8 +57,15 @@ const Payment = () => {
         <Sidebar />
         <div className="sidenav-div">
           <SmallNav>
-            Payment <AiOutlineQuestionCircle />
+            Payments 
+            <div className="small-div-icon">
+            <img src={question} alt="" srcset="" />
+            </div>
           </SmallNav>
+          <div className="payment-search">
+             <FaSearch />
+            <input type="text" placeholder="Search"/>
+          </div>
           <div className="dash-table">
             <ReactTable
               columns={columns}

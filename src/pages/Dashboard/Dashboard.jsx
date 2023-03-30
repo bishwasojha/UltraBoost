@@ -2,9 +2,10 @@ import React from 'react'
 import { useState } from 'react'
 import Sidebar from '../../components/Dashboard/Sidebar'
 import SmallNav from '../../components/Dashboard/SmallNav'
-import { AiOutlineQuestionCircle } from 'react-icons/ai'
 import ReactTable from '../../components/Dashboard/ReactTable'
 import Button from '../../components/Button'
+import question from '../../Assets/Icons/Dashboard/question.svg';
+
 
 const Dashboard = () => {
   const columns = [
@@ -81,7 +82,10 @@ const Dashboard = () => {
         <Sidebar />
         <div className="sidenav-div">
           <SmallNav>
-            Orders <AiOutlineQuestionCircle />
+            Orders
+            <div className="small-div-icon">
+            <img src={question} alt="" srcset="" />
+            </div>
           </SmallNav>
           <div className="button-bars">
             <Button

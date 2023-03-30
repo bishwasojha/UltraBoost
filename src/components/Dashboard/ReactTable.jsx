@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useTable, usePagination, useRowSelect } from 'react-table'
-import '../../css/Dashboard/Reacttable.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronRight,

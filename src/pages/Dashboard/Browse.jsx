@@ -1,10 +1,10 @@
 import React from 'react'
 import Sidebar from '../../components/Dashboard/Sidebar'
 import SmallNav from '../../components/Dashboard/SmallNav'
-import { AiOutlineQuestionCircle } from 'react-icons/ai'
 import { useState } from 'react'
 import ReactTable from '../../components/Dashboard/ReactTable'
 import Button from '../../components/Button'
+import question from '../../Assets/Icons/Dashboard/question.svg';
 
 const Browse = () => {
   const columns = [
@@ -76,7 +76,10 @@ const Browse = () => {
         <Sidebar />
         <div className="sidenav-div">
           <SmallNav>
-            Browse <AiOutlineQuestionCircle />
+            Browse
+            <div className="small-div-icon">
+            <img src={question} alt="" srcset="" />
+            </div>
           </SmallNav>
           <div className="button-bars">
             <Button className="dashboard-btn">Accept Job</Button>

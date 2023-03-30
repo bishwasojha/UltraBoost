@@ -2,12 +2,11 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  width: 100%;
   padding: 20px 24px;
   gap: 10px;
   height: 68px;
   background: #fff;
+  border-bottom: 1px solid #E7EAEE;;
 }
 
 .smallnav-title > span {
@@ -21,9 +20,9 @@
   display: flex;
 }
 
-span > svg {
-  width: 20px;
-  height: 32px;
+span > .small-div-icon > img {
+  width: 12px;
+  height: 16px;
   color: #979fb3;
-  padding-left: 0.7rem;
+  padding-left: 10px;
 }
