@@ -48,22 +48,24 @@
   margin-top: 20px;
 }
 
-.menu-item , .menu-item.active {
+.menu-item,
+.menu-item.active {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
+
 .menu-item.active {
   width: 95.5%;
 }
 
 .menu-item.active > svg {
   color: #07090d;
-} 
+}
 
-.menu-item.active > span{
+.menu-item.active > span {
   color: #07090d !important;
-  border-right: 5px solid  #2457FA;
+  border-right: 5px solid #2457fa;
 }
 
 .menu-item > svg {

@@ -6,7 +6,8 @@
   gap: 10px;
   height: 68px;
   background: #fff;
-  border-bottom: 1px solid #E7EAEE;;
+  border-bottom: 1px solid #e7eaee;
+  width: 100%;
 }
 
 .smallnav-title > span {

@@ -16,14 +16,13 @@
 }
 
 .payment-search > input {
-  align-items: center;
   font-family: OpenSauceSansRegular;
   font-style: normal;
   font-size: 14px;
   line-height: 17px;
   align-items: center;
   border: none;
-  color: #818A9B;
+  color: #818a9b;
 }
 
 .payment-search > input:focus {
@@ -33,11 +32,9 @@
 .payment-search > svg {
   width: 13px;
   height: 13px;
-  padding-top: 10px;
-  padding-left: 12px;
-  padding-bottom: 10px;
-  padding-right: 8px;
+  padding: 10px 8px 10px 12px;
 }
+
 .dash-table {
   width: 80%;
 }

@@ -1,11 +1,11 @@
 .order-content {
-    display: flex;
-    flex-direction: row;
-    padding: 0rem 1.5rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1.5rem;
 }
 
 .order-chat {
-    margin-right: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .chat-content {
@@ -23,31 +23,31 @@
 }
 
 .our-chat {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 6px 12px;
-    width: 240px;
-    background: #F6F7F9;
-    border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 6px 12px;
+  width: 240px;
+  background: #f6f7f9;
+  border-radius: 18px;
 }
 
 .user-reply {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-end;
-    padding: 6px 12px;
-    width: 254.9px;
-    background: #2457FA;
-    border-radius: 18px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: -0.408px;
-    color: #F6F7F9;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  padding: 6px 12px;
+  width: 254.9px;
+  background: #2457fa;
+  border-radius: 18px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #f6f7f9;
 }
 
 .chat-box {
@@ -59,57 +59,56 @@
   gap: 8px;
   width: 393px;
   height: 41.01px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e7eaee;
   border-radius: 12px;
   margin-top: 1rem;
-  
 }
 
 .chat-box > input {
-    width: 344px;
-    border: none;
+  width: 344px;
+  border: none;
 }
 
-.chat-box > input:focus{
-    outline: none;
-    border: none;
+.chat-box > input:focus {
+  outline: none;
+  border: none;
 }
 
 .order-details-table {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 18px;
-    width: 365px;
-    height: 368px;
-    border: 1px solid #E7EAEE;
-    border-radius: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 18px;
+  width: 365px;
+  height: 368px;
+  border: 1px solid #e7eaee;
+  border-radius: 12px;
 }
 
-.left-side-order{
-    margin-right: 2rem;
+.left-side-order {
+  margin-right: 2rem;
 }
 
 .order-text {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: -0.09px;
-    color: #07090D;
-    padding-bottom: 0.2rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #07090d;
+  padding-bottom: 0.2rem;
 }
 
 .order-subtext {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: -0.09px;
-    color: #586173;
-    padding-bottom: 1.2rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #586173;
+  padding-bottom: 1.2rem;
 }
