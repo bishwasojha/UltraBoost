@@ -97,13 +97,12 @@
   display: flex;
   align-items: center;
   margin-top: 360px;
+  cursor: pointer;
 }
 
 .collapse > svg {
-  width: 32px;
-  height: 24px;
-  color: #979fb3;
-  margin-right: 16px;
+  color: var(--neutral_900);
+  margin-right: 8px;
 }
 
 .collapse > span {

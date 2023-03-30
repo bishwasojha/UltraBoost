@@ -8,9 +8,9 @@
   width: 276px;
   height: 33px;
   display: flex;
-  border: 1px solid #e7eaee;
+  border: 1px solid var(--neutral_200);
   border-radius: 99px;
-  color: #818a9b;
+  color: var(--neutral_500);
   margin-left: auto;
   margin-right: 18%;
 }
@@ -22,7 +22,7 @@
   line-height: 17px;
   align-items: center;
   border: none;
-  color: #818a9b;
+  color: var(--neutral_500);
 }
 
 .payment-search > input:focus {

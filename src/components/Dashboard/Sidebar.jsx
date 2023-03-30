@@ -1,7 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faUser,
   faRightLeft,
   faFolderOpen,
   faListUl,
@@ -13,7 +12,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import dashboard_orderitem from '../../Assets/Logos/Dashboard-OrderItem.svg'
 import { NavLink } from 'react-router-dom'
-export default props => {
+
+const Sidebar = () => {
   return (
     <div className="sidebar-container">
       <div className="profile-name">
@@ -71,8 +71,10 @@ export default props => {
         </div>
       </div>
       <div className="collapse">
-        <FontAwesomeIcon icon={faChevronLeft} /> <span>Collapse</span>
+        <FontAwesomeIcon icon={faChevronLeft} size="xs" /> <span>Collapse</span>
       </div>
     </div>
   )
 }
+
+export default Sidebar
