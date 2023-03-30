@@ -3,7 +3,6 @@ import Cookies from 'js-cookie'
 import { useParams } from 'react-router-dom'
 import { useState, Link } from 'react'
 import Sidebar from '../../components/Dashboard/Sidebar'
-import SmallNav from '../../components/Dashboard/SmallNav'
 import Form from '../../components/Form'
 import Input from '../../components/Input'
 import Button from '../../components/Button'
@@ -72,7 +71,9 @@ const Settings = () => {
         <Sidebar />
         <div className="sidenav-div">
           <div className="tab-grid-custom">
-            <SmallNav>Settings</SmallNav>
+            <h2 className="settings-title">
+              Settings
+            </h2>
             {/* <div className="tab-list">
               <Button
                 className={`custom-btn-class ${

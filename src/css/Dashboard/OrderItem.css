@@ -18,7 +18,7 @@
   width: 393px;
   height: 308.99px;
   overflow-y: scroll;
-  border: 1px solid #e7eaee;
+  border: 1px solid var(--neutral_200);
   border-radius: 12px;
 }
 
@@ -28,7 +28,7 @@
     align-items: flex-start;
     padding: 6px 12px;
     width: 240px;
-    background: #F6F7F9;
+    background: var(--lighter_blue);
     border-radius: 18px;
 }
 
@@ -39,7 +39,7 @@
     align-self: flex-end;
     padding: 6px 12px;
     width: 254.9px;
-    background: #2457FA;
+    background: var(--base_blue);
     border-radius: 18px;
     font-family: 'Inter';
     font-style: normal;
@@ -47,7 +47,7 @@
     font-size: 17px;
     line-height: 22px;
     letter-spacing: -0.408px;
-    color: #F6F7F9;
+    color: var(--lighter_blue);
 }
 
 .chat-box {
@@ -59,8 +59,8 @@
   gap: 8px;
   width: 393px;
   height: 41.01px;
-  background: #ffffff;
-  border: 1px solid #e7eaee;
+  background: var(--neutral_0);
+  border: 1px solid var(--neutral_200);
   border-radius: 12px;
   margin-top: 1rem;
   
@@ -84,7 +84,7 @@
     padding: 18px;
     width: 365px;
     height: 368px;
-    border: 1px solid #E7EAEE;
+    border: 1px solid var(--neutral_200);
     border-radius: 12px;
 }
 
@@ -99,7 +99,7 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: -0.09px;
-    color: #07090D;
+    color: var(--neutral_900);
     padding-bottom: 0.2rem;
 }
 
@@ -110,6 +110,6 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: -0.09px;
-    color: #586173;
+    color: var(--neutral_600);
     padding-bottom: 1.2rem;
 }

@@ -2,6 +2,19 @@
   display: flex;
   flex-direction: column;
 }
+.settings-title {
+  font-family: OpenSauceSansSemiBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.006em;
+  color: var(--neutral_900);
+  margin-bottom: 24px;
+  margin-top: 20px;
+  padding-right: 0px;
+  padding-left: 24px;
+}
 
 .tab-list {
   display: flex;
@@ -42,7 +55,7 @@ button {
   padding: 0;
   height: 350px;
   width: 544px;
-  border: 1px solid #e7eaee;
+  border: 1px solid var(--neutral_200);
   border-radius: 12px;
 }
 
@@ -52,8 +65,8 @@ button {
   align-items: flex-start;
   padding: 1rem;
   width: 94%;
-  background: #f6f7f9;
-  border: 1px solid #e7eaee;
+  background: var(--neutral_100);
+  border: 1px solid var(--neutral_200);
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -67,7 +80,7 @@ button {
   display: flex;
   align-items: center;
   letter-spacing: -0.09px;
-  color: #000;
+  color: var(--neutral_900);
 }
 
 .content-content {
@@ -88,7 +101,7 @@ button {
   align-items: flex-start;
   padding: 0;
   width: 544px;
-  border: 1px solid #e7eaee;
+  border: 1px solid var(--neutral_200);
   border-radius: 12px;
 }
 
@@ -97,28 +110,29 @@ button {
   width: 122px;
   height: 24px;
   background-color: transparent;
-  font-family: OpenSauceSansRegular;
+  font-family: OpenSauceSansLight;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.006em;
-  color: #586173;
+  color: var(--neutral_600);
 }
 
 .react-tabs__tab-list {
-  border-bottom: 1px solid #e7eaee !important;
-  margin: 0 1.2rem 1.2rem 24px;
+  border-bottom: 1px solid var(--neutral_200) !important;
+  margin-bottom: 24px;
+  width: 1218px !important;
 }
 
 .react-tabs__tab {
   display: inline-block;
-  border-bottom: none;
   bottom: -1px;
   position: relative;
   list-style: none;
   padding: 6px 12px;
   cursor: pointer;
+  margin-left: 24px;
 }
 
 .react-tabs__tab-panel {
@@ -126,5 +140,5 @@ button {
 }
 
 .react-tabs__tab--selected {
-  border-bottom: 4px solid #2457fa !important;
+  border-bottom: 4px solid var(--base_blue) !important;
 }

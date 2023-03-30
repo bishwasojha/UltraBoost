@@ -4,7 +4,7 @@
 }
 
 .dash-table {
-  border: 1px solid #e7eaee;
+  border: 1px solid var(--neutral_200);
   border-radius: 6px 6px 0 0;
   margin-left: 1.5rem;
 }
@@ -18,7 +18,7 @@
 .dashboard-btn {
   padding: 12px 24px;
   gap: 8px;
-  background: #fff;
+  background: var(--neutral_0);
   border: 1px solid #e7eaee;
   border-radius: 99px;
   margin-right: 10px;
@@ -34,8 +34,8 @@
 }
 
 .dashboard-btn-active {
-  background: #2457fa;
-  border: 1px solid #2457fa;
+  background: var(--base_blue);
+  border: 1px solid var(--base_blue);
   font-family: OpenSauceSansRegular;
   font-style: normal;
   font-weight: 600;
@@ -43,5 +43,5 @@
   line-height: 17px;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: var(--neutral_0);
 }
