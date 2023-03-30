@@ -23,21 +23,21 @@ export default props => {
       </div>
       <div>
       <div className="sidebar-navbar">
-        <NavLink strict to="/testing/order" className="menu-item">
+        <NavLink strict to="/dashboard/order" className="menu-item">
           <FontAwesomeIcon icon={faListUl} /> <span>Orders</span>
         </NavLink>
-        <NavLink strict to="/testing/jobs/" className="menu-item" activeClassName = "active" >
+        <NavLink strict to="/dashboard/jobs/" className="menu-item" activeClassName = "active" >
           <FontAwesomeIcon icon={faBarsProgress} /> <span>Jobs</span>
         </NavLink>
-        <NavLink strict to="/testing/browse/" className="menu-item" activeClassName = "active" >
+        <NavLink strict to="/dashboard/browse/" className="menu-item" activeClassName = "active" >
           <FontAwesomeIcon icon={faFolderOpen} /> <span>Browse</span>
         </NavLink>
-        <NavLink strict to="/testing/payment/" className="menu-item" activeClassName = "active" >
+        <NavLink strict to="/dashboard/payment/" className="menu-item" activeClassName = "active" >
           <FontAwesomeIcon icon={faRightLeft} /> <span>Payments</span>
         </NavLink>
       </div>
       <div className="sidebar-navbar-second">
-        <NavLink strict to="/testing/settings" className="menu-item" activeClassName = "active" >
+        <NavLink strict to="/dashboard/settings" className="menu-item" activeClassName = "active" >
           <FontAwesomeIcon icon={faGear} /> <span>Settings</span>
         </NavLink>
         <NavLink strict to ="/login" className="menu-item" activeClassName = "active" >
