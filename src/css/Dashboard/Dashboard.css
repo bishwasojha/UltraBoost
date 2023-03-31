@@ -9,6 +9,11 @@
   margin-left: 1.5rem;
 }
 
+.search-button-bar {
+  display: flex;
+  flex-direction: row;
+}
+
 .button-bars {
   display: flex;
   flex-direction: row;
@@ -16,7 +21,7 @@
 }
 
 .dashboard-btn {
-  padding: 12px 24px;
+  padding: 8px 24px;
   gap: 8px;
   background: var(--neutral_0);
   border: 1px solid #e7eaee;

@@ -35,6 +35,8 @@
   padding: 10px 8px 10px 12px;
 }
 
-.dash-table {
-  width: 80%;
+.payment-table {
+  border: 1px solid var(--neutral_200);
+  border-radius: 6px 6px 0 0;
+  margin-left: 1.5rem;
 }

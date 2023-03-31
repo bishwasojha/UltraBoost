@@ -5,6 +5,8 @@ import SmallNav from '../../components/Dashboard/SmallNav'
 import ReactTable from '../../components/Dashboard/ReactTable'
 import Button from '../../components/Button'
 import question from '../../Assets/Icons/Dashboard/question.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 const Jobs = () => {
   const columns = [
@@ -53,16 +55,6 @@ const Jobs = () => {
       status: 'In progress',
       dateCompleted: '',
     },
-    {
-      id: 234212,
-      type: 'Division Boosting',
-      game: 'League of Legends',
-      date: '3rd March 2023',
-      details: 'Bronze IV -> Platinum II',
-      booster: 'somebody',
-      status: 'In progress',
-      dateCompleted: '',
-    },
   ]
   const [selectedRows, setSelectedRows] = useState([])
 
@@ -80,8 +72,14 @@ const Jobs = () => {
               <img src={question} alt="" srcset="" />
             </div>
           </SmallNav>
-          <div className="button-bars">
-            <Button className="dashboard-btn">Mark as completed</Button>
+          <div className="search-button-bar">
+            <div className="button-bars">
+              <Button className="dashboard-btn">Mark as completed</Button>
+            </div>
+            <div className="payment-search">
+              <FontAwesomeIcon icon={faSearch} />
+              <input type="text" placeholder="Search" />
+            </div>
           </div>
           <div className="dash-table">
             <ReactTable

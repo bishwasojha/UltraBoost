@@ -66,7 +66,7 @@ const Payment = () => {
             <FaSearch />
             <input type="text" placeholder="Search" />
           </div>
-          <div className="dash-table">
+          <div className="payment-table">
             <ReactTable
               columns={columns}
               data={data}
