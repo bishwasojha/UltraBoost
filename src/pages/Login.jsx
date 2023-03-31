@@ -137,30 +137,29 @@ export default function Login() {
               </Link>
             </div>
 
-            <div className="login-btn">
-              <Button
-                className="login-btn-ub"
-                type="submit"
-                loading={loading}
-                disabled={loading}
-              >
-                Login
-              </Button>
-            </div>
-            <div className="not-a-user">
-              Don't have an account?
-              <Link
-                to="/register"
-                className="not-registered-link"
-                style={{ textDecoration: 'none' }}
-              >
-                Sign Up
-              </Link>
-            </div>
-          </Form>
+              <div className="login-btn">
+                <Button
+                  className="login-btn-ub"
+                  type="submit"
+                  loading={loading}
+                  disabled={loading}
+                >
+                  Login
+                </Button>
+              </div>
+              <div className="not-a-user">
+                Don't have an account?
+                <Link
+                  to="/register"
+                  className="not-registered-link"
+                  style={{ textDecoration: 'none' }}
+                >
+                  Sign Up
+                </Link>
+              </div>
+            </Form>
+          </div>
         </div>
-        </div>
-        
       </div>
     </>
   )

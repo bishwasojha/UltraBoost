@@ -4,7 +4,7 @@ import Sidebar from '../../components/Dashboard/Sidebar'
 import SmallNav from '../../components/Dashboard/SmallNav'
 import Button from '../../components/Button'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faPaperPlane, faSearch } from '@fortawesome/free-solid-svg-icons'
 import Input from '../../components/Input'
 
 const Order = () => {

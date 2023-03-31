@@ -10,16 +10,16 @@
   }
 
 .login-div {
-    width: 544px;
-    height: 540px;
-    border: 1px solid #e7eaee;
-    border-radius: 12px;
-    margin-top: 72px;
-    margin-bottom: 467px;
+  width: 544px;
+  height: 540px;
+  border: 1px solid #e7eaee;
+  border-radius: 12px;
+  margin-top: 72px;
+  margin-bottom: 467px;
 }
 
 .login-detail {
-  padding: 40px; 
+  padding: 40px;
 }
 
 .login-text {

@@ -90,7 +90,7 @@ function Table({ columns, data }) {
             </tr>
           ))}
         </thead>
-        <tbody {...getTableBodyProps()}>
+        <tbody {...getTableBodyProps()} className="tbody-div">
           {page.map((row, i) => {
             prepareRow(row)
             return (

@@ -75,6 +75,10 @@
   border: none;
 }
 
+.chat-box > svg {
+  color: #2457fa;
+}
+
 .order-details-table {
   box-sizing: border-box;
   display: flex;

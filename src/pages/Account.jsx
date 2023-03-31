@@ -27,9 +27,7 @@ const Account = () => {
       <Navbar />
       <div className="account-container">
         <div className="account-detail-left">
-          <div className="account-hometitle">
-            Get Started
-          </div>
+          <div className="account-hometitle">Get Started</div>
           <div className="account-title">
             League of Legends <span>Boosting</span>
           </div>
@@ -157,11 +155,11 @@ const Account = () => {
         </div>
         <div className="account-detail-right">
           <div className="account-img-card">
-          <div className="account-img">
-            <img src={yone} alt="" srcSet="" />
+            <div className="account-img">
+              <img src={yone} alt="" srcSet="" />
+            </div>
+            <Card />
           </div>
-          <Card />
-          </div> 
           <div className="order-summary-card">
             <div className="order-summary">
               <h4>Order Summary</h4>
