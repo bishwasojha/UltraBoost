@@ -4,8 +4,7 @@ import Sidebar from '../../components/Dashboard/Sidebar'
 import SmallNav from '../../components/Dashboard/SmallNav'
 import ReactTable from '../../components/Dashboard/ReactTable'
 import Button from '../../components/Button'
-import question from '../../Assets/Icons/Dashboard/question.svg';
-
+import question from '../../Assets/Icons/Dashboard/question.svg'
 
 const Dashboard = () => {
   const columns = [
@@ -84,7 +83,7 @@ const Dashboard = () => {
           <SmallNav>
             Orders
             <div className="small-div-icon">
-            <img src={question} alt="" srcset="" />
+              <img src={question} alt="" srcset="" />
             </div>
           </SmallNav>
           <div className="button-bars">

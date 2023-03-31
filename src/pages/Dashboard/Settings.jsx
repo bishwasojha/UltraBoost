@@ -71,9 +71,7 @@ const Settings = () => {
         <Sidebar />
         <div className="sidenav-div">
           <div className="tab-grid-custom">
-            <h2 className="settings-title">
-              Settings
-            </h2>
+            <h2 className="settings-title">Settings</h2>
             {/* <div className="tab-list">
               <Button
                 className={`custom-btn-class ${

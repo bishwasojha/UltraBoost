@@ -4,7 +4,7 @@ import SmallNav from '../../components/Dashboard/SmallNav'
 import { useState } from 'react'
 import ReactTable from '../../components/Dashboard/ReactTable'
 import Button from '../../components/Button'
-import question from '../../Assets/Icons/Dashboard/question.svg';
+import question from '../../Assets/Icons/Dashboard/question.svg'
 
 const Browse = () => {
   const columns = [
@@ -78,7 +78,7 @@ const Browse = () => {
           <SmallNav>
             Browse
             <div className="small-div-icon">
-            <img src={question} alt="" srcset="" />
+              <img src={question} alt="" srcset="" />
             </div>
           </SmallNav>
           <div className="button-bars">

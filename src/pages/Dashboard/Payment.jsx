@@ -4,7 +4,7 @@ import Sidebar from '../../components/Dashboard/Sidebar'
 import SmallNav from '../../components/Dashboard/SmallNav'
 import { FaSearch } from 'react-icons/fa'
 import ReactTable from '../../components/Dashboard/ReactTable'
-import question from '../../Assets/Icons/Dashboard/question.svg';
+import question from '../../Assets/Icons/Dashboard/question.svg'
 const Payment = () => {
   const columns = [
     {
@@ -57,14 +57,14 @@ const Payment = () => {
         <Sidebar />
         <div className="sidenav-div">
           <SmallNav>
-            Payments 
+            Payments
             <div className="small-div-icon">
-            <img src={question} alt="" srcset="" />
+              <img src={question} alt="" srcset="" />
             </div>
           </SmallNav>
           <div className="payment-search">
-             <FaSearch />
-            <input type="text" placeholder="Search"/>
+            <FaSearch />
+            <input type="text" placeholder="Search" />
           </div>
           <div className="dash-table">
             <ReactTable

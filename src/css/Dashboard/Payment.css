@@ -8,7 +8,7 @@
   width: 276px;
   height: 33px;
   display: flex;
-  border: 1px solid var(--neutral_200);;
+  border: 1px solid var(--neutral_200);
   border-radius: 99px;
   color: var(--neutral_500);
   margin-left: auto;
@@ -16,7 +16,6 @@
 }
 
 .payment-search > input {
-  align-items: center;
   font-family: OpenSauceSansRegular;
   font-style: normal;
   font-size: 14px;
@@ -33,11 +32,9 @@
 .payment-search > svg {
   width: 13px;
   height: 13px;
-  padding-top: 10px;
-  padding-left: 12px;
-  padding-bottom: 10px;
-  padding-right: 8px;
+  padding: 10px 8px 10px 12px;
 }
+
 .dash-table {
   width: 80%;
 }
