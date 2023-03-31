@@ -11,7 +11,7 @@ import Navbar from '../components/Navbar'
 
 import { AiOutlineUser } from 'react-icons/ai'
 import { HiOutlineLockClosed } from 'react-icons/hi'
-
+import { IoMdInformationCircleOutline } from 'react-icons/io'
 export default function Login() {
   const [username, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -96,6 +96,7 @@ export default function Login() {
     <>
       <Navbar />
       <div className="login-page">
+        <div className="login-div">
         <div className="login-detail">
           <Hometitle>Log in</Hometitle>
           <div className="login-text">Welcome Back !</div>
@@ -120,6 +121,7 @@ export default function Login() {
               type="password"
               required={true}
               icon={<HiOutlineLockClosed />}
+              passwordIcon = {<IoMdInformationCircleOutline/>}
               value={password}
               onChange={e => setPassword(e.target.value)}
               error={errors.password}
@@ -157,6 +159,8 @@ export default function Login() {
             </div>
           </Form>
         </div>
+        </div>
+        
       </div>
     </>
   )

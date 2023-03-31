@@ -1,3 +1,40 @@
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #397524 #DFE9EB;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #DFE9EB;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #397524;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #62A34B;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #62A34B;
+}
+
 .register-page {
   box-sizing: border-box;
   display: flex;
@@ -30,31 +67,6 @@
   letter-spacing: -0.015em;
   color: #07090d;
   padding-bottom: 2.5rem;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px 16px 12px 12px;
-  gap: 8px;
-  width: 464px;
-  height: 24px;
-  background: #fff;
-  border: 1px solid #e7eaee;
-  border-radius: 6px;
-}
-
-.input-group > .icon {
-  height: 24px;
-  width: 24px;
-  padding: 0.1rem;
-}
-
-.input-group > .icon > svg {
-  height: 100%;
-  width: 100%;
-  color: #acb4c3;
 }
 
 form > button {
