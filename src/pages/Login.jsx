@@ -97,70 +97,69 @@ export default function Login() {
       <Navbar />
       <div className="login-page">
         <div className="login-div">
-        <div className="login-detail">
-          <Hometitle>Log in</Hometitle>
-          <div className="login-text">Welcome Back !</div>
-          <Form
-            onSubmit={login}
-            error={errors.non_field_errors || errors.detail}
-          >
-            <Input
-              label="Username"
-              placeholder="Placeholder"
-              type="text"
-              required={true}
-              icon={<AiOutlineUser />}
-              value={username}
-              onChange={e => setEmail(e.target.value)}
-              error={errors.username}
-              className="login-input"
-            />
-            <Input
-              label="Password"
-              placeholder="Password"
-              type="password"
-              required={true}
-              icon={<HiOutlineLockClosed />}
-              passwordIcon = {<IoMdInformationCircleOutline/>}
-              value={password}
-              onChange={e => setPassword(e.target.value)}
-              error={errors.password}
-              className="login-input"
-            />
-            <div className="forgot-password">
-              <Link
-                to="/forgot-password"
-                className="not-registered-link"
-                style={{ textDecoration: 'none' }}
-              >
-                Forgot Password ?
-              </Link>
-            </div>
+          <div className="login-detail">
+            <Hometitle>Log in</Hometitle>
+            <div className="login-text">Welcome Back !</div>
+            <Form
+              onSubmit={login}
+              error={errors.non_field_errors || errors.detail}
+            >
+              <Input
+                label="Username"
+                placeholder="Placeholder"
+                type="text"
+                required={true}
+                icon={<AiOutlineUser />}
+                value={username}
+                onChange={e => setEmail(e.target.value)}
+                error={errors.username}
+                className="login-input"
+              />
+              <Input
+                label="Password"
+                placeholder="Password"
+                type="password"
+                required={true}
+                icon={<HiOutlineLockClosed />}
+                passwordIcon={<IoMdInformationCircleOutline />}
+                value={password}
+                onChange={e => setPassword(e.target.value)}
+                error={errors.password}
+                className="login-input"
+              />
+              <div className="forgot-password">
+                <Link
+                  to="/forgot-password"
+                  className="not-registered-link"
+                  style={{ textDecoration: 'none' }}
+                >
+                  Forgot Password ?
+                </Link>
+              </div>
 
-            <div className="login-btn">
-              <Button
-                className="login-btn-ub"
-                type="submit"
-                loading={loading}
-                disabled={loading}
-              >
-                Login
-              </Button>
-            </div>
-            <div className="not-a-user">
-              Don't have an account?
-              <Link
-                to="/register"
-                className="not-registered-link"
-                style={{ textDecoration: 'none' }}
-              >
-                Sign Up
-              </Link>
-            </div>
-          </Form>
+              <div className="login-btn">
+                <Button
+                  className="login-btn-ub"
+                  type="submit"
+                  loading={loading}
+                  disabled={loading}
+                >
+                  Login
+                </Button>
+              </div>
+              <div className="not-a-user">
+                Don't have an account?
+                <Link
+                  to="/register"
+                  className="not-registered-link"
+                  style={{ textDecoration: 'none' }}
+                >
+                  Sign Up
+                </Link>
+              </div>
+            </Form>
+          </div>
         </div>
-        </div>
-        
       </div>
     </>
   )
