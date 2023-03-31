@@ -48,6 +48,7 @@
 @import url('Login.css');
 @import url('Register.css');
 @import url('Account.css');
+@import url('ForgotPassword.css');
 @import url('Dashboard/Sidebar.css');
 @import url('Dashboard/Table.css');
 @import url('Dashboard/SmallNav.css');

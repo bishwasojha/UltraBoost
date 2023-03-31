@@ -99,7 +99,7 @@ export default function Login() {
         <div className="login-div">
         <div className="login-detail">
           <Hometitle>Log in</Hometitle>
-          <div className="login-text">Welcome Back !</div>
+          <p className="login-text">Welcome Back!</p>
           <Form
             onSubmit={login}
             error={errors.non_field_errors || errors.detail}

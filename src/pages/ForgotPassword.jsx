@@ -78,6 +78,7 @@ export default function ForgotPassword() {
     <>
       <Navbar />
       <div className="login-page">
+        <div className="reset-div">
         <div className="login-detail">
           <HomeTitle>Log in</HomeTitle>
           <div className="login-text">Reset Password</div>
@@ -98,13 +99,13 @@ export default function ForgotPassword() {
               className="login-input"
             />
 
-            <div className="login-btn">
+            <div className="reset-btn">
               <Button
                 onClick={notify}
                 type="submit"
                 loading={loading}
                 disabled={loading}
-                className="login-btn-ub"
+                className="reset-btn-ub"
               >
                 Reset Password
               </Button>
@@ -122,6 +123,8 @@ export default function ForgotPassword() {
             </div>
           </Form>
         </div>
+        </div>
+        
       </div>
     </>
   )

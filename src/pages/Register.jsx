@@ -114,9 +114,10 @@ export default function Register() {
       <Navbar />
 
       <div className="register-page">
-        <div className="register">
+        <div className="register-div">
+        <div className="register-detail">
           <HomeTitle>Sign Up</HomeTitle>
-          <div className="register-text">Create Your Account</div>
+          <p className="register-text">Create Your Account</p>
           <Form
             onSubmit={register}
             error={errors.non_field_errors || errors.detail}
@@ -154,7 +155,7 @@ export default function Register() {
               error={errors.password1}
               className="login-input"
             />
-            <Input
+            {/* <Input
               label="Confirm Password"
               placeholder="Password Confirmation"
               type="password"
@@ -164,21 +165,23 @@ export default function Register() {
               onChange={e => setConfirmPassword(e.target.value)}
               error={errors.password2}
               className="login-input"
-            />
+            /> */}
             <Button
               type="submit"
               loading={loading}
               disabled={loading}
-              className="login-btn-ub"
+              className="register-btn-ub"
             >
               Sign Up
             </Button>
             <div className="already-account">
-              <span>Already have an account ?</span>
-              <Link to="/login">Login</Link>.
+              <span>Already have an account?</span>
+              <Link to="/login">Login</Link>
             </div>
           </Form>
         </div>
+        </div>
+        
       </div>
     </>
   )
