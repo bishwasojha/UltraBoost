@@ -1,11 +1,13 @@
 import { useRef } from 'react'
 
-export default function Input({ label, icon, error, ...props }) {
+export default function Input({ label, icon, passwordIcon, error, ...props }) {
   const inputRef = useRef()
 
   return (
     <div className="input" onClick={() => inputRef.current.focus()}>
-      <div className="label">{label}</div>
+      <div className="label">{label} {
+        label === "Password" && <div className='password-icon'>{passwordIcon}</div>
+      } </div>
       <div className={`input-group ${error && 'error'}`}>
         <div className="icon">{icon}</div>
         <input {...props} ref={inputRef} />
