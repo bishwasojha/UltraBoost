@@ -1,26 +1,33 @@
 .account-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 32px;
 }
 
 .account-detail-left {
   width: 544px;
   display: flex;
   flex-direction: column;
-  padding-left: 160px;
 }
 
 .account-detail-right {
   width: 544px;
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
 }
 
-.account-hometitle .home-title {
+ .account-hometitle {
   display: flex;
-  flex-direction: row;
   padding-top: 120px;
+  font-size: 14px;
+  color: var(--base_blue);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1.25px;
 }
 
 .account-title {
@@ -31,7 +38,8 @@
   line-height: 60px;
   letter-spacing: -0.015em;
   color: #061237;
-  padding-bottom: 2rem;
+  margin-top: 16px;
+  padding-bottom: 24px;
 }
 
 .account-title > span {
@@ -46,7 +54,7 @@
   line-height: 28px;
   letter-spacing: -0.18px;
   color: #3c4353;
-  padding-bottom: 2rem;
+  margin-bottom: 36px;
 }
 
 .account-buy-order {
@@ -61,7 +69,6 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 32px;
-  height: 88px;
   border-bottom: 1px solid #e7eaee;
 }
 
@@ -91,7 +98,6 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 32px;
-  height: 88px;
   border-bottom: 1px solid #e7eaee;
 }
 
@@ -253,7 +259,54 @@
   height: 32px;
 }
 
-.about-pic {
-  margin-bottom: 2.5rem;
-  padding-top: 80px;
+
+.account-guarantee {
+  display: flex;
+  padding-bottom: 52px;
+}
+
+.account-guarantee-1,
+.account-guarantee-2 {
+  display: flex;
+  align-items: center;
+}
+
+.account-guarantee-1 > span,
+.account-guarantee-2 > span {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #07090d;
+  padding: 0 2.5rem 0 1rem;
+}
+
+.account-guarantee-1 > img,
+.account-guarantee-2 > img {
+  width: 15px;
+  height: 15px;
+}
+
+
+.account-img-card{
+  position: relative;
+}
+
+.account-img {
+  padding-top: 48px;
+  margin-bottom: 40px;
+}
+
+.account-img > img {
+  width: 544px;
+  height: 464px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.account-img-card > .card-container {
+    bottom: 15%;
+    left: 36.5%;
 }

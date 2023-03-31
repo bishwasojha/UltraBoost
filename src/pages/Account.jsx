@@ -6,7 +6,7 @@ import AboutTick from '../Assets/Icons/About/about_tick.svg'
 import RightArrow from '../Assets/Icons/About/about_learn-more.svg'
 
 import Navbar from '../components/Navbar'
-import HomeTitle from '../components/HomeTitle'
+import Card from '../components/Card.jsx'
 import Input from '../components/Input'
 import Button from '../components/Button'
 //import Card from '../components/Card';
@@ -28,7 +28,7 @@ const Account = () => {
       <div className="account-container">
         <div className="account-detail-left">
           <div className="account-hometitle">
-            <HomeTitle>Get Started</HomeTitle>
+            Get Started
           </div>
           <div className="account-title">
             League of Legends <span>Boosting</span>
@@ -37,12 +37,12 @@ const Account = () => {
             World class League of Legends boosters, we work with the top 0.1% of
             players in the ranked ladders on every region.
           </div>
-          <div className="about-guarantee">
-            <div className="about-guarantee-1">
+          <div className="account-guarantee">
+            <div className="account-guarantee-1">
               <img src={AboutTick} alt="" />
               <span>Guarantee Letter</span>
             </div>
-            <div className="about-guarantee-2">
+            <div className="account-guarantee-2">
               <img src={AboutTick} alt="" />
               <span>Special Discount 50%</span>
             </div>
@@ -156,9 +156,12 @@ const Account = () => {
           </div>
         </div>
         <div className="account-detail-right">
-          <div className="about-pic">
+          <div className="account-img-card">
+          <div className="account-img">
             <img src={yone} alt="" srcSet="" />
           </div>
+          <Card />
+          </div> 
           <div className="order-summary-card">
             <div className="order-summary">
               <h4>Order Summary</h4>
