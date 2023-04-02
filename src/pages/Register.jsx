@@ -68,6 +68,7 @@ export default function Register() {
         username,
         email,
         password,
+        captcha,
       }
       const response = await fetch(`http://ultraboost.sandbox.com.np/api/v1/users/register/`, {
         method: 'POST',
@@ -96,7 +97,7 @@ export default function Register() {
       captchaRef.current?.reset()
       setCaptcha()
     } catch (reason) {
-      console.log(reason)
+      console.log(reason);
     } finally {
       setLoading(false)
     }
@@ -148,17 +149,6 @@ export default function Register() {
               error={errors.password1}
               className="login-input"
             />
-            {/* <Input
-              label="Confirm Password"
-              placeholder="Password Confirmation"
-              type="password"
-              required={true}
-              icon={<HiOutlineLockClosed />}
-              value={confimPassword}
-              onChange={e => setConfirmPassword(e.target.value)}
-              error={errors.password2}
-              className="login-input"
-            /> */}
             <Button
               type="submit"
               loading={loading}
