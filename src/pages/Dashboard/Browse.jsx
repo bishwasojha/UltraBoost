@@ -3,10 +3,10 @@ import Sidebar from '../../components/Dashboard/Sidebar'
 import SmallNav from '../../components/Dashboard/SmallNav'
 import { useState } from 'react'
 import ReactTable from '../../components/Dashboard/ReactTable'
+import DashboardSearch from '../../components/Dashboard/DashboardSearch'
 import Button from '../../components/Button'
 import question from '../../Assets/Icons/Dashboard/question.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 const Browse = () => {
   const columns = [
@@ -77,9 +77,8 @@ const Browse = () => {
             <div className="button-bars">
               <Button className="dashboard-btn">Mark as completed</Button>
             </div>
-            <div className="payment-search">
-              <FontAwesomeIcon icon={faSearch} />
-              <input type="text" placeholder="Search" />
+            <div className="browse-search">
+              <DashboardSearch />
             </div>
           </div>
 

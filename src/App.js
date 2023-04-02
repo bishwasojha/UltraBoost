@@ -15,7 +15,7 @@ import Order from './pages/Dashboard/Order';
 const App = () => {
   return (
     <>
-    <div className="root-container">
+   
       {/* <div className="root-container"> */}
       {/* <Home />*/}
       {/* </div> */}
@@ -36,7 +36,7 @@ const App = () => {
           <Route path='/dashboard/order' element={<Order />}></Route>
         </Routes>
       </Router>
-      </div>
+      
     </>
   );
 };

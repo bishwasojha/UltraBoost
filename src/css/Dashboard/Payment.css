@@ -1,42 +1,18 @@
 .sidenav-div {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.payment-search {
-  width: 276px;
-  height: 33px;
-  display: flex;
-  border: 1px solid var(--neutral_200);
-  border-radius: 99px;
-  color: var(--neutral_500);
-  margin-left: auto;
-  margin-right: 18%;
-}
-
-.payment-search > input {
-  font-family: OpenSauceSansRegular;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 17px;
-  align-items: center;
-  border: none;
-  color: var(--neutral_500);
-}
-
-.payment-search > input:focus {
-  outline: none;
-}
-
-.payment-search > svg {
-  width: 13px;
-  height: 13px;
-  padding: 10px 8px 10px 12px;
-}
 
 .payment-table {
+  width: 80%;
   border: 1px solid var(--neutral_200);
   border-radius: 6px 6px 0 0;
   margin-left: 1.5rem;
+}
+
+.payment-table > table th:not(:first-child), table td:not(:first-child) {
+  width: 164px;
 }

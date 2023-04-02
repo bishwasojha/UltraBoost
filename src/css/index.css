@@ -50,6 +50,7 @@
 @import url('Account.css');
 @import url('ForgotPassword.css');
 @import url('Dashboard/Sidebar.css');
+@import url('Dashboard/DashboardSearch.css');
 @import url('Dashboard/Table.css');
 @import url('Dashboard/SmallNav.css');
 @import url('Dashboard/Dashboard.css');
@@ -57,3 +58,5 @@
 @import url('Dashboard/OrderItem.css');
 @import url('Dashboard/Reacttable.css');
 @import url('Dashboard/Payment.css');
+@import url('Dashboard/Jobs.css');
+@import url('Dashboard/Browse.css');
