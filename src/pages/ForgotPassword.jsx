@@ -16,14 +16,14 @@ import 'react-toastify/dist/ReactToastify.min.css'
 
 export default function ForgotPassword() {
   const [email, setEmail] = useState('')
-  const [captcha, setCaptcha] = useState()
+  //const [captcha, setCaptcha] = useState()
 
   const [loading, setLoading] = useState(false)
   const [errors, setErrors] = useState({})
   const [message, setMessage] = useState()
 
   const captchaRef = useRef()
-
+  /*
   const notify = () => {
     toast.success('Reset Email Sent!', {
       position: toast.POSITION.BOTTOM_RIGHT,
@@ -34,7 +34,7 @@ export default function ForgotPassword() {
       position: toast.POSITION.BOTTOM_RIGHT,
       autoClose: 3000,
     })
-  }
+  }*/
 
   const login = async e => {
     e.preventDefault()
@@ -44,10 +44,9 @@ export default function ForgotPassword() {
       setErrors({})
       setMessage(null)
       const body = {
-        email,
-        captcha,
+        email
       }
-      const response = await fetch(`/auth/password/reset/`, {
+      const response = await fetch(`change-password/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -57,13 +56,21 @@ export default function ForgotPassword() {
       })
 
       captchaRef.current?.reset()
-      setCaptcha()
+      //setCaptcha()
       if (response.status === 429) {
-        setErrors({ email: 'Too many attempts. Please slow down.' })
+        //setErrors({ email: 'Too many attempts. Please slow down.' })
+        toast.error('Email not found!', {
+          position: toast.POSITION.BOTTOM_RIGHT,
+          autoClose: 3000,
+        })
         return
       }
       if (response.ok) {
-        setMessage('Password reset e-mail has been sent.')
+        //setMessage('Password reset e-mail has been sent.')
+        toast.success('Reset Email Sent!', {
+          position: toast.POSITION.BOTTOM_RIGHT,
+          autoClose: 3000,
+        })
       }
       const json = await response.json()
       setErrors(json)
@@ -101,7 +108,6 @@ export default function ForgotPassword() {
 
             <div className="reset-btn">
               <Button
-                onClick={notify}
                 type="submit"
                 loading={loading}
                 disabled={loading}

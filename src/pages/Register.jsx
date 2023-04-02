@@ -26,39 +26,6 @@ export default function Register() {
   const navigate = useNavigate()
   const location = useLocation()
 
-  const registerStatus = async queue_id => {
-    // Return whether to break or keep polling
-    try {
-      const response = await fetch(`/auth/register/status/${queue_id}/`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-CSRFToken': Cookies.get('csrftoken'),
-        },
-      })
-      if (response.ok) {
-        const data = await response.json()
-        if (data.user) {
-          const urlParams = new URLSearchParams(location.search)
-          navigate(urlParams.get('next') || '/')
-          return false
-        }
-        setErrors(data)
-        return true
-      }
-      const data = await response.json()
-      captchaRef.current?.reset()
-      //    setCaptcha();
-      setErrors(data)
-      setLoading(false)
-      return false
-    } catch (reason) {
-      console.log(reason)
-      setLoading(false)
-    }
-    return false
-  }
-
   const register = async e => {
     e.preventDefault()
     try {
@@ -81,15 +48,9 @@ export default function Register() {
 
       if (response.ok) {
         const data = await response.json()
-        const queueId = data.queue_id
-        if (!queueId) {
-          setLoading(false)
-          return
-        }
-        while (true) {
-          if (!(await registerStatus(queueId))) return
-          await new Promise(resolve => setTimeout(resolve, 2000))
-        }
+        console.log(data)
+        navigate('/login');
+        return 
       }
       setLoading(false)
       const data = await response.json()
