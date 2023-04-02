@@ -6,14 +6,19 @@ import Team from '../components/Team'
 import Testimonials from '../components/Testimonials'
 import Footer from '../components/Footer'
 import Timeline from '../components/Timeline'
+import HeroSection from '../components/HeroSection'
 import Navbar from '../components/Navbar'
 
 const Home = () => {
   return (
     <>
-      <div className="root-container">
+      
         <div className="homepage-navbar">
           <Navbar />
+        </div>
+        <div className="root-container">
+        <div className="homepage-herosection">
+          <HeroSection />
         </div>
         <div className="homepage-timeline">
           <Timeline />

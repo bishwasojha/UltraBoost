@@ -78,7 +78,6 @@ const Navbar = () => {
           <Button className="navbar-login-btn" type="submit">
             <Link
               to="/login"
-              className="not-registered-link"
               style={{ textDecoration: 'none' }}
             >
               Login
@@ -87,7 +86,6 @@ const Navbar = () => {
           <Button className="navbar-register-btn" type="submit">
             <Link
               to="/register"
-              className="not-registered-link"
               style={{ textDecoration: 'none' }}
             >
               Get Started

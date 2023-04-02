@@ -30,6 +30,7 @@
   src: url('../Assets/fonts/OpenSauceOne-ExtraBold.ttf') format('truetype');
 }
 
+@import url('HeroSection.css');
 @import url('Team.css');
 @import url('Testimonials.css');
 @import url('App.css');
