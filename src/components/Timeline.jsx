@@ -6,7 +6,8 @@ import HomeTitle from '../components/HomeTitle'
 
 const Timeline = () => {
   return (
-    timelineData.length > 0 && (
+    
+    timelineData.length > 0 && ( <>
       <div className="timeline-container">
         <div className="timeline-heading-wrapper">
           <HomeTitle>TIMELINE</HomeTitle>
@@ -42,9 +43,10 @@ const Timeline = () => {
             })}
           </div>
         </div>
-
-        <div className="timeline-bg-light"></div>
       </div>
+      <div className="timeline-bg-light"></div>
+
+      </>
     )
   )
 }

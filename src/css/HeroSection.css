@@ -1,0 +1,118 @@
+.herosection-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-top-container{
+    display: flex;
+    gap: 128px;
+}
+
+.hero-text-cont{
+    margin-top: 96px;
+    width: 448px;
+    height: 216px;
+}
+
+.hero-text > h2 ,
+.hero-text > h2 > h3{
+    font-family: OpenSauceSansBold;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.015em;
+}
+
+.hero-text > h2 > span {
+    font-family: OpenSauceSansBold;
+    font-size: 56px;
+    line-height: 72px;
+    letter-spacing: -0.015em;
+    color: var(--base_blue);
+}
+
+.hero-text > p {
+    margin-top: 24px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #818A9C;
+}
+
+.hero-btn{
+    margin-top: 48px;
+    display: flex;
+    gap: 16px;
+}
+
+.read-faq-btn {
+    color: var(--neutral_900);
+    text-align: center;
+    width: 136px;
+    height: 43px;
+    background: var(--neutral_0);
+    border: 1px solid #E7EAEE;
+    border-radius: 6px;
+}
+
+.read-faq-btn > a {
+    position: relative;
+}
+
+.read-faq-btn > a > svg{
+    color: var(--neutral_900);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0px;
+    left: -16px;
+}
+
+.read-faq-btn > a > span:last-child {
+   color: var(--neutral_900);
+   font-size: 14px;
+   line-height : 24px;
+   letter-spacing : -0.09px;
+   margin-left: 6px;
+}
+
+.hero-image-cont {
+    margin-top: 64px;
+}
+
+.hero-img > img {
+    object-fit: cover;
+    width: 544px;
+    height: 464px;
+    border-radius: 16px;
+}
+
+.hero-image-cont >  .card-container{
+    left: 46.5%;
+    bottom: 17%;
+}
+
+.hero-bottom-container {
+    margin-top: 88px;
+}
+
+.hero-logos {
+    display: inline-flex;
+    list-style-type: none;
+    align-content: center;
+    background: #FFFFFF;
+    border: 1px solid #E7EAEE;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.hero-logos > li {
+    width: 280px;
+    height: 112px;
+    border-right: 1px solid #E7EAEE;
+    cursor: pointer;
+}
+
+.hero-logos > li > img {
+    margin-top: 36px;
+}
