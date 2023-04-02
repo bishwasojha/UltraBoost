@@ -12,6 +12,7 @@ import Navbar from '../components/Navbar'
 import { AiOutlineUser } from 'react-icons/ai'
 import { HiOutlineLockClosed } from 'react-icons/hi'
 import { IoMdInformationCircleOutline } from 'react-icons/io'
+
 export default function Login() {
   const [username, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -62,7 +63,7 @@ export default function Login() {
         username,
         password,
       }
-      const response = await fetch(`/auth/login/`, {
+      const response = await fetch(`http://ultraboost.sandbox.com.np/api/v1/users/login/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

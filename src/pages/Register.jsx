@@ -16,7 +16,6 @@ export default function Register() {
   const [username, setFirstName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [confimPassword, setConfirmPassword] = useState('')
   const [captcha, setCaptcha] = useState()
 
   const [errors, setErrors] = useState({})
@@ -62,21 +61,15 @@ export default function Register() {
 
   const register = async e => {
     e.preventDefault()
-    if (password !== confimPassword) {
-      setErrors({ password2: 'Passwords do not match.' })
-      return
-    }
     try {
       setLoading(true)
       setErrors({})
       const body = {
         username,
         email,
-        password1: password,
-        password2: confimPassword,
-        captcha,
+        password,
       }
-      const response = await fetch(`/auth/register/`, {
+      const response = await fetch(`http://ultraboost.sandbox.com.np/api/v1/users/register/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
