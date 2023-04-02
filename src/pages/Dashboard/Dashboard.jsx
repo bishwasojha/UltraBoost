@@ -3,10 +3,10 @@ import { useState } from 'react'
 import Sidebar from '../../components/Dashboard/Sidebar'
 import SmallNav from '../../components/Dashboard/SmallNav'
 import ReactTable from '../../components/Dashboard/ReactTable'
+import DashboardSearch from '../../components/Dashboard/DashboardSearch'
 import Button from '../../components/Button'
 import question from '../../Assets/Icons/Dashboard/question.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 const Dashboard = () => {
   const columns = [
@@ -92,11 +92,11 @@ const Dashboard = () => {
               <Button className="dashboard-btn">In Progress</Button>
               <Button className="dashboard-btn">Completed</Button>
             </div>
-            <div className="payment-search">
-              <FontAwesomeIcon icon={faSearch} />
-              <input type="text" placeholder="Search" />
+            <div className="dashboard-order-search">
+              <DashboardSearch />
             </div>
           </div>
+          
           <div className="dash-table">
             <ReactTable
               columns={columns}

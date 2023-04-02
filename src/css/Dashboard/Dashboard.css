@@ -1,12 +1,19 @@
 .dashboard-container {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
+}
+
+.dashboard-order-search {
+  margin-left: auto;
 }
 
 .dash-table {
   border: 1px solid var(--neutral_200);
   border-radius: 6px 6px 0 0;
   margin-left: 1.5rem;
+  margin-right: 5px;
 }
 
 .search-button-bar {

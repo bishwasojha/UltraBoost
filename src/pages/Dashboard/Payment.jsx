@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Sidebar from '../../components/Dashboard/Sidebar'
 import SmallNav from '../../components/Dashboard/SmallNav'
-import { FaSearch } from 'react-icons/fa'
+import DashboardSearch from '../../components/Dashboard/DashboardSearch'
 import ReactTable from '../../components/Dashboard/ReactTable'
 import question from '../../Assets/Icons/Dashboard/question.svg'
 const Payment = () => {
@@ -63,8 +63,7 @@ const Payment = () => {
             </div>
           </SmallNav>
           <div className="payment-search">
-            <FaSearch />
-            <input type="text" placeholder="Search" />
+            <DashboardSearch />  
           </div>
           <div className="payment-table">
             <ReactTable

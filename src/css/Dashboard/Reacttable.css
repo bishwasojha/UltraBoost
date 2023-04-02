@@ -1,6 +1,7 @@
 table {
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
 }
 
 thead {
@@ -16,7 +17,7 @@ tr {
 
 th,
 td {
-  width: 150px;
+  width: 154px;
   height: 40px;
 }
 
@@ -55,7 +56,7 @@ table td:nth-child(1) {
 table th:nth-child(2),
 table td:nth-child(2) {
   display: inline-flex;
-  width: 75px;
+  width: 154px;
   gap: 10px;
 }
 
