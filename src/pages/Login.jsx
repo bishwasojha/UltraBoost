@@ -22,37 +22,6 @@ export default function Login() {
   const navigate = useNavigate()
   const location = useLocation()
 
-  const loginStatus = async queue_id => {
-    // Return whether to break or keep polling
-    try {
-      const response = await fetch(`/auth/login/status/${queue_id}/`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-CSRFToken': Cookies.get('csrftoken'),
-        },
-      })
-      if (response.ok) {
-        const data = await response.json()
-        if (data.user) {
-          const urlParams = new URLSearchParams(location.search)
-          navigate(urlParams.get('next') || '/my-account/orders')
-          return false
-        }
-        setErrors(data)
-        return true
-      }
-      const data = await response.json()
-      setErrors(data)
-      setLoading(false)
-      return false
-    } catch (reason) {
-      console.log(reason)
-      setLoading(false)
-    }
-    return false
-  }
-
   const login = async e => {
     e.preventDefault()
 
@@ -73,16 +42,20 @@ export default function Login() {
       })
 
       if (response.ok) {
+        navigate('/dashboard')
+        return false;
+        /*
         const data = await response.json()
-        const queueId = data.queue_id
-        if (!queueId) {
-          setLoading(false)
-          return
-        }
-        while (true) {
-          if (!(await loginStatus(queueId))) return
-          await new Promise(resolve => setTimeout(resolve, 2000))
-        }
+        console.log(data)
+        if (data.user) {
+          navigate('/dashboard/');
+          setLoading(false);
+          return false;
+        } else {
+          setErrors(data);
+          setLoading(false);
+          return true;
+        }*/
       }
       const json = await response.json()
       setErrors(json)
