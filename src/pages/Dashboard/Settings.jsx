@@ -45,6 +45,7 @@ const Settings = () => {
         headers: {
           'Content-Type': 'application/json',
           'X-CSRFToken': Cookies.get('csrftoken'),
+          'Cookie': document.cookie,
         },
         body: JSON.stringify(body),
       })
@@ -54,9 +55,6 @@ const Settings = () => {
         return
       }
       const json = await response.json()
-      /*if (json.token || json.uid) {
-        json.non_field_errors = 'Cannot reset password.'
-      }*/
       setErrors(json)
     } catch (reason) {
       console.log(reason)

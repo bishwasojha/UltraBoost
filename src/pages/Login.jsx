@@ -44,18 +44,6 @@ export default function Login() {
       if (response.ok) {
         navigate('/dashboard')
         return false;
-        /*
-        const data = await response.json()
-        console.log(data)
-        if (data.user) {
-          navigate('/dashboard/');
-          setLoading(false);
-          return false;
-        } else {
-          setErrors(data);
-          setLoading(false);
-          return true;
-        }*/
       }
       const json = await response.json()
       setErrors(json)
