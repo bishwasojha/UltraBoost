@@ -40,6 +40,7 @@ export default function Login() {
       )
 
       if (response.ok) {
+
         const data = await response.json()
         document.cookie = `access_token=${data.access}`
         document.cookie = `refresh_token=${data.refresh}`
