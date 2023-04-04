@@ -40,24 +40,41 @@ const Settings = () => {
         oldPassword,
         newPassword
       }
-      const response = await fetch(`http://ultraboost.sandbox.com.np/api/v1/users/change-password/`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'X-CSRFToken': Cookies.get('csrftoken'),
-        },
-        body: JSON.stringify(body),
-      })
+      const response = await fetch(
+        `http://ultraboost.sandbox.com.np/api/v1/users/change-password/`,
+        {
+          method: 'POST',
+          headers: {
+            Authorization: 'Bearer ' + Cookies.get('access_token'),
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(body),
+        }
+
+      )
+      // const response = await fetch(`http://ultraboost.sandbox.com.np/api/v1/users/change-password/`, {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //     'X-CSRFToken': Cookies.get('csrftoken'),
+      //   },
+      //   body: JSON.stringify(body),
+      // })
 
       if (response.ok) {
         setMessage('Password changed successfully.')
         return
       }
-      const json = await response.json()
+
+      const data = await response.json()
+      document.cookie = `access_token=${data.access}`
+      document.cookie = `refresh_token=${data.refresh}`
+      console.log(`access_token=${data.access};refresh_token=${data.refresh}`)
+     
       /*if (json.token || json.uid) {
         json.non_field_errors = 'Cannot reset password.'
       }*/
-      setErrors(json)
+      setErrors(data)
     } catch (reason) {
       console.log(reason)
     } finally {

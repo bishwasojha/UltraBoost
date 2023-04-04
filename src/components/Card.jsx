@@ -6,14 +6,14 @@ const Card = () => {
     <div className="card-container">
       <div className="card">
         <div className="card-top">
-          <div className="card-text">Completed Orders</div>
+          <h className="card-text">Completed Orders</h>
           <img src={HamburgerMenu} alt="" />
         </div>
         <div className="card-bottom">
           <div className="card-user-icon">
             <img src={card_user_icon} alt="" />
           </div>
-          <div className="card-number">15,290</div>
+          <div className="card-number">15,290+</div>
         </div>
       </div>
     </div>

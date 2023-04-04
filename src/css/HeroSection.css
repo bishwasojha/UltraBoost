@@ -16,10 +16,10 @@
 
 .hero-text > h2 ,
 .hero-text > h2 > h3{
-    font-family: OpenSauceSansBold;
+    font-family: OpenSauceSansSemiBold;
     font-size: 56px;
     line-height: 72px;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.035em;
 }
 
 .hero-text > h2 > span {
@@ -44,36 +44,52 @@
     display: flex;
     gap: 16px;
 }
+.herosection-register-btn {
+    width: 125px;
+height: 48px;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+border: none;
+color: #fff;
+line-height: 24px;
+letter-spacing: -0.09px;
+justify-content: center;
+background: #1355ff;
+}
 
 .read-faq-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--neutral_900);
     text-align: center;
     width: 136px;
-    height: 43px;
+    height: 48px;
     background: var(--neutral_0);
     border: 1px solid #E7EAEE;
     border-radius: 6px;
 }
 
-.read-faq-btn > a {
-    position: relative;
-}
-
-.read-faq-btn > a > svg{
+.read-faq-btn > svg{
     color: var(--neutral_900);
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 0px;
-    left: -16px;
+    width: 18px;
+    height: 18px;
 }
 
-.read-faq-btn > a > span:last-child {
+.read-faq-btn  > span {
    color: var(--neutral_900);
+   font-family: 'Inter';
+   font-weight: 400;
    font-size: 14px;
    line-height : 24px;
    letter-spacing : -0.09px;
-   margin-left: 6px;
+   margin-left: 10px;
+}
+
+.hero-btn > a:hover > .read-faq-btn > svg,
+.hero-btn > a:hover > .read-faq-btn > span {
+    color: var(--neutral_0);
 }
 
 .hero-image-cont {
@@ -88,7 +104,7 @@
 }
 
 .hero-image-cont >  .card-container{
-    left: 46.5%;
+    left: 47.5%;
     bottom: 17%;
 }
 
@@ -97,7 +113,7 @@
 }
 
 .hero-logos {
-    display: inline-flex;
+    display: flex;
     list-style-type: none;
     align-content: center;
     background: #FFFFFF;
@@ -109,8 +125,11 @@
 .hero-logos > li {
     width: 280px;
     height: 112px;
-    border-right: 1px solid #E7EAEE;
     cursor: pointer;
+}
+
+.hero-logos > li:not(:last-child) {
+    border-right: 1px solid #E7EAEE;
 }
 
 .hero-logos > li > img {

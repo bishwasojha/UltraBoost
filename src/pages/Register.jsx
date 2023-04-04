@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie'
 import { useRef, useState } from 'react'
 // // import ReCAPTCHA from "react-google-recaptcha";
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Button from '../components/Button'
 import Form from '../components/Form'
 import Input from '../components/Input'
@@ -22,9 +22,7 @@ export default function Register() {
   const [loading, setLoading] = useState(false)
 
   const captchaRef = useRef()
-
   const navigate = useNavigate()
-  const location = useLocation()
 
   const register = async e => {
     e.preventDefault()
@@ -49,10 +47,8 @@ export default function Register() {
       if (response.ok) {
         const data = await response.json()
         console.log(data)
-        navigate('/login');
         return 
       }
-      setLoading(false)
       const data = await response.json()
       setErrors(data)
       captchaRef.current?.reset()
@@ -60,7 +56,10 @@ export default function Register() {
     } catch (reason) {
       console.log(reason);
     } finally {
-      setLoading(false)
+      setTimeout(()=> {
+        setLoading(false)
+        navigate('/login');
+      }, 1500)
     }
   }
 
@@ -115,6 +114,8 @@ export default function Register() {
               loading={loading}
               disabled={loading}
               className="register-btn-ub"
+              color="blue"
+              size="normal"
             >
               Sign Up
             </Button>

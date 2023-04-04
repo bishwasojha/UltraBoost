@@ -5,27 +5,20 @@ import Button from './Button'
 // import { ReactComponent as Hamburger } from "../Assets/Logo/Hamburger.svg";
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(false)
-  // const navigate = useNavigate();
-
-  const handleNavbar = () => {
-    setShowNavbar(!showNavbar)
-  }
 
   return (
     <>
       <div className="navbar-header">
         <div className="left-container">
           <div className="logo">
-            <NavLink to="/" className="header-image">
-              {' '}
-              <img src={UltraBoostLogo} alt="Ultraboost Logo" />{' '}
-            </NavLink>
+            <Link to="/" className="header-image">
+              <img src={UltraBoostLogo} alt="Ultraboost Logo" />
+            </Link>
           </div>
         </div>
 
         <div className="mid-container">
-          <ul className={`main-navbar ${showNavbar && 'active'}`}>
+          <ul className={`main-navbar`}>
             <li className="navbar-item">
               <NavLink exact to="/" className="navbar-link">
                 Home
@@ -37,8 +30,6 @@ const Navbar = () => {
                 exact
                 to="/"
                 className="navbar-link"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 How It Works
               </NavLink>
@@ -56,14 +47,14 @@ const Navbar = () => {
             </li>
 
             <li className="navbar-item">
-              <Link
+              <NavLink
                 exact
                 to="/"
                 className="navbar-link"
                 // onClick={() => navigate("/#faq")}
               >
                 FAQ
-              </Link>
+              </NavLink>
             </li>
 
             <li className="navbar-item">
@@ -75,22 +66,20 @@ const Navbar = () => {
         </div>
 
         <div className="right-container">
-          <Button className="navbar-login-btn" type="submit">
-            <Link
-              to="/login"
-              style={{ textDecoration: 'none' }}
-            >
-              Login
-            </Link>
-          </Button>
-          <Button className="navbar-register-btn" type="submit">
-            <Link
-              to="/register"
-              style={{ textDecoration: 'none' }}
-            >
+          <Link to="/login" style={{ textDecoration: 'none' }}>
+            <Button 
+              className="navbar-login-btn" 
+              color="black" 
+              type="submit">
+              Log in
+            </Button>
+          </Link>
+
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Button className="navbar-register-btn" color="blue" type="submit">
               Get Started
-            </Link>
-          </Button>
+            </Button>
+          </Link>
         </div>
       </div>
     </>

@@ -11,14 +11,17 @@ import Browse from './pages/Dashboard/Browse';
 import Payment from './pages/Dashboard/Payment';
 import Jobs from './pages/Dashboard/Jobs';
 import Order from './pages/Dashboard/Order';
+// import { UserAuthContextProvider } from './context/UserAuthContext';
 
 const App = () => {
   return (
     <>
+ {/* <UserAuthContextProvider> */}
    
       {/* <div className="root-container"> */}
       {/* <Home />*/}
       {/* </div> */}
+  
       <Router>
         <Routes>
           <Route path="/" element={<Home />}></Route>
@@ -36,7 +39,8 @@ const App = () => {
           <Route path='/dashboard/order' element={<Order />}></Route>
         </Routes>
       </Router>
-      
+    
+    {/* </UserAuthContextProvider> */}
     </>
   );
 };

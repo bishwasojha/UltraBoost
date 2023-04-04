@@ -6,7 +6,7 @@
   left: 35.5%;
   background: #fff;
   border: 4px solid #e7eaee;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .card {
@@ -49,9 +49,11 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.025em;
   color: var(--neutral_900);
   margin-left: 24px;
+  display: flex;
+  align-items: center;
 }
 
 .card-bottom > .card-user-icon {
@@ -63,8 +65,8 @@
 }
 
 .card-user-icon > img:nth-child(1) {
-  width: 14px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
 }
 
 .card-bottom > .card-user-icon > img {

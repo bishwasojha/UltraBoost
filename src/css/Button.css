@@ -1,0 +1,12 @@
+.button {
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.button.blue:hover{
+    background: #0033b3;
+}
+
+.button.black:hover {
+    background: var(--neutral_900);
+}

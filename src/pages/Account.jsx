@@ -139,6 +139,7 @@ const Account = () => {
                   <Button
                     className="login-btn-ub"
                     type="submit"
+                    color="blue"
                     loading={loading}
                     disabled={loading}
                   >
@@ -196,6 +197,7 @@ const Account = () => {
               <Button
                 className="pay-btn-ub"
                 type="submit"
+                color="blue"
                 loading={loading}
                 disabled={loading}
               >
