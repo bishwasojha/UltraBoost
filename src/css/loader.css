@@ -1,4 +1,4 @@
-.load-wrapper {
+ .load-wrapper {
     align-self: center;
     justify-self: center;
   }
@@ -13,7 +13,7 @@
   .load-wrapper.small {
     width: 12.5px;
     height: 12.5px;
-  }
+  } 
   
   .load-wrapper.normal {
     width: 25px;

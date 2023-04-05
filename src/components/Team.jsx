@@ -1,6 +1,6 @@
 import React from 'react'
-import { BsFacebook } from 'react-icons/bs'
-import { AiOutlineTwitter, AiFillInstagram } from 'react-icons/ai'
+import { BsFacebook , BsDiscord } from 'react-icons/bs'
+import { AiFillInstagram } from 'react-icons/ai'
 
 const Team = () => {
   return (
@@ -9,8 +9,7 @@ const Team = () => {
         <h4>TEAM</h4>
         <div className="team-bold-text">
           <p>
-            {' '}
-            Meet Our <span>Boosting Team</span>{' '}
+            Meet Our <span>Boosting Team</span>
           </p>
         </div>
       </div>
@@ -26,7 +25,7 @@ const Team = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit integeriet.
           </div>
           <div className="card-links">
-            <AiOutlineTwitter />
+            <BsDiscord />
             <BsFacebook />
             <AiFillInstagram />
           </div>
@@ -42,7 +41,7 @@ const Team = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit integeriet.
           </div>
           <div className="card-links">
-            <AiOutlineTwitter />
+            <BsDiscord  />
             <BsFacebook />
             <AiFillInstagram />
           </div>
@@ -58,7 +57,7 @@ const Team = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit integeriet.
           </div>
           <div className="card-links">
-            <AiOutlineTwitter />
+            <BsDiscord />
             <BsFacebook />
             <AiFillInstagram />
           </div>

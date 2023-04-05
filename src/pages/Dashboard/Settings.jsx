@@ -78,7 +78,9 @@ const Settings = () => {
     } catch (reason) {
       console.log(reason)
     } finally {
-      setLoading(false)
+      setTimeout(()=> {
+        setLoading(false);
+      }, 1500)
     }
   };
 
@@ -137,6 +139,7 @@ const Settings = () => {
                           type="submit"
                           loading={loading}
                           disabled={loading}
+                          size='normal'
                         >
                           Change Email
                         </Button>
@@ -194,6 +197,7 @@ const Settings = () => {
                           type="submit"
                           loading={loading}
                           disabled={loading}
+                          size="normal"
                         >
                           Change Password
                         </Button>
