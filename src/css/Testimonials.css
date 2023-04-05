@@ -18,14 +18,15 @@
   text-transform: uppercase;
   color: var(--base_blue);
 }
-
 .testimonials-bold-text {
+  display: flex;
+  justify-content: center;
+}
+.testimonials-bold-text > h3{
   font-family: OpenSauceSansSemiBold;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  display: flex;
-  justify-content: center;
   line-height: 60px;
   text-align: center;
   letter-spacing: -0.015em;
@@ -33,6 +34,13 @@
 }
 
 .testimonials-bold-text > h3:last-child {
+  font-family: OpenSauceSansSemiBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.015em;
   padding-left: 8px;
   color: var(--base_blue);
 }
