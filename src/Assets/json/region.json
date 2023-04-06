@@ -1,0 +1,12 @@
+[
+    { "key": "EUW", "text": "EUW", "value": "EUW" },
+    { "key": "EUNE", "text": "EUNE", "value": "EUNE" },
+    { "key": "NA", "text": "NA", "value": "NA" },
+    { "key": "OC1", "text": "OCE", "value": "OC1" },
+    { "key": "RU", "text": "RU", "value": "RU" },
+    { "key": "TR", "text": "TR", "value": "TR" },
+    { "key": "LA1", "text": "LAN", "value": "LA1" },
+    { "key": "LA2", "text": "LAS", "value": "LA2" },
+    { "key": "BR", "text": "BR", "value": "BR" },
+    { "key": "JP", "text": "JP", "value": "JP" }
+  ]

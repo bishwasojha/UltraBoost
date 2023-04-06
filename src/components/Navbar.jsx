@@ -5,7 +5,6 @@ import Button from './Button'
 // import { ReactComponent as Hamburger } from "../Assets/Logo/Hamburger.svg";
 
 const Navbar = () => {
-
   return (
     <>
       <div className="navbar-header">

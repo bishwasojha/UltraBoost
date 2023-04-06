@@ -11,6 +11,7 @@ import Browse from './pages/Dashboard/Browse';
 import Payment from './pages/Dashboard/Payment';
 import Jobs from './pages/Dashboard/Jobs';
 import Order from './pages/Dashboard/Order';
+import Select from './components/Select';
 // import { UserAuthContextProvider } from './context/UserAuthContext';
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/dashboard/jobs" element={<Jobs/>}></Route>
           <Route path="/dashboard/payment" element={<Payment/>}></Route>
           <Route path='/dashboard/order' element={<Order />}></Route>
+          <Route path='/testing' element={<Select />}></Route>
         </Routes>
       </Router>
     

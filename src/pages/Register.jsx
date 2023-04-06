@@ -9,6 +9,9 @@ import Navbar from '../components/Navbar'
 import HomeTitle from '../components/HomeTitle'
 // import { captchaSiteKey } from "../settings";
 
+import { ToastContainer, toast, Slide } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.min.css'
+
 import { AiOutlineUser, AiOutlineMail } from 'react-icons/ai'
 import { HiOutlineLockClosed } from 'react-icons/hi'
 
@@ -34,7 +37,39 @@ export default function Register() {
         email,
         password,
         captcha,
+      }/*
+      const response = await fetch(
+        `http://ultraboost.sandbox.com.np/api/v1/users/register/`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': Cookies.get('csrftoken'),
+          },
+          body: JSON.stringify(body),
+        }
+      )
+      if (response.status === 429) {
+        toast.error('Too many attempts. Please slow down.', {
+          position: toast.POSITION.BOTTOM_RIGHT,
+          autoClose: 3000,
+        })
+        return
       }
+      if (response.ok) {
+        const data = await response.json()
+        console.log(data)
+        navigate('/login')
+        return
+      }
+
+      if (response.status === 404) {
+        toast.error('Authentication error!', {
+          position: toast.POSITION.BOTTOM_RIGHT,
+          autoClose: 3000,
+        })
+      }
+      setLoading(false)
       const response = await fetch(`http://ultraboost.sandbox.com.np/api/v1/users/register/`, {
         method: 'POST',
         headers: {
@@ -42,7 +77,7 @@ export default function Register() {
           'X-CSRFToken': Cookies.get('csrftoken'),
         },
         body: JSON.stringify(body),
-      })
+      })*/
 
       if (response.ok) {
         const data = await response.json()
@@ -54,8 +89,13 @@ export default function Register() {
       captchaRef.current?.reset()
       setCaptcha()
     } catch (reason) {
+      console.log(reason)
+    } /*finally {
+      setTimeout(() => {
+        setLoading(false)
+        navigate('/login')
       console.log(reason);
-    } finally {
+    }*/ finally {
       setTimeout(()=> {
         setLoading(false)
         navigate('/login');

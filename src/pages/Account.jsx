@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 import yone from '../Assets/Images/yone.jpg'
@@ -9,7 +9,14 @@ import Navbar from '../components/Navbar'
 import Card from '../components/Card.jsx'
 import Input from '../components/Input'
 import Button from '../components/Button'
+import ReactDropdown from '../components/Select'
+import Checkbox from '../components/Checkbox'
 //import Card from '../components/Card';
+
+// importing json files
+const boosttype = require('../Assets/json/boost-type.json')
+const ranks = require('../Assets/json/ranks.json')
+const regionType = require('../Assets/json/region.json')
 
 const Account = () => {
   const [boostType, setBoostType] = useState('')
@@ -21,6 +28,18 @@ const Account = () => {
   const [region, setRegion] = useState('')
   const [loading, setLoading] = useState(false)
   const [errors, setErrors] = useState({})
+
+  const [selectedOption, setSelectedOption] = useState(null)
+
+  const handleSelect = option => {
+    setSelectedOption(option)
+  }
+
+  const [isChecked, setIsChecked] = useState(false)
+
+  const handleCheckboxChange = event => {
+    setIsChecked(event.target.checked)
+  }
 
   return (
     <>
@@ -56,7 +75,7 @@ const Account = () => {
             <div className="order-boost-detail">
               <div className="boost-type">
                 <div className="boost-type-input">
-                  <Input
+                  {/* <Input
                     label="Boost Type"
                     placeholder="Placeholder"
                     type="text"
@@ -65,10 +84,17 @@ const Account = () => {
                     onChange={e => setBoostType(e.target.value)}
                     error={errors.boostType}
                     className="login-input"
+                  /> */}
+                  <ReactDropdown
+                    label="Boost Type"
+                    options={Object.values(boosttype)}
+                    value={selectedOption}
+                    onChange={handleSelect}
+                    className="dropdown-input"
                   />
                 </div>
                 <div className="starting">
-                  <Input
+                  {/* <Input
                     label="Starting Rank"
                     placeholder="Placeholder"
                     type="text"
@@ -77,8 +103,15 @@ const Account = () => {
                     onChange={e => setStartingRank(e.target.value)}
                     error={errors.startingRank}
                     className="login-input"
+                  /> */}
+                  <ReactDropdown
+                    label="Starting Rank"
+                    options={Object.values(ranks.ranks)}
+                    value={selectedOption}
+                    onChange={handleSelect}
+                    className="dropdown-input"
                   />
-                  <Input
+                  {/* <Input
                     label="Starting Division"
                     placeholder="Placeholder"
                     type="text"
@@ -87,10 +120,17 @@ const Account = () => {
                     onChange={e => setStartingDivision(e.target.value)}
                     error={errors.startingDivision}
                     className="login-input"
+                  /> */}
+                  <ReactDropdown
+                    label="Starting Division"
+                    options={Object.values(ranks.divisions)}
+                    value={selectedOption}
+                    onChange={handleSelect}
+                    className="dropdown-input"
                   />
                 </div>
                 <div className="desired">
-                  <Input
+                  {/* <Input
                     label="Desired Rank"
                     placeholder="Placeholder"
                     type="text"
@@ -99,8 +139,15 @@ const Account = () => {
                     onChange={e => setDesiredRank(e.target.value)}
                     error={errors.desiredRank}
                     className="login-input"
+                  /> */}
+                  <ReactDropdown
+                    label="Desired Rank"
+                    options={Object.values(ranks.ranks)}
+                    value={selectedOption}
+                    onChange={handleSelect}
+                    className="dropdown-input"
                   />
-                  <Input
+                  {/* <Input
                     label="Desired Division"
                     placeholder="Placeholder"
                     type="text"
@@ -109,10 +156,17 @@ const Account = () => {
                     onChange={e => setDesiredDivision(e.target.value)}
                     error={errors.desiredRank}
                     className="login-input"
+                  /> */}
+                  <ReactDropdown
+                    label="Desired Division"
+                    options={Object.values(ranks.divisions)}
+                    value={selectedOption}
+                    onChange={handleSelect}
+                    className="dropdown-input"
                   />
                 </div>
                 <div className="queue-type">
-                  <Input
+                  {/* <Input
                     label="Queue Type"
                     placeholder="Placeholder"
                     type="text"
@@ -121,10 +175,21 @@ const Account = () => {
                     onChange={e => setQueueType(e.target.value)}
                     error={errors.queueType}
                     className="login-input"
+                  /> */}
+                  <ReactDropdown
+                    label="Queue Type"
+                    options={[
+                      { key: 'Solo', text: 'Solo', value: 'Solo' },
+                      { key: 'Duo', text: 'Duo', value: 'Duo' },
+                      { key: 'Flexible', text: 'Flexible', value: 'Flexible' },
+                    ]}
+                    value={selectedOption}
+                    onChange={handleSelect}
+                    className="dropdown-input"
                   />
                 </div>
                 <div className="boost-region">
-                  <Input
+                  {/* <Input
                     label="Region"
                     placeholder="Placeholder"
                     type="text"
@@ -133,13 +198,19 @@ const Account = () => {
                     onChange={e => setRegion(e.target.value)}
                     error={errors.region}
                     className="login-input"
+                  /> */}
+                  <ReactDropdown
+                    label="Region"
+                    options={Object.values(regionType)}
+                    value={selectedOption}
+                    onChange={handleSelect}
+                    className="dropdown-input"
                   />
                 </div>
                 <div className="login-btn">
                   <Button
                     className="login-btn-ub"
                     type="submit"
-                    color="blue"
                     loading={loading}
                     disabled={loading}
                   >
@@ -151,6 +222,62 @@ const Account = () => {
             </div>
             <div className="choose-plan">
               <div className="choose-plan-text">3. Add-ons</div>
+            </div>
+            <div className="order-boost-detail">
+              <div className="choose-plan-checkbox">
+                <Checkbox
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                  label="Duo Boosting"
+                />
+                <Checkbox
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                  label="Priority Order"
+                />
+                <Checkbox
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                  label="+1 Win"
+                />
+                <Checkbox
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                  label="Appear Offline"
+                />
+                <Checkbox
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                  label="Livestream"
+                />
+                <Checkbox
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                  label="Use VPN"
+                />
+                <Checkbox
+                  checked={isChecked}
+                  onChange={handleCheckboxChange}
+                  label="Solo Only"
+                />
+              </div>
+              <div className="login-btn">
+                <Button
+                  className="login-btn-ub"
+                  type="submit"
+                  loading={loading}
+                  disabled={loading}
+                >
+                  Continue
+                  <img src={RightArrow} alt="" />
+                </Button>
+              </div>
+            </div>
+            <div className="choose-plan">
+              <div className="choose-plan-text">4. Promotion</div>
+            </div>
+            <div className="order-boost-detail">
+              <div className="promotion-box"></div>
             </div>
           </div>
         </div>
@@ -197,7 +324,6 @@ const Account = () => {
               <Button
                 className="pay-btn-ub"
                 type="submit"
-                color="blue"
                 loading={loading}
                 disabled={loading}
               >

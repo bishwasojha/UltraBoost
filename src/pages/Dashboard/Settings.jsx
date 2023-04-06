@@ -50,7 +50,6 @@ const Settings = () => {
           },
           body: JSON.stringify(body),
         }
-
       )
       // const response = await fetch(`http://ultraboost.sandbox.com.np/api/v1/users/change-password/`, {
       //   method: 'POST',

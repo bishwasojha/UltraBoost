@@ -1,10 +1,5 @@
 # UltraBoost
 
-## To run this project
-``` npm install```
-and 
-``` yarn start ```
-
 ## Note for developers
 before committing to the repo, please do the following code:
 

@@ -141,6 +141,19 @@
   padding: 0;
 }
 
+.starting .dropdown-input,
+.desired .dropdown-input {
+  width: 232px;
+  margin-right: 0.5rem;
+}
+
+.choose-plan-checkbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 1.2rem;
+}
+
 .starting .input-group,
 .desired .input-group {
   width: 213px;
