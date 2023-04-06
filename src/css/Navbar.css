@@ -47,13 +47,13 @@
   border: 1px solid transparent;
 }
 
-.navbar-item:hover {
+.navbar-item:hover{
   border: 1px solid var(--neutral_200);
   border-radius: 6px;
 }
 
 .navbar-item > .navbar-link {
-  font-family: Inter;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -93,7 +93,7 @@
   line-height: 24px;
 }
 
-.right-container > a > .navbar-login-btn:hover {
+.right-container > a > .navbar-login-btn:hover{
   color: var(--neutral_0);
 }
 

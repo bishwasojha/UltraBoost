@@ -17,9 +17,10 @@
   letter-spacing: 1.25px;
   text-transform: uppercase;
   color: var(--base_blue);
+  margin-bottom: 16px;
 }
 
-.team-title > .team-bold-text {
+.team-title > .team-bold-text > p{
   font-family: OpenSauceSansSemiBold;
   font-style: normal;
   font-weight: 700;
@@ -32,6 +33,13 @@
 }
 
 .team-bold-text > p > span {
+  font-family: OpenSauceSansSemiBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.015em;
   color: var(--base_blue);
 }
 
@@ -112,22 +120,20 @@
   margin-top: 1rem;
 }
 
+.card-links {
+  margin-top: 16px;
+}
+
 .card-links > svg {
   width: 14px;
   height: 14px;
-  margin-top: 1rem;
   align-items: flex-start;
-  padding: 13px;
+  padding: 12px;
   background: var(--neutral_100);
   border-radius: 4px;
   flex-wrap: wrap;
   cursor: pointer;
   margin-right: 12px;
-  transition: filter 0.5s; /* Animation */
-}
-
-.card-links > svg:hover {
-  filter: brightness(90%);
 }
 
 /* .card-links > svg:nth-child(1),

@@ -1,7 +1,6 @@
 import React from 'react'
 import Cookies from 'js-cookie'
-//import { useParams } from 'react-router-dom'
-import { useState, Link } from 'react'
+import { useState } from 'react'
 import Sidebar from '../../components/Dashboard/Sidebar'
 import Form from '../../components/Form'
 import Input from '../../components/Input'
@@ -13,7 +12,6 @@ import { FaLock } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 
 const Settings = () => {
-  //const [selectedIndex, setSelectedIndex] = useState(0)
   const [password, setPassword] = useState('')
   const [oldPassword, setOldPassword] = useState('')
   const [newPassword, setNewPassword] = useState('')
@@ -23,9 +21,11 @@ const Settings = () => {
   const [errors, setErrors] = useState({})
   const [message, setMessage] = useState()
 
-  //const { uid, token } = useParams()
+  const changeEmail = {
+    
+  }
 
-  const resetPassword = async e => {
+  const changePassword = async e => {
     e.preventDefault()
     if (newPassword !== confimPassword) {
       setErrors({ confimPassword: 'Passwords do not match.' })
@@ -38,7 +38,7 @@ const Settings = () => {
       setMessage(null)
       const body = {
         oldPassword,
-        newPassword,
+        newPassword
       }
       const response = await fetch(
         `http://ultraboost.sandbox.com.np/api/v1/users/change-password/`,
@@ -69,7 +69,7 @@ const Settings = () => {
       document.cookie = `access_token=${data.access}`
       document.cookie = `refresh_token=${data.refresh}`
       console.log(`access_token=${data.access};refresh_token=${data.refresh}`)
-
+     
       /*if (json.token || json.uid) {
         json.non_field_errors = 'Cannot reset password.'
       }*/
@@ -77,9 +77,11 @@ const Settings = () => {
     } catch (reason) {
       console.log(reason)
     } finally {
-      setLoading(false)
+      setTimeout(()=> {
+        setLoading(false);
+      }, 1500)
     }
-  }
+  };
 
   return (
     <>
@@ -105,7 +107,7 @@ const Settings = () => {
                   </div>
                   <div className="content-content">
                     <Form
-                      onSubmit={resetPassword}
+                      onSubmit={changeEmail}
                       error={errors.non_field_errors || errors.detail}
                     >
                       <Input
@@ -136,6 +138,7 @@ const Settings = () => {
                           type="submit"
                           loading={loading}
                           disabled={loading}
+                          size='normal'
                         >
                           Change Email
                         </Button>
@@ -151,7 +154,7 @@ const Settings = () => {
                   </div>
                   <div className="content-content">
                     <Form
-                      onSubmit={resetPassword}
+                      onSubmit={changePassword}
                       error={errors.non_field_errors}
                     >
                       <Input
@@ -193,6 +196,7 @@ const Settings = () => {
                           type="submit"
                           loading={loading}
                           disabled={loading}
+                          size="normal"
                         >
                           Change Password
                         </Button>

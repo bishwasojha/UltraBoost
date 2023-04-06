@@ -26,7 +26,7 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="hero-btn">
-              <Link to="/register" style={{ textDecoration: 'none' }}>
+               <Link to="/register" style={{ textDecoration: 'none' }}>
                 <Button
                   className="herosection-register-btn"
                   color="blue"
@@ -34,13 +34,17 @@ const HeroSection = () => {
                 >
                   Get Started
                 </Button>
-              </Link>
+               </Link>
 
-              <Link to="/" style={{ textDecoration: 'none' }}>
-                <Button className="read-faq-btn" color="black" type="submit">
+                <Link to="/" style={{ textDecoration: 'none' }}>
+                 <Button 
+                   className="read-faq-btn" 
+                   color="black" 
+                   type="submit">
                   <RiPlayCircleLine /> <span>Read FAQ</span>
-                </Button>
-              </Link>
+                 </Button>
+                </Link>
+              
             </div>
           </div>
           <div className="hero-image-cont">

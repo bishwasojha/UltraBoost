@@ -37,7 +37,7 @@ export default function Register() {
         email,
         password,
         captcha,
-      }
+      }/*
       const response = await fetch(
         `http://ultraboost.sandbox.com.np/api/v1/users/register/`,
         {
@@ -70,16 +70,35 @@ export default function Register() {
         })
       }
       setLoading(false)
+      const response = await fetch(`http://ultraboost.sandbox.com.np/api/v1/users/register/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRFToken': Cookies.get('csrftoken'),
+        },
+        body: JSON.stringify(body),
+      })*/
+
+      if (response.ok) {
+        const data = await response.json()
+        console.log(data)
+        return 
+      }
       const data = await response.json()
       setErrors(data)
       captchaRef.current?.reset()
       setCaptcha()
     } catch (reason) {
       console.log(reason)
-    } finally {
+    } /*finally {
       setTimeout(() => {
         setLoading(false)
         navigate('/login')
+      console.log(reason);
+    }*/ finally {
+      setTimeout(()=> {
+        setLoading(false)
+        navigate('/login');
       }, 1500)
     }
   }
@@ -90,63 +109,64 @@ export default function Register() {
 
       <div className="register-page">
         <div className="register-div">
-          <div className="register-detail">
-            <HomeTitle>Sign Up</HomeTitle>
-            <p className="register-text">Create Your Account</p>
-            <Form
-              onSubmit={register}
-              error={errors.non_field_errors || errors.detail}
+        <div className="register-detail">
+          <HomeTitle>Sign Up</HomeTitle>
+          <p className="register-text">Create Your Account</p>
+          <Form
+            onSubmit={register}
+            error={errors.non_field_errors || errors.detail}
+          >
+            <Input
+              label="Username"
+              placeholder="Username"
+              type="text"
+              required={true}
+              icon={<AiOutlineUser />}
+              value={username}
+              onChange={e => setFirstName(e.target.value)}
+              error={errors.username}
+              className="login-input"
+            />
+            <Input
+              label="Email"
+              placeholder="Email"
+              type="email"
+              required={true}
+              icon={<AiOutlineMail />}
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              error={errors.email}
+              className="login-input"
+            />
+            <Input
+              label="Password"
+              placeholder="Password"
+              type="password"
+              required={true}
+              icon={<HiOutlineLockClosed />}
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              error={errors.password1}
+              className="login-input"
+            />
+            <Button
+              type="submit"
+              loading={loading}
+              disabled={loading}
+              className="register-btn-ub"
+              color="blue"
+              size="normal"
             >
-              <Input
-                label="Username"
-                placeholder="Username"
-                type="text"
-                required={true}
-                icon={<AiOutlineUser />}
-                value={username}
-                onChange={e => setFirstName(e.target.value)}
-                error={errors.username}
-                className="login-input"
-              />
-              <Input
-                label="Email"
-                placeholder="Email"
-                type="email"
-                required={true}
-                icon={<AiOutlineMail />}
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                error={errors.email}
-                className="login-input"
-              />
-              <Input
-                label="Password"
-                placeholder="Password"
-                type="password"
-                required={true}
-                icon={<HiOutlineLockClosed />}
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-                error={errors.password1}
-                className="login-input"
-              />
-              <Button
-                type="submit"
-                loading={loading}
-                disabled={loading}
-                className="register-btn-ub"
-                color="blue"
-                size="normal"
-              >
-                Sign Up
-              </Button>
-              <div className="already-account">
-                <span>Already have an account?</span>
-                <Link to="/login">Login</Link>
-              </div>
-            </Form>
-          </div>
+              Sign Up
+            </Button>
+            <div className="already-account">
+              <span>Already have an account?</span>
+              <Link to="/login">Login</Link>
+            </div>
+          </Form>
         </div>
+        </div>
+        
       </div>
     </>
   )

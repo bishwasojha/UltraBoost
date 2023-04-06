@@ -25,7 +25,11 @@ const Navbar = () => {
             </li>
 
             <li className="navbar-item">
-              <NavLink exact to="/" className="navbar-link">
+              <NavLink
+                exact
+                to="/"
+                className="navbar-link"
+              >
                 How It Works
               </NavLink>
             </li>
@@ -62,7 +66,10 @@ const Navbar = () => {
 
         <div className="right-container">
           <Link to="/login" style={{ textDecoration: 'none' }}>
-            <Button className="navbar-login-btn" color="black" type="submit">
+            <Button 
+              className="navbar-login-btn" 
+              color="black" 
+              type="submit">
               Log in
             </Button>
           </Link>

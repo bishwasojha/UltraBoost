@@ -63,7 +63,7 @@ const Payment = () => {
             </div>
           </SmallNav>
           <div className="payment-search">
-            <DashboardSearch />
+            <DashboardSearch />  
           </div>
           <div className="payment-table">
             <ReactTable

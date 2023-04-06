@@ -78,8 +78,8 @@ const Jobs = () => {
             </div>
 
             <div className="jobs-search">
-              <DashboardSearch />
-            </div>
+             <DashboardSearch />  
+          </div>
           </div>
           <div className="dash-table">
             <ReactTable

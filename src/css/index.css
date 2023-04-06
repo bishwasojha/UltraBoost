@@ -30,27 +30,6 @@
   src: url('../Assets/fonts/OpenSauceOne-ExtraBold.ttf') format('truetype');
 }
 
-@import url('HeroSection.css');
-@import url('Team.css');
-@import url('Testimonials.css');
-@import url('App.css');
-@import url('Feature.css');
-@import url('HomeTitle.css');
-@import url('Home.css');
-@import url('FAQ.css');
-@import url('Footer.css');
-@import url('About.css');
-@import url('Card.css');
-@import url('theme.css');
-@import url('Timeline.css');
-@import url('TimelineItem.css');
-@import url('Navbar.css');
-@import url('Input.css');
-@import url('Login.css');
-@import url('Register.css');
-@import url('Account.css');
-@import url('ForgotPassword.css');
-@import url('Button.css');
 @import url('App.css');
 @import url('About.css');
 @import url('Account.css');

@@ -44,7 +44,7 @@ export default function ForgotPassword() {
       setErrors({})
       setMessage(null)
       const body = {
-        email,
+        email
       }
       const response = await fetch(`change-password/`, {
         method: 'POST',
@@ -86,50 +86,51 @@ export default function ForgotPassword() {
       <Navbar />
       <div className="login-page">
         <div className="reset-div">
-          <div className="login-detail">
-            <HomeTitle>Log in</HomeTitle>
-            <div className="login-text">Reset Password</div>
-            <Form
-              onSubmit={login}
-              message={message}
-              error={errors.non_field_errors}
-            >
-              <Input
-                label="Email address"
-                placeholder="Placeholder"
-                type="email"
-                required={true}
-                icon={<AiOutlineMail />}
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-                error={errors.email}
-                className="login-input"
-              />
+        <div className="login-detail">
+          <HomeTitle>Log in</HomeTitle>
+          <div className="login-text">Reset Password</div>
+          <Form
+            onSubmit={login}
+            message={message}
+            error={errors.non_field_errors}
+          >
+            <Input
+              label="Email address"
+              placeholder="Placeholder"
+              type="email"
+              required={true}
+              icon={<AiOutlineMail />}
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              error={errors.email}
+              className="login-input"
+            />
 
-              <div className="reset-btn">
-                <Button
-                  type="submit"
-                  loading={loading}
-                  disabled={loading}
-                  className="reset-btn-ub"
-                >
-                  Reset Password
-                </Button>
-                <ToastContainer transition={Slide} />
-              </div>
-              <div className="not-a-user">
-                Don't have an account?
-                <Link
-                  to="/register"
-                  className="not-registered-link"
-                  style={{ textDecoration: 'none' }}
-                >
-                  Sign Up
-                </Link>
-              </div>
-            </Form>
-          </div>
+            <div className="reset-btn">
+              <Button
+                type="submit"
+                loading={loading}
+                disabled={loading}
+                className="reset-btn-ub"
+              >
+                Reset Password
+              </Button>
+              <ToastContainer transition={Slide} />
+            </div>
+            <div className="not-a-user">
+              Don't have an account?
+              <Link
+                to="/register"
+                className="not-registered-link"
+                style={{ textDecoration: 'none' }}
+              >
+                Sign Up
+              </Link>
+            </div>
+          </Form>
         </div>
+        </div>
+        
       </div>
     </>
   )

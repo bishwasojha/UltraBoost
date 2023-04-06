@@ -12,7 +12,6 @@
   margin-left: 1.5rem;
 }
 
-.payment-table > table th:not(:first-child),
-table td:not(:first-child) {
+.payment-table > table th:not(:first-child), table td:not(:first-child) {
   width: 164px;
 }

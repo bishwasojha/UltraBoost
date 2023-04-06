@@ -2,15 +2,14 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  margin: 3rem 0;
+  margin-top: 40px;
 }
 
 .faq-title {
-  width: 42%;
-  margin-left: 0;
+  width: 40%;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
 }
 
 .faq-second-heading {
@@ -19,12 +18,17 @@
 }
 
 .faq-second-heading > h1 {
+  font-family: OpenSauceSansSemiBold;
   font-size: 44px;
   line-height: 60px;
+  letter-spacing: -0.019em;
   color: #07090d;
 }
 
 .faq-second-heading > span {
+  font-family: OpenSauceSansSemiBold;
+  line-height: 60px;
+  letter-spacing: -0.019em;
   font-size: 44px;
   color: #1355ff;
 }
@@ -33,11 +37,13 @@
   display: flex;
   flex-direction: column;
   font-family: Inter;
-  font-weight: 400;
+  font-weight: 300;
   margin-top: 16rem;
 }
 
 .faq-email-section > p {
+  font-family: Inter;
+  font-weight: 300;
   width: 298px;
   color: #586174;
   font-size: 14px;
@@ -46,44 +52,43 @@
 }
 
 .faq-email-section > span {
+  font-family: Inter;
+  font-weight: 300;
   color: #1355ff;
   font-size: 16px;
   padding-top: 0.8rem;
 }
 
 .faq-details {
+  width: 60%;
   display: flex;
   flex-direction: row;
-  width: 57%;
 }
 
 .faq-items {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
   margin-left: 2rem;
 }
 
 .faq-item {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
   border-bottom: 1px solid #e7eaee;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
   transition: 0.5s cubic-bezier(0, 0.5, 0, 1);
-  margin-top: 0.4rem;
+  padding: 40px 0px 16px 32px;
+  background: transparent;
+  transition: 0.6s ease-in-out;
 }
 
 .faq-item.opened {
   background: #f6f7f9;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .faq-question {
   display: flex;
   justify-content: space-between;
-  padding: 26px 8px 8px 15px;
 }
 
 .faq-question > span {
@@ -108,12 +113,12 @@
   color: #3c4353;
   overflow: hidden;
   transition: max-height 0.4s cubic-bezier(0, 0.5, 0, 1);
-  padding: 5px 5px 5px 15px;
+  padding: 24px 0px 0px 0px;
 }
 
 .faq-answer.opened {
   max-height: 500px;
-  margin-bottom: 0.8rem;
+  padding: 24px 0px 0px 0px;
   transition: max-height 0.4s ease-in-out;
 }
 

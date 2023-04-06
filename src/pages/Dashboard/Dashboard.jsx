@@ -96,7 +96,7 @@ const Dashboard = () => {
               <DashboardSearch />
             </div>
           </div>
-
+          
           <div className="dash-table">
             <ReactTable
               columns={columns}

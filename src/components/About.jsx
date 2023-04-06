@@ -34,7 +34,10 @@ const About = () => {
             <span>Special Discount 50%</span>
           </div>
         </div>
-        <Button className="learn-more-btn" color="blue" type="submit">
+        <Button 
+         className="learn-more-btn" 
+         color="blue"
+         type="submit">
           <span> Learn More</span>
           <img src={RightArrow} alt="" />
         </Button>

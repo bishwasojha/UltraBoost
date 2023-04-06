@@ -12,10 +12,11 @@ import Navbar from '../components/Navbar'
 const Home = () => {
   return (
     <>
-      <div className="homepage-navbar">
-        <Navbar />
-      </div>
-      <div className="root-container">
+      
+        <div className="homepage-navbar">
+          <Navbar />
+        </div>
+        <div className="root-container">
         <div className="homepage-herosection">
           <HeroSection />
         </div>
