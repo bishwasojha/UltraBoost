@@ -1,0 +1,20 @@
+<svg width="16" height="544" viewBox="0 0 16 544" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="15" height="15" rx="7.5" fill="white"/>
+<circle cx="8" cy="8" r="2" fill="#1355FF"/>
+<rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#1355FF"/>
+<path d="M8 16L8 96" stroke="#1355FF"/>
+<rect x="0.5" y="176.5" width="15" height="15" rx="7.5" fill="white"/>
+<circle cx="8" cy="184" r="2" fill="#1355FF"/>
+<rect x="0.5" y="176.5" width="15" height="15" rx="7.5" stroke="#1355FF"/>
+<path d="M8 96L8 176" stroke="#1355FF"/>
+<path d="M8 192L8 272" stroke="#1355FF"/>
+<rect x="0.5" y="352.5" width="15" height="15" rx="7.5" fill="white"/>
+<circle cx="8" cy="360" r="2" fill="#1355FF"/>
+<rect x="0.5" y="352.5" width="15" height="15" rx="7.5" stroke="#1355FF"/>
+<path d="M8 272L8 352" stroke="#1355FF"/>
+<path d="M8 368L8 448" stroke="#1355FF"/>
+<rect x="0.5" y="528.5" width="15" height="15" rx="7.5" fill="white"/>
+<circle cx="8" cy="536" r="2" fill="#1355FF"/>
+<rect x="0.5" y="528.5" width="15" height="15" rx="7.5" stroke="#1355FF"/>
+<path d="M8 448L8 528" stroke="#1355FF"/>
+</svg>

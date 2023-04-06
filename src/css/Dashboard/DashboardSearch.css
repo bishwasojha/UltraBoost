@@ -1,0 +1,30 @@
+.dashboard-search {
+  width: 276px;
+  height: 33px;
+  display: flex;
+  border: 1px solid var(--neutral_200);
+  border-radius: 99px;
+  color: var(--neutral_500);
+  margin-left: auto;
+  margin-right: 18%;
+}
+
+.dashboard-search > input {
+  font-family: OpenSauceSansRegular;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  align-items: center;
+  border: none;
+  color: var(--neutral_500);
+}
+
+.dashboard-search > input:focus {
+  outline: none;
+}
+
+.dashboard-search > svg {
+  width: 13px;
+  height: 13px;
+  padding: 10px 8px 10px 12px;
+}

@@ -1,0 +1,118 @@
+.order-content {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1.5rem;
+}
+
+.order-chat {
+  margin-right: 1.5rem;
+}
+
+.chat-content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 18px 10px;
+  gap: 8px;
+  width: 393px;
+  height: 308.99px;
+  overflow-y: scroll;
+  border: 1px solid var(--neutral_200);
+  border-radius: 12px;
+}
+
+.our-chat {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 6px 12px;
+  width: 240px;
+  background: var(--lighter_blue);
+  border-radius: 18px;
+}
+
+.user-reply {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  padding: 6px 12px;
+  width: 254.9px;
+  background: var(--base_blue);
+  border-radius: 18px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: var(--lighter_blue);
+}
+
+.chat-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 8px;
+  width: 393px;
+  height: 41.01px;
+  background: var(--neutral_0);
+  border: 1px solid var(--neutral_200);
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+
+.chat-box > input {
+  width: 344px;
+  border: none;
+}
+
+.chat-box > input:focus {
+  outline: none;
+  border: none;
+}
+
+.chat-box > svg {
+  color: #2457fa;
+}
+
+.order-details-table {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 18px;
+  width: 365px;
+  height: 368px;
+  border: 1px solid var(--neutral_200);
+  border-radius: 12px;
+}
+
+.left-side-order {
+  margin-right: 2rem;
+}
+
+.order-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: var(--neutral_900);
+  padding-bottom: 0.2rem;
+}
+
+.order-subtext {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: var(--neutral_600);
+  padding-bottom: 1.2rem;
+}

@@ -1,0 +1,144 @@
+.footer-wrapper {
+  height: 584px;
+}
+
+.footer-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 96px 160px 0;
+  justify-content: space-around;
+}
+
+.footer-pageslink {
+  max-width: 1120px;
+  margin: 0 auto;
+  font-family: Inter;
+  font-weight: 200;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 72px;
+  border-bottom: 1px solid #1b212c;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo > img {
+  width: 207px;
+  height: 40px;
+}
+
+.logo > p {
+  width: 350px;
+  color: #818a9c;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.02px;
+  padding-top: 24px;
+}
+
+.footer-pages {
+  display: flex;
+  justify-content: space-around;
+  gap: 32px;
+  margin-left: 224px;
+}
+
+.footer-pages > .pages,
+.footer-pages > .ref-pages {
+  width: 160px;
+}
+
+.pages > h4,
+.ref-pages > h4 {
+  color: var(--neutral_0);
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1.28px;
+  margin-bottom: 16px;
+}
+
+.pgs {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pgs > li {
+  color: #818a9c;
+  font-family: Inter;
+  font-size: 14px;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 24px;
+  letter-spacing: 0.09px;
+}
+
+.long-horizontal-line {
+  width: 1120px;
+  height: 1px;
+  background: var(--neutral_100);
+}
+
+.footer-sociallink {
+  /* max-width: 1120px;
+    margin: 0 auto; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 58px;
+}
+
+.copyright {
+  color: #818a9c;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 16px;
+}
+
+.social > li {
+  width: 24px;
+  height: 24px;
+  padding: 12px;
+  border: 1px solid #e4e5e829;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+}
+
+.footer-fb > img,
+.footer-insta > img,
+.footer-twitter > img {
+  margin-top: 5px;
+}

@@ -1,0 +1,19 @@
+{
+    "ranks": {
+      "IR": { "key": "IRON", "text": "Iron", "value": "IR", "color": "iron" },
+      "BR": { "key": "BRONZE", "text": "Bronze", "value": "BR", "color": "bronze" },
+      "SI": { "key": "SILVER", "text": "Silver", "value": "SI", "color": "silver" },
+      "GO": { "key": "GOLD", "text": "Gold", "value": "GO", "color": "gold" },
+      "PL": { "key": "PLATINUM", "text": "Platinum", "value": "PL", "color": "platinum" },
+      "DI": { "key": "DIAMOND", "text": "Diamond", "value": "DI", "color": "diamond" },
+      "MA": { "key": "MASTER", "text": "Master", "value": "MA", "color": "master" },
+      "GR": { "key": "GRANDMASTER", "text": "Grandmaster", "value": "GR", "color": "grandmaster" },
+      "CH": { "key": "CHALLENGER", "text": "Challenger", "value": "CH", "color": "challenger" }
+    },
+    "divisions": [
+      { "key": "I", "text": "I", "value": 1 },
+      { "key": "II", "text": "II", "value": 2 },
+      { "key": "III", "text": "III", "value": 3 },
+      { "key": "IV", "text": "IV", "value": 4 }
+    ]
+  }

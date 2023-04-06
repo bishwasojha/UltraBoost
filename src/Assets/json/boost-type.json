@@ -1,0 +1,8 @@
+[
+    { "key": "Division", "text": "Division", "value": "Division"},
+    { "key": "Placements", "text": "Placements", "value": "Placements"},
+    { "key": "Duo Games", "text": "Duo Games", "value": "Duo Games"},
+    { "key": "Normal Wins", "text": "Normal Wins", "value": "Normal Wins"},
+    { "key": "Leveling", "text": "Leveling", "value": "Leveling"},
+    { "key": "Masteries", "text": "Masteries", "value": "Masteries"}
+]

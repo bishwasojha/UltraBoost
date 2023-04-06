@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: OpenSauceSansLight;
+  src: url('../Assets/fonts/OpenSauceOne-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: OpenSauceSansMedium;
+  src: url('../Assets/fonts/OpenSauceOne-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: OpenSauceSansRegular;
+  src: url('../Assets/fonts/OpenSauceOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: OpenSauceSansSemiBold;
+  src: url('../Assets/fonts/OpenSauceOne-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: OpenSauceSansBold;
+  src: url('../Assets/fonts/OpenSauceOne-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: OpenSauceSansExtraBold;
+  src: url('../Assets/fonts/OpenSauceOne-ExtraBold.ttf') format('truetype');
+}
+
+@import url('HeroSection.css');
+@import url('Team.css');
+@import url('Testimonials.css');
+@import url('App.css');
+@import url('Feature.css');
+@import url('HomeTitle.css');
+@import url('Home.css');
+@import url('FAQ.css');
+@import url('Footer.css');
+@import url('About.css');
+@import url('Card.css');
+@import url('theme.css');
+@import url('Timeline.css');
+@import url('TimelineItem.css');
+@import url('Navbar.css');
+@import url('Input.css');
+@import url('Login.css');
+@import url('Register.css');
+@import url('Account.css');
+@import url('ForgotPassword.css');
+@import url('Button.css');
+@import url('App.css');
+@import url('About.css');
+@import url('Account.css');
+@import url('Button.css');
+@import url('Card.css');
+@import url('FAQ.css');
+@import url('Feature.css');
+@import url('ForgotPassword.css');
+@import url('Footer.css');
+@import url('HomeTitle.css');
+@import url('Home.css');
+@import url('HeroSection.css');
+@import url('Navbar.css');
+@import url('Input.css');
+@import url('Login.css');
+@import url('loader.css');
+@import url('Register.css');
+@import url('Team.css');
+@import url('Testimonials.css');
+@import url('theme.css');
+@import url('Timeline.css');
+@import url('TimelineItem.css');
+@import url('Dashboard/Sidebar.css');
+@import url('Dashboard/DashboardSearch.css');
+@import url('Dashboard/Table.css');
+@import url('Dashboard/SmallNav.css');
+@import url('Dashboard/Dashboard.css');
+@import url('Dashboard/Settings.css');
+@import url('Dashboard/OrderItem.css');
+@import url('Dashboard/Reacttable.css');
+@import url('Dashboard/Payment.css');
+@import url('Dashboard/Jobs.css');
+@import url('Dashboard/Browse.css');
+@import url('Dropdown.css');

@@ -1,0 +1,79 @@
+.load-wrapper {
+  align-self: center;
+  justify-self: center;
+}
+
+.loader {
+  animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  width: 100%;
+  height: 100%;
+}
+
+.load-wrapper.small {
+  width: 12.5px;
+  height: 12.5px;
+}
+
+.load-wrapper.normal {
+  width: 25px;
+  height: 25px;
+}
+
+.load-wrapper.big {
+  width: 50px;
+  height: 50px;
+}
+
+.loader .path {
+  stroke: #fff;
+  stroke-linecap: round;
+  animation: dash 1.5s ease-in-out infinite;
+  animation: dash 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
