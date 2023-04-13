@@ -1,0 +1,29 @@
+.smallnav-title {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 24px;
+  gap: 10px;
+  height: 68px;
+  background: #fff;
+  border-bottom: 1px solid #e7eaee;
+  width: 100%;
+}
+
+.smallnav-title > span {
+  font-family: OpenSauceSansSemiBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.006em;
+  color: #07090d;
+  display: flex;
+}
+
+span > .small-div-icon > img {
+  width: 12px;
+  height: 16px;
+  color: #979fb3;
+  padding-left: 10px;
+}

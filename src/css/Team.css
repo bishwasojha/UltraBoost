@@ -1,0 +1,143 @@
+.team-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-title {
+  margin-bottom: 2.5rem;
+}
+
+.team-title > h4 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: var(--base_blue);
+  margin-bottom: 16px;
+}
+
+.team-title > .team-bold-text > p {
+  font-family: OpenSauceSansSemiBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: var(--neutral_900);
+  margin-top: 16px;
+}
+
+.team-bold-text > p > span {
+  font-family: OpenSauceSansSemiBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: var(--base_blue);
+}
+
+.team-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.team-card {
+  border: 1px solid #e7eaee;
+  border-radius: 15px;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.img-placeholder {
+  width: 288px;
+  height: 280px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  margin-top: 5px;
+}
+
+.user-title,
+.team-card-description {
+  margin-left: 0;
+}
+
+.user-title {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #e7eaee;
+  margin-top: 32px;
+}
+
+.user-name {
+  font-family: OpenSauceSansRegular;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  color: #07090d;
+  padding-right: 12px;
+  margin-bottom: 16px;
+}
+
+.user-title > .user-rank {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #1355ff;
+  margin-left: 12px;
+  margin-bottom: 26px;
+  margin-top: 5px;
+}
+
+.long-line {
+  width: 1px;
+  height: 12px;
+  background: var(--neutral_200);
+  margin-top: 10px;
+}
+
+.team-card-description {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  width: 288px;
+  letter-spacing: -0.18px;
+  color: #586174;
+  margin-top: 1rem;
+}
+
+.card-links {
+  margin-top: 16px;
+}
+
+.card-links > svg {
+  width: 14px;
+  height: 14px;
+  align-items: flex-start;
+  padding: 12px;
+  background: var(--neutral_100);
+  border-radius: 4px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+/* .card-links > svg:nth-child(1),
+.card-links > svg:nth-child(2),
+.card-links > svg:nth-child(3) {
+    height: 12px;
+} */

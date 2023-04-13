@@ -1,0 +1,109 @@
+.feature-container {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.text-special-feature {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.09em;
+}
+
+.text-special-feature > h1 {
+  font-family: OpenSauceSansSemiBold;
+  font-size: 44px;
+  color: #07090d;
+  font-weight: 700;
+}
+
+.text-special-feature > h2 {
+  font-family: OpenSauceSansSemiBold;
+  font-size: 44px;
+  color: #1355ff;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.feature-description {
+  margin-top: 2rem;
+}
+
+.feature-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.feature-wrapper-1,
+.feature-wrapper-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.each-feature {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.feature-icon {
+  background: #f0f5ff;
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.feature-icon > img {
+  padding: 10px;
+  width: 17px;
+  height: 14px;
+  margin-top: 5px;
+}
+
+.feature-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+
+.feature-name > h3 {
+  font-family: OpenSauceSansRegular;
+  font-size: 18px;
+  color: #07090d;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+}
+
+.feature-name > p {
+  width: 280px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 300;
+  color: #586174;
+  margin-top: 0.8rem;
+  line-height: 22px;
+}

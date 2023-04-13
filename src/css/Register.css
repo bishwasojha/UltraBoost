@@ -1,0 +1,104 @@
+.register-page {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.register-div {
+  width: 544px;
+  height: 604px;
+  border: 1px solid #e7eaee;
+  border-radius: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.register-detail > .home-title {
+  text-align: center;
+}
+
+.register-detail {
+  padding: 40px;
+}
+
+.register-text {
+  font-family: OpenSauceSansBold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.015em;
+  color: #07090d;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+form > button {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: #fff;
+}
+
+.register-btn-ub {
+  padding: 12px 24px;
+  width: 100%;
+  background: #1355ff;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+}
+
+.already-account {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.09px;
+  color: var(--neutral_900);
+  margin-top: 28px;
+  margin-bottom: 44px;
+}
+
+.already-account > a {
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.09px;
+  color: var(--base_blue);
+  padding-left: 0.5rem;
+  text-decoration: none;
+}
+
+.input:nth-child(2) {
+  padding-bottom: 1.5rem;
+}
+
+.input:nth-child(3) {
+  padding-bottom: 1.5rem;
+}
+
+.input:nth-child(4) {
+  padding-bottom: 1.5rem;
+}
+
+.already-account > a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: var(--base_blue);
+  transition: 0.2s;
+}
+
+.already-account > a:hover::after {
+  width: 100%;
+}

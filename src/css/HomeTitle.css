@@ -1,0 +1,16 @@
+.home-title {
+  letter-spacing: 1.25px;
+  margin-bottom: 18px;
+}
+
+.home-title > span {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--base_blue);
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 24px;
+  letter-spacing: 1.25px;
+}

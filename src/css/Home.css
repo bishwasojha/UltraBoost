@@ -1,0 +1,21 @@
+.homepage-timeline,
+.homepage-about,
+.homepage-team,
+.homepage-feature,
+.homepage-faq,
+.homepage-testimonials {
+  padding: 5rem 0;
+}
+
+.homepage-herosection {
+  padding-bottom: 6rem;
+}
+
+.homepage-timeline {
+  margin-bottom: 160px;
+}
+
+.homepage-footer {
+  background: #07090d;
+  margin-top: 40px;
+}

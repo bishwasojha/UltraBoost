@@ -1,0 +1,47 @@
+[
+  {
+    "key": "IRON",
+    "text": "Iron",
+    "value": "IR"
+  },
+  {
+    "key": "BRONZE",
+    "text": "Bronze",
+    "value": "BR"
+  },
+  {
+    "key": "SILVER",
+    "text": "Silver",
+    "value": "SI"
+  },
+  {
+    "key": "GOLD",
+    "text": "Gold",
+    "value": "GO"
+  },
+  {
+    "key": "PLATINUM",
+    "text": "Platinum",
+    "value": "PL"
+  },
+  {
+    "key": "DIAMOND",
+    "text": "Diamond",
+    "value": "DI"
+  },
+  {
+    "key": "MASTER",
+    "text": "Master",
+    "value": "MA"
+  },
+  {
+    "key": "GRANDMASTER",
+    "text": "Grandmaster",
+    "value": "GR"
+  },
+  {
+    "key": "CHALLENGER",
+    "text": "Challenger",
+    "value": "CH"
+  }
+]

@@ -1,0 +1,31 @@
+.boosting-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 16px;
+  width: 464px;
+  height: 32px;
+  border-bottom: 1px solid #e7eaee;
+}
+
+.title-of-service {
+  width: 379px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+  color: var(--neutral_600);
+}
+
+.cost-of-service {
+  font-family: OpenSauceSansRegular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  color: var(--neutral_900);
+}
